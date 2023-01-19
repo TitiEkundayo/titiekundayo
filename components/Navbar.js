@@ -104,14 +104,14 @@ const Navbar = ({ heading }) => {
 									</Link>
 								</li>
 								<li className="nav-item">
-									<a className="nav-link active" href="/">
+									<Link className="nav-link active" href="/">
 										Consulting
-									</a>
+									</Link>
 								</li>
 								<li className="nav-item">
-									<a className="nav-link active" href="/">
+									<Link className="nav-link active" href="/">
 										Entrepreneur
-									</a>
+									</Link>
 								</li>
 								<li className="nav-item">
 									<Link className="nav-link active" href="/">
@@ -119,14 +119,14 @@ const Navbar = ({ heading }) => {
 									</Link>
 								</li>
 								<li className="nav-item">
-									<a className="nav-link active" href="/">
+									<Link className="nav-link active" href="/">
 										Podcast
-									</a>
+									</Link>
 								</li>
 								<li className="nav-item">
-									<a className="nav-link active" href="/">
+									<Link className="nav-link active" href="/">
 										Musing
-									</a>
+									</Link>
 								</li>
 								<li className="nav-item">
 									<Link className="nav-link active" href="/contact">
