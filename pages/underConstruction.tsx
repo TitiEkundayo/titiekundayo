@@ -1,5 +1,5 @@
 const UnderConstruction = () => {
-	return <div>underConstruction</div>;
+	return <div className="border-3">numbers</div>;
 };
 
 export default UnderConstruction;

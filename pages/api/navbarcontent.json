@@ -1,0 +1,29 @@
+{
+	"landingpage": [
+		{
+			"id": 1,
+			"heading": "Home"
+		}
+	],
+
+	"portfolio": [
+		{
+			"id": 1,
+			"heading": "Portfolio"
+		}
+	],
+
+	"projectdelivery": [
+		{
+			"id": 1,
+			"heading": "Project Delivery"
+		}
+	],
+
+	"managedservices": [
+		{
+			"id": 1,
+			"heading": "Managed Services"
+		}
+	]
+}

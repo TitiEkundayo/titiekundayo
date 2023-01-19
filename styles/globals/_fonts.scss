@@ -1,0 +1,145 @@
+@use "./colors" as *;
+@use "./mediaqueries" as *;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap");
+
+$fontFamily: "Oooh Baby", cursive !important;
+
+@mixin H1Font {
+	font-family: "Poppins", sans-serif;
+	font-size: 3.5rem;
+	font-weight: bold;
+	letter-spacing: 2%;
+}
+
+@mixin H2Font {
+	font-family: "Poppins", sans-serif;
+	font-size: 3rem !important;
+	font-weight: bold;
+	letter-spacing: 2%;
+}
+
+@mixin H3Font {
+	font-family: "Poppins", sans-serif;
+	font-size: 2.25rem;
+	font-weight: bold;
+	letter-spacing: 2%;
+}
+
+// @mixin H4Font {
+// 	font-family: "Poppins", sans-serif;
+// 	font-size: 1.563rem;
+// 	font-weight: bold;
+// 	letter-spacing: 2%;
+// }
+
+// @mixin H5Font {
+// 	font-family: "Poppins", sans-serif;
+// 	font-size: 1.25em;
+// 	line-height: 1.75rem;
+// }
+
+// @mixin H6Font {
+// 	font-family: "Poppins", sans-serif;
+// 	font-size: 1rem;
+// 	line-height: 1.75rem;
+// }
+
+@mixin pFont {
+	font-family: "Open Sans", sans-serif;
+	font-size: 1rem;
+	// color: $bodyTextColor;
+	line-height: 1.75rem; //multiples of 1.5 the font-size
+	letter-spacing: 0.02rem; //multiples of 1.5 the font-size
+}
+
+@mixin mutedFont {
+	font-family: "Open Sans";
+	font-size: 0.812em;
+	// color: $mutedTextColor;
+}
+
+@mixin btnText {
+	font: {
+		family: poppins;
+		weight: bold;
+		size: 1.2rem;
+	}
+
+	@include sm {
+		font: {
+			weight: bold;
+			size: 1rem;
+		}
+	}
+}
+
+.h1 {
+	@include H1Font;
+}
+
+.h2 {
+	@include H2Font;
+}
+
+.h3 {
+	@include H3Font;
+}
+
+// h4 {
+// 	@include H4Font;
+// }
+
+// h5 {
+// 	@include H5Font;
+// }
+
+// h6 {
+// 	@include H6Font;
+// }
+
+.p {
+	@include pFont;
+}
+
+.whiteText {
+	color: $whiteColor;
+}
+
+.greenText {
+	color: $secColor !important;
+}
+
+.mutedTexts {
+	@include mutedFont;
+}
+
+.mutedText {
+	@include mutedFont;
+	color: $secColor;
+	line-height: normal;
+	opacity: 0.85;
+}
+
+.removeLineHeight {
+	line-height: 0;
+}
+
+@include sm {
+	.h1 {
+		font-size: 2rem;
+	}
+
+	.h2 {
+		font-size: 2.5rem;
+	}
+
+	.h3 {
+		font-size: 2rem;
+	}
+}
+
+.logofont {
+	font-family: "Oooh Baby", cursive;
+}
