@@ -21,12 +21,25 @@ export default function Home() {
 			</div>
 
 			<div className="card bg-dark m-auto w-75 mt-5">
-				<div className="card-body text-center">
+				<div className="card-body text-center p-5">
 					<h5 className="card-title text-white mb-4">
 						We are working on something beautiful
 					</h5>
 
-					<div className="card m-auto" style={{ width: "18rem" }}>
+					<div className="card m-auto d-none d-sm-block d-md-none">
+						<div className="card-body">
+							<div className="card-text d-flex justify-content-center">
+								<p className="my-auto">60</p>
+								<p>:</p>
+								<p className="my-auto">00</p>
+								<p>:</p>
+								<p className="my-auto">00</p>
+								<p>:</p>
+								<p className="my-auto">00</p>
+							</div>
+						</div>
+					</div>
+					<div className="card m-auto w-50 d-sm-none d-md-block">
 						<div className="card-body">
 							<div className="card-text d-flex justify-content-center">
 								<p className="my-auto">60</p>
@@ -55,6 +68,27 @@ export default function Home() {
 					</footer>
 				</div>
 			</div>
+
+			{/* <div className="card m-auto w-75 mt-5 bg-dark">
+				<div className="card-body text-center p-5">
+					<h5 className="card-title text-white mb-4">
+						We are working on something beautiful
+					</h5>
+					<div className="card m-auto w-50 px-3">
+						<div className="card-body">
+							<div className="card-text d-flex justify-content-center">
+								<p className="my-auto">60</p>
+								<p>:</p>
+								<p className="my-auto">00</p>
+								<p>:</p>
+								<p className="my-auto">00</p>
+								<p>:</p>
+								<p className="my-auto">00</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> */}
 		</>
 	);
 }
