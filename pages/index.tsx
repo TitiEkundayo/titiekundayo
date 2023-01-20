@@ -21,7 +21,7 @@ export default function Home() {
 				<HomeNavTitle />
 			</div>
 
-			<div className="">
+			<div>
 				<UnderConstruction />
 			</div>
 
