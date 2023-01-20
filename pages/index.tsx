@@ -3,8 +3,8 @@ import Image from "next/image";
 import { HomeNavTitle } from "../components/Navbar";
 import home from "../styles/Home.module.css";
 import titi from "../public/images/HomeImgs/titi.png";
-import UnderConstruction from "./underconstruction";
 import Footer from "@/components/Footer";
+import UnderConstruction from "./underconstruction";
 // import Hero from "../components/Hero";
 
 export default function Home() {
