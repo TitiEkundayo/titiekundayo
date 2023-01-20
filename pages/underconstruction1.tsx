@@ -6,7 +6,7 @@ import {
 } from "@/components/icons.js/SocialMediaIcons";
 import underconstructionstyles from "../styles/pagesstyles/underconstruction.module.scss";
 
-export default function UnderConstruction() {
+export default function UnderConstruction1() {
 	return (
 		<div className="card bg-dark m-auto w-75 mt-5">
 			<div className="card-body text-center p-5">
