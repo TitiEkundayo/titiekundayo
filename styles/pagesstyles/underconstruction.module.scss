@@ -1,0 +1,28 @@
+@use "../globals/colors" as *;
+@use "../globals/fonts" as *;
+@use "../globals/mediaqueries" as *;
+
+.seccolor {
+	color: $secColor !important;
+}
+
+.pFont {
+	@include pFont;
+}
+
+@include sm {
+	.h1 {
+		font-size: 2rem;
+	}
+
+	.h2 {
+		font-size: 2.5rem;
+	}
+
+	.h3 {
+		font-size: 2rem;
+	}
+	.pFont {
+		font-size: 0.5rem;
+	}
+}

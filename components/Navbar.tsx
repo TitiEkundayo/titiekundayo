@@ -2,13 +2,13 @@ import navbar from "../styles/componentstyles/navbar.module.scss";
 import quill_hamburger from "../public/images/quill_hamburger.svg";
 import Image from "next/image";
 import Link from "next/link";
-import text from "../pages/api/navbarcontent.json";
+import title from "../pages/api/navbarcontent.json";
 
-export const Navbar0 = () => {
+export const HomeNavTitle = () => {
 	return (
 		<div className="container-fluid mb-1">
 			<div className="row">
-				{text.landingpage.map((navbar) => {
+				{title.landingpage.map((navbar) => {
 					return (
 						<div
 							className="col-sm-12 col-md-12 col-lg-12 p-0 m-0"
@@ -22,11 +22,11 @@ export const Navbar0 = () => {
 	);
 };
 
-export const Navbar1 = () => {
+export const ConsultNavTitle = () => {
 	return (
 		<div className="container-fluid">
 			<div className="row">
-				{text.portfolio.map((navbar) => {
+				{title.consulting.map((navbar) => {
 					return (
 						<div
 							className="col-sm-12 col-md-12 col-lg-12 p-0 m-0 "
@@ -40,11 +40,11 @@ export const Navbar1 = () => {
 	);
 };
 
-export const Navbar2 = () => {
+export const EntrepreneurNavTitle = () => {
 	return (
 		<div className="container-fluid ">
 			<div className="row">
-				{text.portfolios.map((navbar) => {
+				{title.entrepreneur.map((navbar) => {
 					return (
 						<div className="col-sm-12 col-md-12 col-lg-12 p-0 " key={navbar.id}>
 							<Navbar {...navbar}></Navbar>
@@ -56,7 +56,76 @@ export const Navbar2 = () => {
 	);
 };
 
-const Navbar = ({ heading }) => {
+export const BookNavTitle = () => {
+	return (
+		<div className="container-fluid ">
+			<div className="row">
+				{title.books.map((navbar) => {
+					return (
+						<div className="col-sm-12 col-md-12 col-lg-12 p-0 " key={navbar.id}>
+							<Navbar {...navbar}></Navbar>
+						</div>
+					);
+				})}
+			</div>
+		</div>
+	);
+};
+
+export const PodcastNavTitle = () => {
+	return (
+		<div className="container-fluid ">
+			<div className="row">
+				{title.podcast.map((navbar) => {
+					return (
+						<div className="col-sm-12 col-md-12 col-lg-12 p-0 " key={navbar.id}>
+							<Navbar {...navbar}></Navbar>
+						</div>
+					);
+				})}
+			</div>
+		</div>
+	);
+};
+
+export const MusingNavTitle = () => {
+	return (
+		<div className="container-fluid ">
+			<div className="row">
+				{title.musing.map((navbar) => {
+					return (
+						<div className="col-sm-12 col-md-12 col-lg-12 p-0 " key={navbar.id}>
+							<Navbar {...navbar}></Navbar>
+						</div>
+					);
+				})}
+			</div>
+		</div>
+	);
+};
+
+export const ContactNavTitle = () => {
+	return (
+		<div className="container-fluid ">
+			<div className="row">
+				{title.contact.map((navbar) => {
+					return (
+						<div className="col-sm-12 col-md-12 col-lg-12 p-0 " key={navbar.id}>
+							<Navbar {...navbar}></Navbar>
+						</div>
+					);
+				})}
+			</div>
+		</div>
+	);
+};
+
+interface topic {
+	heading: string;
+}
+
+const Navbar = (props: topic) => {
+	const { heading } = props;
 	return (
 		<>
 			<nav className="navbar navbar-dark bg-dark">
@@ -67,7 +136,7 @@ const Navbar = ({ heading }) => {
 					<h6 className="text-white nav-link">{heading}</h6>
 					<Image
 						src={quill_hamburger}
-						type="button"
+						// type="button"
 						data-bs-toggle="offcanvas"
 						data-bs-target="#offcanvasDarkNavbar"
 						aria-controls="offcanvasDarkNavbar"
@@ -77,13 +146,13 @@ const Navbar = ({ heading }) => {
 
 					<div
 						className="offcanvas offcanvas-end text-bg-dark"
-						tabindex="-1"
+						tabIndex={-1}
 						id="offcanvasDarkNavbar"
 						aria-labelledby="offcanvasDarkNavbarLabel">
 						<div className="offcanvas-header">
 							<Link
 								href="/"
-								className={`offcanvas-title ${navbar.logofont}`}
+								className={`offcanvas-title navbar-brand ${navbar.logofont}`}
 								id="offcanvasDarkNavbarLabel">
 								Titilayo
 							</Link>

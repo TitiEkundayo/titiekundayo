@@ -1,78 +1,45 @@
 @use "./colors" as *;
 @use "./mediaqueries" as *;
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap");
 
-$fontFamily: "Oooh Baby", cursive !important;
+$navLogoFontFamily: "Oooh Baby", cursive !important;
+$titleFontFamily: "Montserrat", sans-serif;
+$bodyFontFamily: "Open Sans", sans-serif;
 
 @mixin H1Font {
-	font-family: "Poppins", sans-serif;
+	font-family: $titleFontFamily;
 	font-size: 3.5rem;
 	font-weight: bold;
 	letter-spacing: 2%;
 }
 
 @mixin H2Font {
-	font-family: "Poppins", sans-serif;
+	font-family: $titleFontFamily;
 	font-size: 3rem !important;
 	font-weight: bold;
 	letter-spacing: 2%;
 }
 
 @mixin H3Font {
-	font-family: "Poppins", sans-serif;
+	font-family: $titleFontFamily;
 	font-size: 2.25rem;
 	font-weight: bold;
 	letter-spacing: 2%;
 }
 
-// @mixin H4Font {
-// 	font-family: "Poppins", sans-serif;
-// 	font-size: 1.563rem;
-// 	font-weight: bold;
-// 	letter-spacing: 2%;
-// }
-
-// @mixin H5Font {
-// 	font-family: "Poppins", sans-serif;
-// 	font-size: 1.25em;
-// 	line-height: 1.75rem;
-// }
-
-// @mixin H6Font {
-// 	font-family: "Poppins", sans-serif;
-// 	font-size: 1rem;
-// 	line-height: 1.75rem;
-// }
-
 @mixin pFont {
-	font-family: "Open Sans", sans-serif;
+	font-family: $bodyFontFamily;
 	font-size: 1rem;
-	// color: $bodyTextColor;
-	line-height: 1.75rem; //multiples of 1.5 the font-size
+	// line-height: 1.75rem; //multiples of 1.5 the font-size
 	letter-spacing: 0.02rem; //multiples of 1.5 the font-size
 }
 
 @mixin mutedFont {
-	font-family: "Open Sans";
+	font-family: $bodyFontFamily;
 	font-size: 0.812em;
 	// color: $mutedTextColor;
-}
-
-@mixin btnText {
-	font: {
-		family: poppins;
-		weight: bold;
-		size: 1.2rem;
-	}
-
-	@include sm {
-		font: {
-			weight: bold;
-			size: 1rem;
-		}
-	}
 }
 
 .h1 {
@@ -87,27 +54,11 @@ $fontFamily: "Oooh Baby", cursive !important;
 	@include H3Font;
 }
 
-// h4 {
-// 	@include H4Font;
-// }
-
-// h5 {
-// 	@include H5Font;
-// }
-
-// h6 {
-// 	@include H6Font;
-// }
-
-.p {
-	@include pFont;
-}
-
 .whiteText {
 	color: $whiteColor;
 }
 
-.greenText {
+.secText {
 	color: $secColor !important;
 }
 
@@ -136,10 +87,9 @@ $fontFamily: "Oooh Baby", cursive !important;
 	}
 
 	.h3 {
-		font-size: 2rem;
+		font-size: 0.5rem;
 	}
-}
-
-.logofont {
-	font-family: "Oooh Baby", cursive;
+	.pFont {
+		font-size: 0.5rem;
+	}
 }

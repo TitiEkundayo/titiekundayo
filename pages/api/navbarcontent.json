@@ -6,24 +6,45 @@
 		}
 	],
 
-	"portfolio": [
+	"consulting": [
 		{
 			"id": 1,
-			"heading": "Portfolio"
+			"heading": "Consulting"
 		}
 	],
 
-	"projectdelivery": [
+	"entrepreneur": [
 		{
 			"id": 1,
-			"heading": "Project Delivery"
+			"heading": "Entrepreneur"
 		}
 	],
 
-	"managedservices": [
+	"books": [
 		{
 			"id": 1,
-			"heading": "Managed Services"
+			"heading": "Books"
+		}
+	],
+
+	"podcast": [
+		{
+			"id": 1,
+			"heading": "Podcast"
+		}
+	],
+
+	"musing": [
+		{
+			"id": 1,
+			"heading": "Musing"
+		}
+	],
+
+	"contact": [
+		{
+			"id": 1,
+			"heading": "Contact"
 		}
 	]
 }

@@ -1,9 +1,10 @@
 import Head from "next/head";
 import Image from "next/image";
-import Navbar, { Navbar0 } from "../components/Navbar";
+import { HomeNavTitle } from "../components/Navbar";
 import home from "../styles/Home.module.css";
 import titi from "../public/images/HomeImgs/titi.png";
-import titi1 from "../public/images/HomeImgs/titi1.png";
+import UnderConstruction from "./underconstruction";
+import Footer from "@/components/Footer";
 // import Hero from "../components/Hero";
 
 export default function Home() {
@@ -17,78 +18,16 @@ export default function Home() {
 			</Head>
 
 			<div>
-				<Navbar0 />
+				<HomeNavTitle />
 			</div>
 
-			<div className="card bg-dark m-auto w-75 mt-5">
-				<div className="card-body text-center p-5">
-					<h5 className="card-title text-white mb-4">
-						We are working on something beautiful
-					</h5>
-
-					<div className="card m-auto d-none d-sm-block d-md-none">
-						<div className="card-body">
-							<div className="card-text d-flex justify-content-center">
-								<p className="my-auto">60</p>
-								<p>:</p>
-								<p className="my-auto">00</p>
-								<p>:</p>
-								<p className="my-auto">00</p>
-								<p>:</p>
-								<p className="my-auto">00</p>
-							</div>
-						</div>
-					</div>
-					<div className="card m-auto w-50 d-sm-none d-md-block">
-						<div className="card-body">
-							<div className="card-text d-flex justify-content-center">
-								<p className="my-auto">60</p>
-								<p>:</p>
-								<p className="my-auto">00</p>
-								<p>:</p>
-								<p className="my-auto">00</p>
-								<p>:</p>
-								<p className="my-auto">00</p>
-							</div>
-						</div>
-					</div>
-
-					<div className="text-white mt-4">
-						<address className="mb-0">holla@titiekundayo.com</address>
-						<div className="d-flex justify-content-center">
-							<p>email</p>
-							<p>linkedin</p>
-							<p>facebook</p>
-							<p>instagram</p>
-						</div>
-					</div>
-
-					<footer className="text-white">
-						&copy; 2022 Titi Ekundayo. All Rights Reserved | Privacy Policy
-					</footer>
-				</div>
+			<div className="">
+				<UnderConstruction />
 			</div>
 
-			{/* <div className="card m-auto w-75 mt-5 bg-dark">
-				<div className="card-body text-center p-5">
-					<h5 className="card-title text-white mb-4">
-						We are working on something beautiful
-					</h5>
-					<div className="card m-auto w-50 px-3">
-						<div className="card-body">
-							<div className="card-text d-flex justify-content-center">
-								<p className="my-auto">60</p>
-								<p>:</p>
-								<p className="my-auto">00</p>
-								<p>:</p>
-								<p className="my-auto">00</p>
-								<p>:</p>
-								<p className="my-auto">00</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div> */}
+			<div className="bg-dark mt-5 pt-5">
+				<Footer />
+			</div>
 		</>
 	);
 }
