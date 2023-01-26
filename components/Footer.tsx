@@ -1,6 +1,7 @@
 import logofont from "../styles/generalstyles/fonts.module.scss";
 import { SocialMediaIcons } from "./icons.js/SocialMediaIcons";
 import styles from "../styles/generalstyles/colors.module.scss";
+import Link from "next/link";
 
 const Footer = () => {
 	return (
@@ -11,27 +12,68 @@ const Footer = () => {
 				{/* <h1 className={`mb-5 ${globalstyles.logofont}`}>Titilayo Ekundayo</h1> */}
 
 				<div className="d-flex justify-content-around mb-3">
-					<div className="">
-						<p>Meet Titi</p>
-						<p>Books</p>
-						<p>Contact</p>
+					{/* first column */}
+					<div>
+						<Link
+							className="nav-link active"
+							aria-current="page"
+							href="/meettiti">
+							Titi
+						</Link>
+
+						<Link
+							className="nav-link active mt-3"
+							aria-current="page"
+							href="/books">
+							Books
+						</Link>
+
+						<Link
+							className="nav-link active mt-3"
+							aria-current="page"
+							href="/contact">
+							Contact
+						</Link>
 					</div>
 
-					<div className="">
-						<p>Podcast</p>
-						<p>Musing</p>
+					{/* second column */}
+					<div>
+						<Link
+							className="nav-link active"
+							aria-current="page"
+							href="/podcast">
+							Podcast
+						</Link>
+
+						<Link
+							className="nav-link active mt-3"
+							aria-current="page"
+							href="/musing">
+							Musing
+						</Link>
 					</div>
 
-					<div className="">
-						<p>Entrepreneur</p>
-						<p>Consulting</p>
+					{/* third column */}
+					<div>
+						<Link
+							className="nav-link active"
+							aria-current="page"
+							href="/entrepreneurship">
+							Entrepreneur
+						</Link>
+
+						<Link
+							className="nav-link active mt-3"
+							aria-current="page"
+							href="/consulting">
+							Consulting
+						</Link>
 					</div>
 				</div>
 
 				<div className="d-flex flex-column align-items-center mb-3">
 					<p className={`mb-0`}>Subscribe to Newsletter</p>
-					<div className={`border-bottom w-50`}></div>
-					{/* <div className={`border-bottom w-50 ${globalstyles.secColor}`}></div> */}
+					<div className={`border-bottom w-50 ${styles.secColor}`}></div>
 				</div>
 				<div>
 					<SocialMediaIcons />
@@ -52,17 +94,58 @@ const Footer = () => {
 					<div className={`vr`}></div>
 
 					<div className="text-start">
-						<p>Meet Titi</p>
-						<p>Books</p>
-						<p>Podcast</p>
-						<p>Musing</p>
+						<Link
+							className="nav-link active mb-3"
+							aria-current="page"
+							href="/meettiti">
+							Titi
+						</Link>
+
+						<Link
+							className="nav-link active mb-3"
+							aria-current="page"
+							href="/books">
+							Books
+						</Link>
+
+						<Link
+							className="nav-link active mb-3"
+							aria-current="page"
+							href="/podcast">
+							Podcast
+						</Link>
+
+						<Link
+							className="nav-link active"
+							aria-current="page"
+							href="/musing">
+							Musing
+						</Link>
 					</div>
+
 					<div className={`vr`}></div>
 
 					<div className="text-start">
-						<p>Entrepreneur</p>
-						<p>Consulting</p>
-						<p>Contact</p>
+						<Link
+							className="nav-link active mb-3"
+							aria-current="page"
+							href="/musing">
+							Entrepreneur
+						</Link>
+
+						<Link
+							className="nav-link active mb-3"
+							aria-current="page"
+							href="/consulting">
+							Consulting
+						</Link>
+
+						<Link
+							className="nav-link active"
+							aria-current="page"
+							href="/contact">
+							Contact
+						</Link>
 					</div>
 				</div>
 
