@@ -9,3 +9,7 @@ $textColor: #fff;
 .secColor {
 	color: $secColor;
 }
+
+.secBgColor {
+	background-color: $secColor !important;
+}
