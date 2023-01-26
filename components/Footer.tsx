@@ -5,7 +5,7 @@ const Footer = () => {
 	return (
 		<>
 			{/* mobile footer */}
-			<footer className="text-white container-fluid d-sm-block d-md-none">
+			<footer className="text-white container-fluid d-sm-block d-md-none pb-4">
 				<h1 className={`mb-5 ${logofont.logofontfamily}`}>Titilayo Ekundayo</h1>
 				{/* <h1 className={`mb-5 ${globalstyles.logofont}`}>Titilayo Ekundayo</h1> */}
 
@@ -42,7 +42,7 @@ const Footer = () => {
 			</footer>
 
 			{/* desktop footer */}
-			<footer className="text-white container d-none d-sm-none d-md-block">
+			<footer className="text-white container d-none d-sm-none d-md-block pb-4">
 				<div className="d-flex justify-content-around text-center">
 					<div className="">
 						<h1 className={`${logofont.logofontfamily}`}>Titilayo Ekundayo</h1>
