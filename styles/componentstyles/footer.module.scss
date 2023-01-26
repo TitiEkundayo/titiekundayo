@@ -1,0 +1,6 @@
+@use "../generalstyles/colors.module.scss" as *;
+
+.underlineColor {
+	border-bottom: 2px solid $secColor;
+	// padding-bottom: 3px;
+}

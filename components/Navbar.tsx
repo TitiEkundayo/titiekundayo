@@ -152,7 +152,7 @@ const Navbar = (props: topic) => {
 						{/* <Link className={`navbar-brand ${globalstyles.logofont}`} href="/"> */}
 						Titilayo
 					</Link>
-					<h6 className="text-white nav-link">{heading}</h6>
+					<h6 className="text-white nav-link mt-2">{heading}</h6>
 					<Image
 						src={quill_hamburger}
 						// type="button"

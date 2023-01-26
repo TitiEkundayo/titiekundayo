@@ -1,6 +1,5 @@
 import { SocialMediaIcons } from "@/components/icons.js/SocialMediaIcons";
 import styles from "../styles/generalstyles/colors.module.scss";
-import Button from "@/components/Button";
 
 export default function UnderConstruction1() {
 	return (
