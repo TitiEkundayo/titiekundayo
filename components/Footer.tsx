@@ -27,10 +27,13 @@ const Footer = () => {
 					</div>
 				</div>
 
-				<div className="d-flex flex-column align-items-center">
+				<div className="d-flex flex-column align-items-center mb-3">
 					<p className={`mb-0`}>Subscribe to Newsletter</p>
 					<div className={`border-bottom w-50`}></div>
 					{/* <div className={`border-bottom w-50 ${globalstyles.secColor}`}></div> */}
+				</div>
+				<div>
+					<SocialMediaIcons />
 				</div>
 				<div className="mt-4 text-center">
 					<p className="mb-0">&copy; 2022 Titi Ekundayo. All Rights Reserved</p>
