@@ -1,5 +1,6 @@
 import logofont from "../styles/generalstyles/fonts.module.scss";
 import { SocialMediaIcons } from "./icons.js/SocialMediaIcons";
+import styles from "../styles/generalstyles/colors.module.scss";
 
 const Footer = () => {
 	return (
@@ -80,7 +81,8 @@ const Footer = () => {
 
 				<div className="mt-4 text-center">
 					<p className="mb-0">
-						&copy; 2022 Titi Ekundayo. All Rights Reserved | Privacy Policy
+						&copy; 2022 Titi Ekundayo. All Rights Reserved{" "}
+						<span className={`${styles.secColor}`}> | </span> Privacy Policy
 					</p>
 				</div>
 			</footer>

@@ -22,6 +22,24 @@ export const HomeNavTitle = () => {
 	);
 };
 
+export const TitiNavTitle = () => {
+	return (
+		<div className="container-fluid mb-1">
+			<div className="row">
+				{title.meettiti.map((navbar) => {
+					return (
+						<div
+							className="col-sm-12 col-md-12 col-lg-12 p-0 m-0"
+							key={navbar.id}>
+							<Navbar {...navbar}></Navbar>
+						</div>
+					);
+				})}
+			</div>
+		</div>
+	);
+};
+
 export const ConsultNavTitle = () => {
 	return (
 		<div className="container-fluid">
@@ -174,31 +192,40 @@ const Navbar = (props: topic) => {
 										Home
 									</Link>
 								</li>
-								{/* <li className="nav-item">
-									<Link className="nav-link active" href="/underconstruction1">
+
+								<li className="nav-item">
+									<Link
+										className="nav-link active"
+										aria-current="page"
+										href="/meettiti">
+										Titi
+									</Link>
+								</li>
+								<li className="nav-item">
+									<Link className="nav-link active" href="/consulting">
 										Consulting
 									</Link>
-								</li> */}
-								{/* <li className="nav-item">
-									<Link className="nav-link active" href="/underconstruction1">
+								</li>
+								<li className="nav-item">
+									<Link className="nav-link active" href="/entrepreneurship">
 										Entrepreneur
 									</Link>
-								</li> */}
+								</li>
 								<li className="nav-item">
 									<Link className="nav-link active" href="/books">
 										Books
 									</Link>
 								</li>
-								{/* <li className="nav-item">
-									<Link className="nav-link active" href="/underconstruction1">
+								<li className="nav-item">
+									<Link className="nav-link active" href="/podcast">
 										Podcast
 									</Link>
-								</li> */}
-								{/* <li className="nav-item">
-									<Link className="nav-link active" href="/underconstruction1">
+								</li>
+								<li className="nav-item">
+									<Link className="nav-link active" href="/musing">
 										Musing
 									</Link>
-								</li> */}
+								</li>
 								<li className="nav-item">
 									<Link className="nav-link active" href="/contact">
 										Contact

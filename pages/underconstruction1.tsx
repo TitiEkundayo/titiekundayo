@@ -1,5 +1,4 @@
 import { SocialMediaIcons } from "@/components/icons.js/SocialMediaIcons";
-import underconstructionstyles from "../styles/pagesstyles/underconstruction.module.scss";
 import styles from "../styles/generalstyles/colors.module.scss";
 
 export default function UnderConstruction1() {
@@ -56,12 +55,11 @@ export default function UnderConstruction1() {
 				<footer className="text-white mt-5">
 					<p className="mb-0"> &copy; 2022 Titi Ekundayo.</p>
 					<p>
-						{/* All Rights Reserved{" "}
-						<span className={`${underconstructionstyles.seccolor}`}>|</span>{" "}
-						Privacy Policy */}
-						All Rights Reserved
-						<span>|</span>
+						{/* All Rights Reserved <span className={`${styles.secColor}`}>|</span>{" "} */}
 						Privacy Policy
+						{/* All Rights Reserved
+						<span>|</span>
+						Privacy Policy */}
 					</p>
 				</footer>
 			</div>

@@ -1,12 +1,12 @@
-import { BookNavTitle } from "@/components/Navbar";
-import UnderConstruction1 from "./underconstruction1";
+import { MusingNavTitle } from "@/components/Navbar";
+import UnderConstruction1 from "../underconstruction1";
 import Footer from "@/components/Footer";
 
-const Books = () => {
+const Musing = () => {
 	return (
 		<div>
 			<div>
-				<BookNavTitle />
+				<MusingNavTitle />
 			</div>
 
 			<div>
@@ -20,4 +20,4 @@ const Books = () => {
 	);
 };
 
-export default Books;
+export default Musing;
