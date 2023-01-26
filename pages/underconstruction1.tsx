@@ -1,5 +1,6 @@
 import { SocialMediaIcons } from "@/components/icons.js/SocialMediaIcons";
 import underconstructionstyles from "../styles/pagesstyles/underconstruction.module.scss";
+import styles from "../styles/generalstyles/colors.module.scss";
 
 export default function UnderConstruction1() {
 	return (
@@ -9,7 +10,7 @@ export default function UnderConstruction1() {
 					className={`card-title mb-4 h3 ${underconstructionstyles.seccolor}`}>
 					We are working on something beautiful
 				</h3> */}
-				<h3 className={`card-title mb-4 h3`}>
+				<h3 className={`card-title mb-4 h3 ${styles.secColor}`}>
 					We are working on something beautiful
 				</h3>
 
