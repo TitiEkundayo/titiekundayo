@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
 import { HomeNavTitle } from "../components/Navbar";
-import home from "../styles/Home.module.css";
 import titi from "../public/images/HomeImgs/titi.png";
 import Footer from "@/components/Footer";
 import UnderConstruction from "./underconstruction1";

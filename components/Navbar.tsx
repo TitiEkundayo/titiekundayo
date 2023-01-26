@@ -1,8 +1,8 @@
-import navbar from "../styles/componentstyles/navbar.module.scss";
 import quill_hamburger from "../public/images/quill_hamburger.svg";
 import Image from "next/image";
 import Link from "next/link";
 import title from "../pages/api/navbarcontent.json";
+import logofont from "../styles/generalstyles/fonts.module.scss";
 
 export const HomeNavTitle = () => {
 	return (
@@ -130,7 +130,8 @@ const Navbar = (props: topic) => {
 		<>
 			<nav className="navbar navbar-dark bg-dark">
 				<div className="container-fluid">
-					<Link className={`navbar-brand ${navbar.logofont}`} href="/">
+					<Link className={`navbar-brand ${logofont.logofontfamily}`} href="/">
+						{/* <Link className={`navbar-brand ${globalstyles.logofont}`} href="/"> */}
 						Titilayo
 					</Link>
 					<h6 className="text-white nav-link">{heading}</h6>
@@ -152,7 +153,8 @@ const Navbar = (props: topic) => {
 						<div className="offcanvas-header">
 							<Link
 								href="/"
-								className={`offcanvas-title navbar-brand ${navbar.logofont}`}
+								className={`offcanvas-title navbar-brand `}
+								// className={`offcanvas-title navbar-brand ${globalstyles.logofont}`}
 								id="offcanvasDarkNavbarLabel">
 								Titilayo
 							</Link>

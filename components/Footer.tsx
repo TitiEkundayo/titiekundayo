@@ -1,56 +1,86 @@
+import logofont from "../styles/generalstyles/fonts.module.scss";
+import { SocialMediaIcons } from "./icons.js/SocialMediaIcons";
+
 const Footer = () => {
 	return (
 		<>
 			{/* mobile footer */}
-			<div className="text-white container-fluid d-sm-block d-md-none">
-				<h1 className="mb-5">Titilayo Ekundayo</h1>
+			<footer className="text-white container-fluid d-sm-block d-md-none">
+				<h1 className={`mb-5 ${logofont.logofontfamily}`}>Titilayo Ekundayo</h1>
+				{/* <h1 className={`mb-5 ${globalstyles.logofont}`}>Titilayo Ekundayo</h1> */}
 
-				<div className="d-flex justify-content-center">
-					<p className="me-3">Meet Titi</p>
-					<p className="me-3">Podcast</p>
-					<p>Entrepreneur</p>
-				</div>
-				<div className="d-flex justify-content-center">
-					<p className="me-3">Books</p>
-					<p className="me-3">Musing</p>
-					<p>Consulting</p>
-				</div>
-				<div className="d-flex justify-content-center">
-					<p className="me-3">Contact</p>
-					<p>Subscribe to Newsletter</p>
+				<div className="d-flex justify-content-around mb-3">
+					<div className="">
+						<p>Meet Titi</p>
+						<p>Books</p>
+						<p>Contact</p>
+					</div>
+
+					<div className="">
+						<p>Podcast</p>
+						<p>Musing</p>
+					</div>
+
+					<div className="">
+						<p>Entrepreneur</p>
+						<p>Consulting</p>
+					</div>
 				</div>
 
+				<div className="d-flex flex-column align-items-center">
+					<p className={`mb-0`}>Subscribe to Newsletter</p>
+					<div className={`border-bottom w-50`}></div>
+					{/* <div className={`border-bottom w-50 ${globalstyles.secColor}`}></div> */}
+				</div>
 				<div className="mt-4 text-center">
 					<p className="mb-0">&copy; 2022 Titi Ekundayo. All Rights Reserved</p>
 					<p>Privacy Policy</p>
 				</div>
-			</div>
+			</footer>
 
 			{/* desktop footer */}
-			<div className="text-white text-center container-fluid d-none d-sm-none d-md-block">
-				<div className="row">
-					<div className="col-md-4">
-						<h1>Titilayo Ekundayo</h1>
+			<footer className="text-white container d-none d-sm-none d-md-block">
+				<div className="d-flex justify-content-around text-center">
+					<div className="">
+						<h1 className={`${logofont.logofontfamily}`}>Titilayo Ekundayo</h1>
 					</div>
-					<div className="col-md-4">
-						<div>
-							<div>
-								<p>Meet Titi</p>
-								<p>Books</p>
-							</div>
-							<div>
-								<p>Podcast</p>
-								<p>Musing</p>
-							</div>
-						</div>
+
+					<div className={`vr`}></div>
+
+					<div className="text-start">
+						<p>Meet Titi</p>
+						<p>Books</p>
+						<p>Podcast</p>
+						<p>Musing</p>
 					</div>
-					<div className="col-md-4">
+					<div className={`vr`}></div>
+
+					<div className="text-start">
 						<p>Entrepreneur</p>
 						<p>Consulting</p>
 						<p>Contact</p>
 					</div>
 				</div>
-			</div>
+
+				<div className="mt-5 mb-5 d-flex justify-content-between">
+					<div className="">
+						<p className={`mb-0`}>Subscribe to Newsletter</p>
+						<div className={`border-bottom w-100`}></div>
+					</div>
+
+					<div className="">
+						<SocialMediaIcons />
+					</div>
+
+					{/* <div className={`border-bottom w-50 ${globalstyles.secColor}`}></div> */}
+				</div>
+
+				<div className="mt-4 text-center">
+					<p className="mb-0">
+						&copy; 2022 Titi Ekundayo. All Rights Reserved | Privacy Policy
+					</p>
+				</div>
+			</footer>
 		</>
 	);
 };
