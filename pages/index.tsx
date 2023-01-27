@@ -33,10 +33,6 @@ export default function Home() {
 
 				<Button classes={`btn btn-primary text-white`} btnText="Submit" />
 			</div> */}
-
-			<div className="bg-dark mt-5 pt-5">
-				<Footer />
-			</div>
 		</>
 	);
 }
