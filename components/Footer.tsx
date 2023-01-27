@@ -10,6 +10,7 @@ const Footer = () => {
 			{/* mobile footer */}
 			<footer className="text-white container-fluid d-sm-block d-md-none pb-4">
 				<h1 className={`mb-5 ${logofont.logofontfamily}`}>Titilayo Ekundayo</h1>
+				{/* <h1 className={`mb-5 ${globalstyles.logofont}`}>Titilayo Ekundayo</h1> */}
 
 				<div className="d-flex justify-content-around mb-5">
 					{/* first column */}
@@ -75,6 +76,7 @@ const Footer = () => {
 					<p className={`mb-0 ${footerstyle.underlineColor}`}>
 						Subscribe to Newsletter
 					</p>
+					{/* <div className={`border-bottom w-50 ${styles.secColor}`}></div> */}
 				</div>
 				<div className="mb-5">
 					<SocialMediaIcons />
