@@ -93,7 +93,7 @@ export default function UnderConstruction1() {
 					<div className="card-body">
 						<div className="d-flex justify-content-center">
 							<div className="me-1">
-								<h4 className="mb-0">30</h4>
+								<h4 className="mb-0">40</h4>
 								<h6>Days</h6>
 							</div>
 
@@ -102,7 +102,7 @@ export default function UnderConstruction1() {
 							</div>
 
 							<div className="me-1">
-								<h4 className="mb-0">10</h4>
+								<h4 className="mb-0">06</h4>
 								<h6>Hrs</h6>
 							</div>
 
