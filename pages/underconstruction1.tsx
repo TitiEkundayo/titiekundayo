@@ -49,15 +49,20 @@ export default function UnderConstruction1() {
 			// to display or update our timer
 			if (timeDifference < 0) {
 				// stop the timer
+				// clearInterval(interval.current)
+				clearInterval(interval);
 			} else {
 				// update the timer
 				setDays(dayTimer);
 				setHours(hourTimer);
 				setMinutes(minutesTimer);
-				setSeconds();
+				setSeconds(secondsTimer);
 			}
 		}, 1000);
 	};
+
+	useEffect(() => {}, []);
+
 	return (
 		<div className="card bg-dark m-auto w-75 mt-5">
 			<div className="card-body text-center p-5">
@@ -177,7 +182,12 @@ export default function UnderConstruction1() {
 
 				<div className="text-white mt-4">
 					{/* <address className="mb-0 pFont">holla@titiekundayo.com</address> */}
-					<Link href="mailto:holla@titiekundayo.com" passHref={true}></Link>
+					<Link
+						href="mailto:holla@titiekundayo.com"
+						className="nav-link"
+						passHref={true}>
+						holla@titiekundayo.com
+					</Link>
 					<SocialMediaIcons />
 				</div>
 
