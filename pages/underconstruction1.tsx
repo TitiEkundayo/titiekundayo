@@ -1,7 +1,7 @@
 import { SocialMediaIcons } from "@/components/icons.js/SocialMediaIcons";
 import styles from "../styles/generalstyles/colors.module.scss";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export default function UnderConstruction1() {
 	const [days, setDays] = useState(30);
@@ -9,22 +9,55 @@ export default function UnderConstruction1() {
 	const [minutes, setMinutes] = useState(0);
 	const [seconds, setSeconds] = useState(0);
 
-	useEffect(() => {
-		const targetTime = new Date("31/03/2023 23:59:59");
+	// useEffect(() => {
+	// 	const targetTime = new Date("31/03/2023 23:59:59");
 
-		const interval = setInterval(() => {
-			const currentTime = new Date();
-			const timeDifference = targetTime.getTime() - currentTime.getTime();
-			const daysBtwNowAndTarget = Math.floor(
-				timeDifference / (1000 * 60 * 60 * 24)
+	// 	const interval = setInterval(() => {
+	// 		const currentTime = new Date();
+	// 		const timeDifference = targetTime.getTime() - currentTime.getTime();
+	// 		const daysBtwNowAndTarget = Math.floor(
+	// 			timeDifference / (1000 * 60 * 60 * 24)
+	// 		);
+	// 		// console.log(daysBtwNowAndTarget);
+
+	// 		setDays(daysBtwNowAndTarget);
+	// 	}, 1000);
+
+	// 	return () => clearInterval(interval);
+	// }, []);
+
+	let interval = useRef();
+
+	const beginTimer = () => {
+		const countDown = new Date("March 1 2023 59:00:00").getTime();
+
+		let interval = setInterval(() => {
+			const currentTime = new Date().getTime();
+			const timeDifference = countDown - currentTime;
+
+			const dayTimer = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+			const hourTimer = Math.floor(
+				(timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
 			);
-			// console.log(daysBtwNowAndTarget);
 
-			setDays(daysBtwNowAndTarget);
+			const minutesTimer = Math.floor(
+				(timeDifference % (1000 * 60 * 60)) / (1000 * 60)
+			);
+
+			const secondsTimer = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+			// to display or update our timer
+			if (timeDifference < 0) {
+				// stop the timer
+			} else {
+				// update the timer
+				setDays(dayTimer);
+				setHours(hourTimer);
+				setMinutes(minutesTimer);
+				setSeconds();
+			}
 		}, 1000);
-
-		return () => clearInterval(interval);
-	}, []);
+	};
 	return (
 		<div className="card bg-dark m-auto w-75 mt-5">
 			<div className="card-body text-center p-5">
@@ -55,7 +88,7 @@ export default function UnderConstruction1() {
 					<div className="card-body">
 						<div className="d-flex justify-content-center">
 							<div className="me-1">
-								<h4 className="mb-0">{}</h4>
+								<h4 className="mb-0">30</h4>
 								<h6>Days</h6>
 							</div>
 
