@@ -5,6 +5,7 @@ import titi from "../public/images/HomeImgs/titi.png";
 import Footer from "@/components/Footer";
 import UnderConstruction from "./underconstruction1";
 // import Hero from "../components/Hero";
+import { ScrollToTop } from "@/components/Button";
 
 export default function Home() {
 	return (
@@ -19,10 +20,12 @@ export default function Home() {
 			<div>
 				<HomeNavTitle />
 			</div>
+			
 
 			<div>
 				<UnderConstruction />
 			</div>
+			
 
 			{/* the code below is a sample of how a button is used */}
 			{/* <div>
