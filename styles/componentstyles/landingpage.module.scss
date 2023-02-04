@@ -1,0 +1,51 @@
+.LandingPageHeroBgg::before {
+  content: "";
+  position: absolute;
+  background-color: #2e3133;
+  height: 72vh;
+  width: 100%;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0;
+}
+
+.LandingPageHeroBg {
+  background: url(/public/images/HomeImgs/landingpageherobg.png);
+  background-size: cover;
+  position: relative;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  height: 72vh;
+  width: 100%;
+}
+
+.LandingPageHeroBg h2 {
+  position: relative;
+  line-height: 45px;
+}
+.LandingPageHeroBg h3 {
+  position: relative;
+  line-height: 35px;
+}
+
+@media only screen and (max-width: 990px) {
+  .LandingPageHeroBgg::before {
+    height: 22.5rem;
+  }
+  .LandingPageHeroBg::before {
+    height: 22.5rem;
+  }
+}
+@media only screen and (max-width: 765px) {
+  .LandingPageHeroBg {
+    height: 120vh;
+  }
+}
+
+.LandingPageBg {
+  background-color: #000;
+}
