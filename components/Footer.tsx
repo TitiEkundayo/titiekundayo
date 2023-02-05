@@ -3,11 +3,15 @@ import { SocialMediaIcons } from "./icons.js/SocialMediaIcons";
 import styles from "../styles/generalstyles/colors.module.scss";
 import footerstyle from "../styles/componentstyles/footer.module.scss";
 import Link from "next/link";
+import ScrollToTop from "./icons.js/scrolltotopbutton";
 
 const Footer = () => {
 	return (
 		<>
 			{/* mobile footer */}
+			<div >
+				<ScrollToTop/>
+			</div>
 			<footer className="text-white container-fluid d-sm-block d-md-none pb-4">
 				<h1 className={`mb-5 ${logofont.logofontfamily}`}>Titilayo Ekundayo</h1>
 
