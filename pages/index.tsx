@@ -3,7 +3,8 @@ import Image from "next/image";
 import { HomeNavTitle } from "../components/Navbar";
 import titi from "../public/images/HomeImgs/titi.png";
 import Footer from "@/components/Footer";
-import UnderConstruction from "./underconstruction1";
+// import UnderConstruction from "./underconstruction1";
+import UnderConstruction1 from "./underconstruction1";
 // import Hero from "../components/Hero";
 
 
@@ -23,7 +24,7 @@ export default function Home() {
 			
 
 			<div>
-				<UnderConstruction />
+				<UnderConstruction1 />
 			</div>
 			
 
@@ -36,10 +37,6 @@ export default function Home() {
 
 				<Button classes={`btn btn-primary text-white`} btnText="Submit" />
 			</div> */}
-
-			<div className="bg-dark mt-5 pt-5">
-				<Footer />
-			</div>
 		</>
 	);
 }

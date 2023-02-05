@@ -14,27 +14,13 @@ const Entrepreneurship = () => {
 				<EntrepreneurNavTitle />
 			</div>
 
-			{/* <div>
+			/* <div>
 				<UnderConstruction1 />
-			</div> */}
-
-			<div>
-				<EnterpreneurpageHero/>
 			</div>
-			<div className="mb-5 pb-5 bg-black">
 
-			<Enterpreneur/>
-				</div>
-
-			
-
-			
 			<div className="bg-dark mt-5 pt-5">
-				
-				
 				<Footer />
 			</div>
-			
 		</div>
 	);
 };
