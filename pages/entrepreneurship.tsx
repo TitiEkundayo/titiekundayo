@@ -2,6 +2,7 @@ import { ContactNavTitle, EntrepreneurNavTitle } from "@/components/Navbar";
 import UnderConstruction1 from "./underconstruction1";
 import Footer from "@/components/Footer";
 
+
 const Entrepreneurship = () => {
 	return (
 		<div>
@@ -9,8 +10,13 @@ const Entrepreneurship = () => {
 				<EntrepreneurNavTitle />
 			</div>
 
+
+<div>
+
+	
+</div>
 			<div>
-				<UnderConstruction1 />
+				{/* <UnderConstruction1 /> */}
 			</div>
 
 			<div className="bg-dark mt-5 pt-5">
