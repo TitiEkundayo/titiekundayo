@@ -4,7 +4,7 @@ import  styles  from "../styles/componentstyles/hero.module.scss";
 
 const Hero = () => {{
 	return (
-	// <div>Hero</div>;
+	
 			
 				  <div className={styles.ConsultingHero}>
 					{/* <div className="gradientBg overlayBg"></div> */}
