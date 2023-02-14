@@ -7,5 +7,9 @@ export default function App({ Component, pageProps }: AppProps) {
 	useEffect(() => {
 		require("bootstrap/dist/js/bootstrap.bundle");
 	}, []);
-	return <Component {...pageProps} />;
+	return (
+    <>
+      <Component {...pageProps} />;
+    </>
+  );
 }

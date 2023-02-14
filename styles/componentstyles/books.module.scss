@@ -1,0 +1,155 @@
+@use "../generalstyles/colors.module.scss" as *;
+
+.underlineColor {
+	border-bottom: 2px solid $secColor;
+	// padding-bottom: 3px;
+}
+
+// $HeroImg : "../../public/images/HomeImgs/";
+// .overlay {
+//   position: fixed;
+//   display: none;
+//   width: 100%;
+//   height: 100%;
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   bottom: 0;
+//   background-image: url(#{$HeroImg}/titi1.png);
+//   z-index: 2;
+//   cursor: pointer;
+// }
+
+// .HomePageHeroImg {
+//     content: "";
+//     // position: absolute;
+//     // background: url(/public/images/BooksImgs/homepageheroimg.png);
+//     height: auto;
+//     width: auto;
+//     display: flex-end;
+//     top: 0px;
+//     right: 0px;
+//     bottom: 0px;
+//     left: 0px;
+//     opacity: 1;
+// }
+
+.HomePageHeroBg {
+    background-color: #AAADB2;
+    // background: url(/public/images/BooksImgs/Homepageherobg.png);
+    background-size: cover;
+    position: relative;
+    height: auto;
+    width: auto;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+
+.BookHeroBg {
+    // background-color: #AAADB2;
+    background: url("/images/BooksImgs/otherbookheroimgdesktop.png");
+    background-size: cover;
+    position: relative;
+    height: 50vh;
+    width: auto;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+
+// .HomePageHeroBgg {
+//     background-color: #AAADB2;
+//     // background: url(/public/images/BooksImgs/heroimgdesktop.png);
+//     background-size: cover;
+//     position: relative;
+//     height: auto;
+//     width: auto;
+//     top: 0px;
+//     right: 0px;
+//     bottom: 0px;
+//     left: 0px;
+// }
+
+// .BgColor {
+// background-color: #000000;
+// }
+
+// .HomePageHeroBg h2 {
+// position: relative;
+// line-height: 45px;
+// }
+
+// .HomePageHeroBg h3 {
+// position: relative;
+// line-height: 35px;
+// }
+
+
+
+.p {
+    // position: relative;
+    // line-height: 10px;
+    color: #ffffff;
+    // color: #000000;
+    font-weight: normal;
+}
+
+.img {
+    width: auto;
+    height: auto;
+}
+
+.booklink{
+    display: flex;
+    position: relative;
+    color: #00ffcd;
+    font-size: small;
+    font-weight: 500;
+    // text-decoration: underline;
+}
+
+.ordertext{
+    color: #00ffcd !important;
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+.testimonials{
+    color: #00ffcd;
+    border-bottom: 2px solid #00ffcd;
+
+}
+
+.feedbackform{
+    color: #00ffcd;
+
+}
+
+
+.btnbgcolor{
+    color: #000000;
+    background-color: #00ffcd;
+    font-weight: 700;
+
+}
+
+.herolink{
+    display: flex;
+    position: relative;
+    color: #000000;
+    font-size: small;
+    text-decoration: underline;
+	font-weight: normal;
+
+}
+
+.youtubeicon {
+    color: red;
+    display: block;
+    margin: auto;
+    // fill: #ffffff;
+
+}
