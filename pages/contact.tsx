@@ -6,6 +6,7 @@ import {
 	SocialMediaIcons,
 } from "@/components/icons.js/SocialMediaIcons";
 import btnbgcolor from "../styles/generalstyles/colors.module.scss";
+import styles from "../styles/pagesstyle/contactform.module.scss"
 
 const Contact = () => {
 	return (
@@ -56,20 +57,20 @@ const Contact = () => {
 
 const GetInTouch = () => {
 	return (
-		<div className="">
-			<div className="text-white">
+		<div className="text-white text-center text-md-start p-3">
+			<div className=" ">
 				<h3>Get In Touch</h3>
-				<p className="w-75">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, earum?
+				<p>
+			        Lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor 
+					lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor 
 				</p>
 			</div>
 
-			{/* <div>
-				<EmailIcon />
-				<p>titiekundayo@gmail.com</p>
-			</div> */}
+			  <div className=" ">
+				<EmailIcon/> titiekundayo@gmail.com
+			 </div> 
 
-			<div className="">
+			<div>
 				<SocialMediaIcons />
 			</div>
 		</div>
@@ -79,8 +80,8 @@ const GetInTouch = () => {
 const ContactForm = () => {
 	return (
 		<>
-			<form className="bg-white p-3 w-100">
-				<div className="mb-3">
+			<form className= {`bg-white p-3 mt-5 rounded ${styles.form}`}>
+				<div className=" mt-3 mb-3">
 					<input
 						type="email"
 						className="form-control"
@@ -105,7 +106,7 @@ const ContactForm = () => {
 						className="form-control"
 						id="exampleFormControlTextarea1"
 						placeholder="Message"
-						rows={3}></textarea>
+						rows={5}></textarea>
 				</div>
 
 				<div className="d-flex justify-content-end">
@@ -128,19 +129,23 @@ const ContactPageLayout = () => {
 						<GetInTouch />
 					</div>
 
-					<div className="col-md-7">
-						<ContactForm />
+					<div className="col-md-7 ">
+						<div className="w-50">
+							<ContactForm />
+						</div>
 					</div>
 				</div>
 			</div>
 
 			{/* mobile */}
-			<div className="container mt-5 pt-3">
-				<div className="">
-					<GetInTouch />
-				</div>
-				<div className="">
-					<ContactForm />
+			<div className="container d-md-none d-sm-block mt-5 pt-3">
+				<div className="justify-content-center align-items-center">
+					<div className="">
+						<GetInTouch />
+					</div>
+					<div className=" ">
+						<ContactForm />
+					</div>
 				</div>
 			</div>
 		</>
