@@ -1,12 +1,12 @@
-import { ContactNavTitle } from "@/components/Navbar";
-import UnderConstruction1 from "./underconstruction1";
+import { MusingNavTitle } from "@/components/Navbar";
+import UnderConstruction1 from "../underconstruction1";
 import Footer from "@/components/Footer";
 
-const Contact = () => {
+const Musing = () => {
 	return (
 		<div>
 			<div>
-				<ContactNavTitle />
+				<MusingNavTitle />
 			</div>
 
 			<div>
@@ -20,4 +20,4 @@ const Contact = () => {
 	);
 };
 
-export default Contact;
+export default Musing;

@@ -1,14 +1,32 @@
-import navbar from "../styles/componentstyles/navbar.module.scss";
 import quill_hamburger from "../public/images/quill_hamburger.svg";
 import Image from "next/image";
 import Link from "next/link";
 import title from "../pages/api/navbarcontent.json";
+import logofont from "../styles/generalstyles/fonts.module.scss";
 
 export const HomeNavTitle = () => {
 	return (
 		<div className="container-fluid mb-1">
 			<div className="row">
 				{title.landingpage.map((navbar) => {
+					return (
+						<div
+							className="col-sm-12 col-md-12 col-lg-12 p-0 m-0"
+							key={navbar.id}>
+							<Navbar {...navbar}></Navbar>
+						</div>
+					);
+				})}
+			</div>
+		</div>
+	);
+};
+
+export const TitiNavTitle = () => {
+	return (
+		<div className="container-fluid mb-1">
+			<div className="row">
+				{title.meettiti.map((navbar) => {
 					return (
 						<div
 							className="col-sm-12 col-md-12 col-lg-12 p-0 m-0"
@@ -130,10 +148,11 @@ const Navbar = (props: topic) => {
 		<>
 			<nav className="navbar navbar-dark bg-dark">
 				<div className="container-fluid">
-					<Link className={`navbar-brand ${navbar.logofont}`} href="/">
+					<Link className={`navbar-brand ${logofont.logofontfamily}`} href="/">
+						{/* <Link className={`navbar-brand ${globalstyles.logofont}`} href="/"> */}
 						Titilayo
 					</Link>
-					<h6 className="text-white nav-link">{heading}</h6>
+					<h6 className="text-white nav-link mt-2">{heading}</h6>
 					<Image
 						src={quill_hamburger}
 						// type="button"
@@ -152,7 +171,8 @@ const Navbar = (props: topic) => {
 						<div className="offcanvas-header">
 							<Link
 								href="/"
-								className={`offcanvas-title navbar-brand ${navbar.logofont}`}
+								className={`offcanvas-title navbar-brand `}
+								// className={`offcanvas-title navbar-brand ${globalstyles.logofont}`}
 								id="offcanvasDarkNavbarLabel">
 								Titilayo
 							</Link>
@@ -172,28 +192,37 @@ const Navbar = (props: topic) => {
 										Home
 									</Link>
 								</li>
+
 								<li className="nav-item">
-									<Link className="nav-link active" href="/">
+									<Link
+										className="nav-link active"
+										aria-current="page"
+										href="/meettiti">
+										Titi
+									</Link>
+								</li>
+								<li className="nav-item">
+									<Link className="nav-link active" href="/consulting">
 										Consulting
 									</Link>
 								</li>
 								<li className="nav-item">
-									<Link className="nav-link active" href="/">
+									<Link className="nav-link active" href="/entrepreneurship">
 										Entrepreneur
 									</Link>
 								</li>
 								<li className="nav-item">
-									<Link className="nav-link active" href="/">
+									<Link className="nav-link active" href="/books">
 										Books
 									</Link>
 								</li>
 								<li className="nav-item">
-									<Link className="nav-link active" href="/">
+									<Link className="nav-link active" href="/podcast">
 										Podcast
 									</Link>
 								</li>
 								<li className="nav-item">
-									<Link className="nav-link active" href="/">
+									<Link className="nav-link active" href="/musing">
 										Musing
 									</Link>
 								</li>
