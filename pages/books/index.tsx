@@ -9,8 +9,8 @@ import Book2 from "../../public/images/BooksImgs/Book2.png";
 import Book3 from "../../public/images/BooksImgs/Book2b.png";
 import Book4 from "../../public/images/BooksImgs/Book3.png";
 import { ScrollUpIcon } from "@/components/icons.js/ScrollUpIcon";
-import Footer from "@/components/Footer";
 import UnderConstruction1 from "../underconstruction1";
+// import Footer from "@/components/Footer";
 // import AbegWhoSendPage from "./abegwhosendpage";
 // import { Hero } from "./abegwhosendpage";
 // import { FeedbackForm, OrderBookSection } from "./abegwhosendpage";
@@ -117,7 +117,7 @@ export const Hero = () => {
             <div className="col-lg-6 col-md-6 col-sm-6">
               <Image
                 className={`img-fluid
-                 mx-lg-auto d-xs-block d-sm-block d-md-none d-lg-none`}
+                 mx-lg-auto d-xs-block d-sm-block d-md-none d-lg-none ms-5`}
                 src={HomePageHeroImgMobile}
                 alt=""
               />
@@ -141,7 +141,7 @@ export const Books1 = () => {
       <div className={`container-fluid mt-3`}>
         <div className={`container d-flex align-items-center`}>
           {/* Book 1 Section */}
-          <div className={`container d-flex overflow-hidden`}>
+          <div className={`container`}>
             <div className="row align-items-center justify-content-center gx-md-5">
               <div className="col-lg-4 col-md-4 col-sm-12 mt-4">
                 <Image
@@ -151,7 +151,7 @@ export const Books1 = () => {
                 />
               </div>
               <div className="col-lg-8 col-md-8 col-sm-12 d-flex mt-3">
-                <div className="col">
+                <div className="col w-100">
                   <p
                     className={`d-block text-center text-md-start text-lg-start ${styles.p}`}
                   >
@@ -195,7 +195,7 @@ export const Books2 = () => {
       <div className={`container-fluid mt-3`}>
         <div className={`container d-flex align-items-center`}>
           {/* Book 2 Section */}
-          <div className={`container d-flex`}>
+          <div className={`container`}>
             <div className="row align-items-center justify-content-center gx-md-5">
               <div className="col-lg-4 col-md-4 col-sm-12 mt-4">
                 <Image
@@ -248,7 +248,7 @@ export const Books3 = () => {
       <div className={`container-fluid mt-3`}>
         <div className={`container d-flex align-items-center`}>
           {/* Book 3 Section */}
-          <div className={`container d-flex overflow-hidden`}>
+          <div className={`container`}>
             <div className="row align-items-center justify-content-center gx-md-5">
               <div className="col-lg-4 col-md-4 col-sm-12 mt-4">
                 <Image
@@ -258,7 +258,7 @@ export const Books3 = () => {
                 />
               </div>
               <div className="col-lg-8 col-md-8 col-sm-12 d-flex mt-3">
-                <div className="col">
+                <div className="col w-100">
                   <p
                     className={`d-block text-center text-md-start text-lg-start ${styles.p}`}
                   >
@@ -301,7 +301,7 @@ export const Books4 = () => {
       <div className={`container-fluid mt-3`}>
         <div className={`container d-flex align-items-center`}>
           {/* Book 4 Section */}
-          <div className={`container d-flex overflow-hidden`}>
+          <div className={`container`}>
             <div className="row align-items-center justify-content-center gx-md-5">
               <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12 mt-4">
                 <Image
