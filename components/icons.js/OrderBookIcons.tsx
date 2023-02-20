@@ -31,32 +31,46 @@ export const Amazon = () => {
   );
 };
 
+// export const OkadaBooks = () => {
+//   return (
+//     <>
+//       <svg
+//         width="44"
+//         height="44"
+//         viewBox="0 0 44 44"
+//         fill="none"
+//         xmlns="http://www.w3.org/2000/svg"
+//         xmlnsXlink="http://www.w3.org/1999/xlink"
+//       >
+//         <rect width="44" height="44" fill="url(#pattern0)" />
+//         <defs>
+//           <pattern
+//             id="pattern0"
+//             patternContentUnits="objectBoundingBox"
+//             width="1"
+//             height="1"
+//           >
+//             <use
+//               xlinkHref="#image0_559_740"
+//               transform="matrix(0.000735294 0 0 0.00114164 0 -0.0365712)"
+//             />
+//           </pattern>
+//         </defs>
+//       </svg>
+//     </>
+//   );
+// };
+
 export const OkadaBooks = () => {
   return (
     <>
-      <svg
-        width="44"
-        height="44"
-        viewBox="0 0 44 44"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        xmlnsXlink="http://www.w3.org/1999/xlink"
-      >
-        <rect width="44" height="44" fill="url(#pattern0)" />
-        <defs>
-          <pattern
-            id="pattern0"
-            patternContentUnits="objectBoundingBox"
-            width="1"
-            height="1"
-          >
-            <use
-              xlinkHref="#image0_559_740"
-              transform="matrix(0.000735294 0 0 0.00114164 0 -0.0365712)"
-            />
-          </pattern>
-        </defs>
-      </svg>
+      <img
+        src="../../images/BooksImgs/Okada.png"
+        className="img-fluid d-block ms-2"
+        width="48"
+        height="48"
+        alt="okadabooks"
+      />
     </>
   );
 };

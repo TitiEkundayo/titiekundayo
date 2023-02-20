@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import styles from "../../styles/componentstyles/books.module.scss";
-import Book1 from "../../public/images/BooksImgs/Book1.png";
+import Book4 from "../../public/images/BooksImgs/Book4.png";
 import Ini from "../../public/images/BooksImgs/ini.png";
 import { YouTubeIcon } from "@/components/icons.js/YoutubeIcon";
 import { OrderBookIcons } from "@/components/icons.js/OrderBookIcons";
@@ -35,7 +35,7 @@ export const Hero = () => {
       <div
         className={`bg-image container-fluid d-flex align-items-center justify-content-center ${styles.BookHeroBg}`}
       >
-        <div className="d-flex align-items-center">
+        <div className="container-fluid d-flex align-items-center">
           <div className="col">
             <div className="col-lg-12 col-md-12 col-sm-12">
               <YouTubeIcon />
@@ -55,7 +55,7 @@ export const OrderBookSection = () => {
           <div className="col-sm-12 col-md-12 col-lg-12 mb-3 align-items-center justify-content-center">
             <Image
               className={`img-fluid d-block mx-auto ${styles.img}`}
-              src={Book1}
+              src={Book4}
               alt=""
             />
           </div>
@@ -113,11 +113,10 @@ export const Testimonials = () => {
                 eius pariatur tenetur dolor perferendis eveniet?
               </p>
             </div>
-
             <div className="col-sm-12 col-md-7 col-lg-7 mt-3">
               <div className="row">
                 <div className="col">
-                  <div className={`card h-100 w-auto text-center`}>
+                  <div className="card h-100 w-auto text-center">
                     <div className="card-body">
                       <p className="card-text text-dark text-start">
                         Lorem ipsum dolor sit amet consectetur, adipisicing
@@ -205,5 +204,3 @@ export const FeedbackForm = () => {
     </>
   );
 };
-
-

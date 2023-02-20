@@ -6,15 +6,11 @@ import HomePageHeroImgDesktop from "../../public/images/BooksImgs/homepageheroim
 import { BookNavTitle } from "@/components/Navbar";
 import Book1 from "../../public/images/BooksImgs/Book1.png";
 import Book2 from "../../public/images/BooksImgs/Book2.png";
-import Book3 from "../../public/images/BooksImgs/Book2b.png";
-import Book4 from "../../public/images/BooksImgs/Book3.png";
+import Book3 from "../../public/images/BooksImgs/Book3.png";
+import Book4 from "../../public/images/BooksImgs/Book4.png";
 import { ScrollUpIcon } from "@/components/icons.js/ScrollUpIcon";
 import UnderConstruction1 from "../underconstruction1";
 // import Footer from "@/components/Footer";
-// import AbegWhoSendPage from "./abegwhosendpage";
-// import { Hero } from "./abegwhosendpage";
-// import { FeedbackForm, OrderBookSection } from "./abegwhosendpage";
-// import { Testimonials } from "./abegwhosendpage";
 
 export const Books = () => {
   return (
@@ -26,18 +22,6 @@ export const Books = () => {
       <div>
         <Hero />
       </div>
-
-      {/* <div>
-        <OrderBookSection />
-      </div>
-
-      <div>
-        <Testimonials />
-      </div>
-
-      <div>
-        <FeedbackForm />
-      </div> */}
 
       <div>
         <Books1 />
@@ -220,7 +204,7 @@ export const Books2 = () => {
                     <Link
                       className={`nav-link active me-2 ${styles.underlineColor}`}
                       aria-current="page"
-                      href=""
+                      href="/books/randomthoughts1"
                     >
                       Read More
                     </Link>
@@ -273,7 +257,7 @@ export const Books3 = () => {
                     <Link
                       className={`nav-link active me-2 ${styles.underlineColor}`}
                       aria-current="page"
-                      href=""
+                      href="/books/randomthoughts2"
                     >
                       Read More
                     </Link>
@@ -326,7 +310,7 @@ export const Books4 = () => {
                     <Link
                       className={`nav-link active me-2 ${styles.underlineColor}`}
                       aria-current="page"
-                      href=""
+                      href="/books/thirdbook"
                     >
                       Read More
                     </Link>
