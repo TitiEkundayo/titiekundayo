@@ -3,6 +3,7 @@ import Image from "next/image";
 import styles from "../../styles/componentstyles/books.module.scss";
 import Book4 from "../../public/images/BooksImgs/Book4.png";
 import Ini from "../../public/images/BooksImgs/ini.png";
+import { ScrollUpIcon } from "@/components/icons.js/ScrollUpIcon";
 import { YouTubeIcon } from "@/components/icons.js/YoutubeIcon";
 import { OrderBookIcons } from "@/components/icons.js/OrderBookIcons";
 import { PaginationIcons } from "@/components/icons.js/PaginationIcons";
@@ -24,6 +25,10 @@ export default function AbegWhoSendPage() {
 
       <div>
         <FeedbackForm />
+      </div>
+
+      <div className="">
+        <ScrollUpIcon />
       </div>
     </div>
   );
@@ -114,35 +119,30 @@ export const Testimonials = () => {
               </p>
             </div>
             <div className="col-sm-12 col-md-7 col-lg-7 mt-3">
-              <div className="row">
-                <div className="col">
-                  <div className="card h-100 w-auto text-center">
-                    <div className="card-body">
-                      <p className="card-text text-dark text-start">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing
-                        elit. A ipsam autem possimus illo tenetur asperiores,
-                        eius nihil eum quis numquam nisi, neque veniam ea ut!
-                      </p>
-                      <h3
-                        className={`card-title ${styles.underlineColor}`}
-                      ></h3>
-                      <div className="d-flex align-items-center">
-                        <Image
-                          src={Ini}
-                          className="rounded-circle me-3"
-                          alt="..."
-                        />
-                        <div className="text-start">
-                          <h5>NAME</h5>
-                          <p className="card-text text-dark">
-                            Lorem ipsum dolor
-                          </p>
-                        </div>
+              <div className="col">
+                <div className="card h-100 w-auto text-center">
+                  <div className="card-body">
+                    <p className="card-text text-dark text-start">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      A ipsam autem possimus illo tenetur asperiores, eius nihil
+                      eum quis numquam nisi, neque veniam ea ut!
+                    </p>
+                    <h3 className={`card-title ${styles.underlineColor}`}></h3>
+                    <div className="d-flex align-items-center">
+                      <Image
+                        src={Ini}
+                        className="rounded-circle me-3"
+                        alt="..."
+                      />
+                      <div className="text-start">
+                        <h5>NAME</h5>
+                        <p className="card-text text-dark">Lorem ipsum dolor</p>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
+
               <PaginationIcons />
             </div>
           </div>
@@ -155,7 +155,7 @@ export const Testimonials = () => {
 export const FeedbackForm = () => {
   return (
     <>
-      <div className="container-fluid mt-5">
+      <div className="mt-5">
         <div className="container d-flex align-items-center justify-content-center">
           <div className="col-sm-12 col-md-12 col-lg-12">
             <h3 className={`text-center mb-3 ${styles.feedbackform}`}>
@@ -193,7 +193,7 @@ export const FeedbackForm = () => {
                 <label htmlFor="floatingTextarea">Message</label>
               </div>
             </form>
-            <div className="d-flex justify-content-center mt-3">
+            <div className="text-center mt-3">
               <button type="submit" className={`btn ${styles.btnbgcolor}`}>
                 Submit
               </button>
