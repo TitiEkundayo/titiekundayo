@@ -76,12 +76,32 @@ picture {
 /* color-scheme: light dark; */
 /* } */
 
+/* body{
+	background-color: black;
+} */
+
 h1,
 h2,
-h3 {
-	font-family: "Montserrat";
+h3,
+h5 {
+	font-family: "Montserrat" !important;
+	font-weight: bold !important;
+	letter-spacing: 2px;
 }
 
 p {
-	font-family: "Open Sans", sans-serif;
+	font-family: "Open Sans", sans-serif !important;
+	color: #ffffff !important;
+	/* font-weight: smaller !important; */
 }
+
+a {
+	/* text-decoration: underline; */
+	/* font-weight: 600 !important; */
+	
+}
+
+body{
+	background-color: black !important;
+}
+
