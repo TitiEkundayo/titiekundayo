@@ -67,7 +67,7 @@ export const InstagramIcon = () => {
 
 export const SocialMediaIcons = () => {
 	return (
-		<div className="d-flex justify-content-center align-items-center mt-2">
+		<div className="mt-2">
 			<EmailIcon />
 			<LinkedInIcon />
 			<FacebookIcon />
