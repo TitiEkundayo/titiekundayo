@@ -70,6 +70,7 @@ export const InstagramIcon = () => {
 };
 
 export const SocialMediaIcons = () => {
+<<<<<<< HEAD
   return (
     <div className="d-flex justify-content-center align-items-center mt-2">
       <EmailIcon />
@@ -78,4 +79,14 @@ export const SocialMediaIcons = () => {
       <InstagramIcon />
     </div>
   );
+=======
+	return (
+		<div className="mt-2">
+			<EmailIcon />
+			<LinkedInIcon />
+			<FacebookIcon />
+			<InstagramIcon />
+		</div>
+	);
+>>>>>>> blessing_branch
 };

@@ -56,7 +56,11 @@ const Blogone = () => {
                         lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor.
                     </p>
                 </div>
+<<<<<<< HEAD
                 <div className="mt-5 mb-5">    
+=======
+                <div className="mt-5 mb-5">
+>>>>>>> blessing_branch
                     <Image
                         className={`img-fluid rounded mx-auto d-block w-75 ${musingstyles.img}`}
                         src={musing2}
