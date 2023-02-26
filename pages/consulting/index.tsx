@@ -3,7 +3,7 @@ import UnderConstruction1 from "../underconstruction1";
 import Footer from "@/components/Footer";
 import styles from ".././../styles/componentstyles/consulting.module.scss";
 // import Cards from "@/components/consultingComponents/cards";
-import ConsultingReadMore from ".././consulting/ConsultingReadMore";
+// import ConsultingReadMore from ".././consulting/ConsultingReadMore";
 
 const Consulting = () => {
 	return (
@@ -39,7 +39,7 @@ const Consulting = () => {
 				
 		<div>
 			{/* What most of our clients ask for */}
-			<ConsultingReadMore/>
+			{/* <ConsultingReadMore/> */}
         {/* <>
         <div className={styles.ConsultingHome}>
         <div className="bg-black">
@@ -116,12 +116,6 @@ const Consulting = () => {
 			<div>
 				{/* <UnderConstruction1 /> */}
 			</div>
-
-			<div className="bg-dark mt-5 pt-5">
-				<Footer />
-			
-			</div>
-			
 		</div>
 	);
 };

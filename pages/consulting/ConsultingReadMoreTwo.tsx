@@ -1,7 +1,7 @@
-import styles from ".././../styles/componentstyles/consulting.module.scss";
+import styles from ".././../styles/componentstyles/consultingTwo.module.scss";
 import Image from "next/image";
-import SectionImg from ".././../public/images/ConsultingImgs/Image1.png";
-import { CardMapping } from "../../components/consultingComponents/card";
+import SectionImgTwo from ".././../public/images/ConsultingImgs/consultingImage2.png";
+import { CardMappingTwo } from "../../components/consultingComponents/cardTwo";
 import { ConsultNavTitle } from "@/components/Navbar";
 import MobileHeroImg from ".././../public/images/ConsultingImgs/MobileHeroImg.png";
 import DesktopHeroImg from ".././../public/images/HomeImgs/titi.png";
@@ -49,10 +49,10 @@ const ConsultingReadMore = () => {
         <h3 className={styles.LineColor}>Success Stories</h3>
         <div className={styles.Underline}></div>
         <div className="mb-5">
-          <CardMapping />
+          <CardMappingTwo />
         </div>
       </div>
-      
+     
     </>
   );
 };
@@ -116,7 +116,7 @@ export const Section = () => {
                   >
                     <Image
                       className={styles.bodyImage}
-                      src={SectionImg}
+                      src={SectionImgTwo}
                       width="700"
                       height={500}
                       alt="image"

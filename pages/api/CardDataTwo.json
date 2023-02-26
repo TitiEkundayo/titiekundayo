@@ -1,0 +1,27 @@
+{
+    "CardDetails": [{
+        "id": 1,
+        "image": "../images/ConsultingImgs/HowDoWeSolveItImg.png",
+        "bodyText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore delectus corporis a ipsa ea asperiores vero libero deleniti porro debitis!",
+        "title": "Name",
+        "smallText": "Lorem ipsum Dolor"
+    },
+    
+    {
+        "id": 2,
+        "image": "../images/ConsultingImgs/HowDoWeSolveItImg.png",
+        "bodyText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore delectus corporis a ipsa ea asperiores vero libero deleniti porro debitis!",
+        "title": "Name",
+        "smallText":"Lorem ipsum Dolor"
+    },
+    
+    {
+        "id": 3,
+        "image": "../images/ConsultingImgs/HowDoWeSolveItImg.png",
+        "bodyText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore delectus corporis a ipsa ea asperiores vero libero deleniti porro debitis!",
+        "title": "Name",
+        "smallText": "Lorem ipsum Dolor"
+    }
+    
+    ]
+    }
