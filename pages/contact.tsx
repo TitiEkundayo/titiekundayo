@@ -3,7 +3,7 @@ import UnderConstruction1 from "./underconstruction1";
 import Footer from "@/components/Footer";
 import {
 	EmailIcon,
-	SocialMediaIcons,
+	ThreeSocialMediaIcons,
 } from "@/components/icons.js/SocialMediaIcons";
 import btnbgcolor from "../styles/generalstyles/colors.module.scss";
 import styles from "../styles/pagesstyle/contactform.module.scss"
@@ -71,7 +71,7 @@ const GetInTouch = () => {
 			 </div> 
 
 			<div>
-				<SocialMediaIcons />
+				<ThreeSocialMediaIcons/>
 			</div>
 		</div>
 	);

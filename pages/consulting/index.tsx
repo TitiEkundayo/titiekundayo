@@ -30,13 +30,6 @@ const Consulting = () => {
         <OurApproach />
       </div>
 
-<<<<<<< HEAD
-			<div>
-				<UnderConstruction1 />
-			</div>
-		</div>
-	);
-=======
       <div>{/* <UnderConstruction1 /> */}</div>
 
       <div className="bg-dark mt-5 pt-5">
@@ -44,7 +37,6 @@ const Consulting = () => {
       </div>
     </div>
   );
->>>>>>> 35e78296826922bc2ee6166a69c06ddc51bcae00
 };
 
 const WhatOurClientsAskFor = () => {
