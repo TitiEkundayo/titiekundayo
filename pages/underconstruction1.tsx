@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from "react";
 
 export default function UnderConstruction1() {
 	const [hooray, setHooray] = useState(false);
-	const [days, setDays] = useState(30);
+	const [days, setDays] = useState(0);
 	const [hours, setHours] = useState(0);
 	const [minutes, setMinutes] = useState(0);
 	const [seconds, setSeconds] = useState(0);
