@@ -12,6 +12,7 @@ const Musing = () => {
 			<div>
 				<UnderConstruction1 />
 			</div>
+			
 		</div>
 	);
 };

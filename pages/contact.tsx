@@ -12,6 +12,7 @@ const Contact = () => {
 			<div>
 				<UnderConstruction1 />
 			</div>
+			
 		</div>
 	);
 };

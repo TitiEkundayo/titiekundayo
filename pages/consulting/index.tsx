@@ -12,6 +12,7 @@ const Consulting = () => {
 			<div>
 				<UnderConstruction1 />
 			</div>
+			
 		</div>
 	);
 };
