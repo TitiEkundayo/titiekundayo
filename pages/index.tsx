@@ -3,15 +3,10 @@ import Image from "next/image";
 import { HomeNavTitle } from "../components/Navbar";
 import titi from "../public/images/HomeImgs/titi.png";
 import Footer from "@/components/Footer";
-<<<<<<< HEAD
-// import UnderConstruction from "./underconstruction1";
-import UnderConstruction1 from "./underconstruction1";
-=======
 import UnderConstruction from "./underconstruction1";
 import { LandingPageHero } from "../components/Hero";
 import { LetterFromTiti } from "../components/Hero";
 import { ArticleCard } from "@/components/ArticleCard";
->>>>>>> 35e78296826922bc2ee6166a69c06ddc51bcae00
 // import Hero from "../components/Hero";
 
 export default function Home() {
@@ -28,13 +23,7 @@ export default function Home() {
         <HomeNavTitle />
       </div>
 
-<<<<<<< HEAD
-			<div>
-				<UnderConstruction1 />
-			</div>
-=======
       <div>{/* <UnderConstruction /> */}</div>
->>>>>>> 35e78296826922bc2ee6166a69c06ddc51bcae00
 
       {/* Landing page */}
       <div>
@@ -53,15 +42,6 @@ export default function Home() {
 
 				<Button classes={`btn btn-primary text-white`} btnText="Submit" />
 			</div> */}
-<<<<<<< HEAD
 		</>
 	);
-=======
-
-      <div className="bg-dark mt-5 pt-5">
-        <Footer />
-      </div>
-    </>
-  );
->>>>>>> 35e78296826922bc2ee6166a69c06ddc51bcae00
 }

@@ -20,7 +20,7 @@ const Musing = () => {
 			}
 			<div className="text-white">
 		     <Blog />
-		     <PopularArticlessection/>	
+		     <PopularArticlesSection/>	
 	        </div>
 				
 			
@@ -89,7 +89,7 @@ const Blog = () => {
 	);   
 };
 
-const PopularArticlessection = () => {
+const PopularArticlesSection = () => {
 	return (
 		<div className="p-3 mt-5">
 			<div className="container">

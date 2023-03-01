@@ -5,9 +5,6 @@ import titi from "../public/images/HomeImgs/titi.png";
 // import styles from "../styles/generalstyles/colors.module.scss";
 
 const Hero = () => {
-<<<<<<< HEAD
-  return <></>;
-=======
   return <div>Hero</div>;
 };
 
@@ -144,7 +141,6 @@ export const LetterFromTiti = () => {
       </div>{" "}
     </div>
   );
->>>>>>> 35e78296826922bc2ee6166a69c06ddc51bcae00
 };
 
 export default Hero;
