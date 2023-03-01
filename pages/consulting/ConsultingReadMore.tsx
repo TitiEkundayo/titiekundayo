@@ -5,6 +5,7 @@ import { CardMapping } from "../../components/consultingComponents/card";
 import { ConsultNavTitle } from "@/components/Navbar";
 import MobileHeroImg from ".././../public/images/ConsultingImgs/MobileHeroImg.png";
 import DesktopHeroImg from ".././../public/images/HomeImgs/titi.png";
+
 const ConsultingReadMore = () => {
   return (
     <>
