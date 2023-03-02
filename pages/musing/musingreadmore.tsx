@@ -4,6 +4,7 @@ import musingstyles from "../../styles/pagesstyle/musing.module.scss";
 import Image from "next/image";
 import musingimg from "../../public/images/musingpagesimg/musingimg.png";
 import musing2 from "../../public/images/musingpagesimg/musing2.png";
+import { ScrollUpIcon } from "@/components/icons.js/ScrollUpIcon";
 
 
 
@@ -18,6 +19,9 @@ const Musingreadmore = () => {
             <div>
                 <Blogone/>
             </div>
+            <div>
+              <ScrollUpIcon/>
+           </div>
         </div>
         
     );

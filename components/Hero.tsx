@@ -3,7 +3,7 @@ import styles from "../styles/componentstyles/landingpage.module.scss";
 import consultingstyles from "../styles/componentstyles/consulting.module.scss";
 import titi from "../public/images/HomeImgs/titi.png";
 // import styles from "../styles/generalstyles/colors.module.scss";
-
+ 
 const Hero = () => {
   return <div>Hero</div>;
 };

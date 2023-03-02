@@ -1,11 +1,12 @@
 import { MusingNavTitle } from "@/components/Navbar";
 //import UnderConstruction1 from "../underconstruction1";
 import Footer from "@/components/Footer";
-import styles from "../../styles/generalstyles/colors.module.scss"
-import mustyles from "../../styles/pagesstyle/musing.module.scss"
+import styles from "../../styles/generalstyles/colors.module.scss";
+import mustyles from "../../styles/pagesstyle/musing.module.scss";
 import Image from "next/image";
-import blogimg from "../../public/images/musingpagesimg/blogimg.png"
-import {CardMapping} from "../../components/musingcard"
+import blogimg from "../../public/images/musingpagesimg/blogimg.png";
+import { CardMapping } from "../../components/musingcard";
+import { ScrollUpIcon } from "@/components/icons.js/ScrollUpIcon";
 
 const Musing = () => {
 	return ( 
@@ -22,7 +23,10 @@ const Musing = () => {
 		     <Blog />
 		     <PopularArticlesSection/>	
 	        </div>
-				
+
+			<div>
+              <ScrollUpIcon/>
+           </div>
 			
 		</div>
 	);

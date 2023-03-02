@@ -1,4 +1,18 @@
-@use "../generalstyles/colors.module.scss" as *;
+.pryColor {
+  background-color: #000;
+}
+
+.secColor {
+  color: #00ffcd;
+}
+
+.secBgColor {
+  background-color: #00ffcd !important;
+}
+
+.BgColor {
+  background: #000 !important;
+}
 
 .ConsultingPageHeroBgg::before {
   content: "";
@@ -29,6 +43,7 @@
   position: relative;
   line-height: 45px;
 }
+
 .ConsultingPageHeroBg h3 {
   position: relative;
   line-height: 35px;
@@ -47,79 +62,69 @@
     height: 80vh;
   }
 }
-
-// .LandingPageBg {
-//   background-color: #000;
-// }
-
 .ConsultingHeaderText {
-  color: $secColor;
+  color: #00ffcd;
   font-weight: 700;
 }
+
 .SubHeaderText {
-  color: $secColor;
+  color: #00ffcd;
 }
+
 .WhatOurClientsAskFor,
 .WhoWeHaveSolvedItFor {
   background: #000000;
   opacity: 0.95;
 }
-.ConsultingHero {
-  background-image:url(.././../public/images/ConsultingImgs/background.png);
-  
-  h1 {
-  font-size: 3rem;
-  }
 
+.ConsultingHero {
+  background-image: url(.././../public/images/ConsultingImgs/background.png);
+}
+.ConsultingHero h1 {
+  font-size: 3rem;
 }
 
-.desktopImage{
-width: 40% !important;
+.desktopImage {
+  width: 40% !important;
 }
 
 .ConsultingHome {
   background-size: cover;
   height: 50vh;
-  // width: auto;
   margin-top: 230px;
   margin-bottom: 0px;
   left: 0px;
   right: 0px;
 }
 
-
 .LineColor {
-  // color: rgb(18, 229, 176);
-  color: $secColor;
+  color: #00ffcd;
   margin-left: 120px;
 }
+
 .LineColor3 {
-  // color: rgb(18, 229, 176);
-  color: $secColor;
+  color: #00ffcd;
 }
 
-// .Section {
-  // margin-top: 8.5rem;
-  // font-weight: 100;
-  // padding-bottom: 10px;
-// }
-
 .LineColor2 {
-  color: $secColor;
+  color: #00ffcd;
   margin-left: 100px;
   font-weight: bolder;
   font-size: 1.5rem;
 }
+
 .justifyText {
   text-align: justify;
 }
-.Underline{
+
+.Underline {
   width: 6rem;
-  background-color: $secColor;
+  background-color: #00ffcd;
   height: 1px;
   margin-left: 7.5rem;
 }
-.Card{
+
+.Card {
   width: 25rem;
   height: 30rem;
 }
@@ -131,11 +136,12 @@ width: 40% !important;
   .Section {
     margin-top: 0;
   }
-  .bodyImage{
+  .bodyImage {
     width: 19rem !important;
     height: 12rem !important;
   }
-  .Underline{
+  .Underline {
     width: 11rem;
   }
 }
+/*# sourceMappingURL=consulting.module.css.map */

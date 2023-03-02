@@ -7,7 +7,7 @@ import whatourclientsaskedfor from "../../public/images/ConsultingImgs/whatourcl
 import howwesolveit from "../../public/images/ConsultingImgs/howwesolveit.png";
 import irwlogo from "../../public/images/ConsultingImgs/irwlogo.png";
 import consultingstyles from "../../styles/componentstyles/consulting.module.scss";
-
+import { ScrollUpIcon } from "@/components/icons.js/ScrollUpIcon";
 const Consulting = () => {
   return (
     <div>
@@ -29,12 +29,13 @@ const Consulting = () => {
       <div>
         <OurApproach />
       </div>
+      <div>
+        <ScrollUpIcon/>
+      </div>
 
       <div>{/* <UnderConstruction1 /> */}</div>
 
-      <div className="bg-dark mt-5 pt-5">
-        <Footer />
-      </div>
+      
     </div>
   );
 };
@@ -130,7 +131,7 @@ const HowDoWeSolveIt = () => {
               alt="..."
             />
 
-            <h5 className={`card-title `}>Lorem Ipsum</h5>
+            <h5 className={`card-title`}>Lorem Ipsum</h5>
             <div className={`card-body`}>
               Lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum
               dolor lorem. Lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor
@@ -294,3 +295,5 @@ const OurApproach = () => {
 // ${styles.LandingPageBg}
 
 export default Consulting;
+
+
