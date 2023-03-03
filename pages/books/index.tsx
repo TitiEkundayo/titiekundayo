@@ -77,7 +77,7 @@ export const Hero = () => {
               <Link
                 className={`nav-link active ${styles.herolink}`}
                 aria-current="page"
-                href=""
+                href="/books/abegwhosendpage"
               >
                 ABEGWHOSEND ME
               </Link>
@@ -85,7 +85,7 @@ export const Hero = () => {
               <Link
                 className={`nav-link active ${styles.herolink}`}
                 aria-current="page"
-                href=""
+                href="/books/randomthoughts1"
               >
                 RANDOM THOUGHTS VOL.1
               </Link>
@@ -93,7 +93,7 @@ export const Hero = () => {
               <Link
                 className={`nav-link active ${styles.herolink}`}
                 aria-current="page"
-                href=""
+                href="/books/randomthoughts2"
               >
                 RANDOM THOUGHTS VOL.2
               </Link>

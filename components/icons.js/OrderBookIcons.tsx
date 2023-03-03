@@ -1,3 +1,6 @@
+import Image from "next/image";
+import okadaimg from "../../public/images/BooksImgs/Okada.png";
+
 export const Amazon = () => {
   return (
     <>
@@ -64,8 +67,9 @@ export const Amazon = () => {
 export const OkadaBooks = () => {
   return (
     <>
-      <img
-        src="../../images/BooksImgs/Okada.png"
+      <Image
+        src={okadaimg}
+        // src="../../images/BooksImgs/Okada.png"
         className="img-fluid d-block ms-2"
         width="48"
         height="48"

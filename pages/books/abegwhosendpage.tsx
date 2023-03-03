@@ -3,6 +3,7 @@ import Image from "next/image";
 import styles from "../../styles/componentstyles/books.module.scss";
 import Book1 from "../../public/images/BooksImgs/Book1.png";
 import Ini from "../../public/images/BooksImgs/ini.png";
+import { AbegWhoSendMeNavTitle } from "@/components/Navbar";
 import { ScrollUpIcon } from "@/components/icons.js/ScrollUpIcon";
 import { YouTubeIcon } from "@/components/icons.js/YoutubeIcon";
 import { OrderBookIcons } from "@/components/icons.js/OrderBookIcons";
@@ -11,6 +12,10 @@ import { PaginationIcons } from "@/components/icons.js/PaginationIcons";
 export default function AbegWhoSendPage() {
   return (
     <div>
+      <div>
+        <AbegWhoSendMeNavTitle />
+      </div>
+
       <div>
         <Hero />
       </div>
