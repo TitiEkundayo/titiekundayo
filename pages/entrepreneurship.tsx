@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { ContactNavTitle, EntrepreneurNavTitle } from "@/components/Navbar";
 import UnderConstruction1 from "./underconstruction1";
 import Footer from "@/components/Footer";
@@ -48,7 +49,7 @@ const Enterpreneuerbody = (props: ITestimonial) => {
           <div className="row">
             <div className="col-lg-3 col-md-4 col-sm-12 col-xs-12 mt-4">
               <div style={{ width: "11rem" }}>
-                <img src={images} alt="/" />
+                <Image src={images} alt="/" />
               </div>
             </div>
             <div className={`col-lg-2 mb-5 ${styles.enterpreneurLineimg}`}>
@@ -81,7 +82,7 @@ const Enterpreneuerbody = (props: ITestimonial) => {
               </a>
             </p>
             <div className="col-sm-12 ms-5" style={{ width: "13rem" }}>
-              <img src={images} alt="/" />
+              <Image src={images} alt="/" />
             </div>
           </div>
         </div>

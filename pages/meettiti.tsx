@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Footer from "@/components/Footer";
 import UnderConstruction1 from "./underconstruction1";
 import { TitiNavTitle } from "@/components/Navbar";
@@ -36,7 +37,7 @@ export const MeettitiBody = () => {
         <div className="container">
           <div className="row">
             <div className={`col-lg-6 col-md-6 mb-5 mt-5`}>
-              <img src={meettiti1.src} alt="/" />
+              <Image src={meettiti1} alt="/" />
             </div>
             <div className="col-lg-6 col-md-6 mt-5 pt-2">
               <div className="mt-5 pt-3">
@@ -134,7 +135,7 @@ export const MeettitiBody = () => {
                   </p>
                 </div>
                 <div className="col-sm-12 mb-5 mt-4 mx-5">
-                  <img src={meettiti1.src} alt="/" />
+                  <Image src={meettiti1.src} alt="/" />
                 </div>
                 <div className="">
                   <h5

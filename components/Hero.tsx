@@ -1,3 +1,4 @@
+import Image from "next/image";
 import meettitiBighero from "../public/images/HomeImgs/meettitiBighero.png";
 import meettitiSmallhero from "../public/images/HomeImgs/meettitiSmallhero.png";
 
@@ -29,12 +30,13 @@ export const EnterpreneurpageHero = () => {
                   <br /> Lorem ipsum dolor sit amet consectetur.
                 </p>
               </div>
-              <img
+              <Image
                 className="col-lg-8 col-md-8 col-sm-6"
                 style={{
                   width: "25rem",
                 }}
-                src={meettitiSmallhero.src}
+                src={meettitiSmallhero}
+                alt={""}
               />
             </div>
           </div>
@@ -67,7 +69,7 @@ export const MeettitipageHero = () => {
             </div>
             <div
               className={`col-lg-6 col-md-6 col-sm-12 mt-5 mb-5 ${MeetTiti.MeetTitiHero}`}>
-              <img src={meettitiheropics.src} alt="/" />
+              <Image src={meettitiheropics} alt="/" />
             </div>
           </div>
         </div>
