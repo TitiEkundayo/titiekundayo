@@ -9,7 +9,7 @@ import { YouTubeIcon } from "@/components/icons.js/YoutubeIcon";
 import { OrderBookIcons } from "@/components/icons.js/OrderBookIcons";
 import { PaginationIcons } from "@/components/icons.js/PaginationIcons";
 
-export default function AbegWhoSendPage() {
+export default function ThirdBookPage() {
   return (
     <div>
       <div>
