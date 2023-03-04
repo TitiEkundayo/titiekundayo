@@ -107,7 +107,8 @@
 
 .form{
 //    align-self: center;
-   width: 350px;
+   max-width: 350px;
+   min-width: 200px;
    height: auto;
 }
 

@@ -137,7 +137,7 @@ export const Books1 = () => {
               <div className="col-lg-8 col-md-8 col-sm-12 d-flex mt-3">
                 <div className="col w-100">
                   <p
-                    className={`d-block text-center text-md-start text-lg-start ${styles.p}`}
+                    className={`d-block text-sm-start text-md-start text-lg-start ${styles.p}`}
                   >
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Ratione accusantium beatae libero nihil aut accusamus
@@ -191,7 +191,7 @@ export const Books2 = () => {
               <div className="col-lg-8 col-md-8 col-sm-12 d-flex mt-3 order-lg-first order-md-first order-xl-first">
                 <div className="col w-100 ms-xl-3">
                   <p
-                    className={`d-block text-center text-md-start text-lg-start ${styles.p}`}
+                    className={`d-block text-sm-start text-md-start text-lg-start ${styles.p}`}
                   >
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Ratione accusantium beatae libero nihil aut accusamus
@@ -244,7 +244,7 @@ export const Books3 = () => {
               <div className="col-lg-8 col-md-8 col-sm-12 d-flex mt-3">
                 <div className="col w-100">
                   <p
-                    className={`d-block text-center text-md-start text-lg-start ${styles.p}`}
+                    className={`d-block text-sm-start text-md-start text-lg-start ${styles.p}`}
                   >
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Ratione accusantium beatae libero nihil aut accusamus
@@ -297,7 +297,7 @@ export const Books4 = () => {
               <div className="col-xl-8 col-lg-8 col-md-8 col-sm-12 d-flex mt-3 order-lg-first order-md-first order-xl-first">
                 <div className="col w-100 ms-xl-3">
                   <p
-                    className={`d-block text-center text-md-start text-lg-start ${styles.p}`}
+                    className={`d-block text-sm-start text-md-start text-lg-start ${styles.p}`}
                   >
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Ratione accusantium beatae libero nihil aut accusamus

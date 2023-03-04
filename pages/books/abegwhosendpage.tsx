@@ -78,7 +78,7 @@ export const OrderBookSection = () => {
           <OrderBookIcons />
         </div>
 
-        <div className="container mt-3 text-center text-md-start text-lg-start">
+        <div className="container mt-3 text-sm-start text-md-start text-lg-start">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Est maxime
             rerum consequuntur necessitatibus nostrum molestiae, non culpa nulla
