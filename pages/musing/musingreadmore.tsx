@@ -36,14 +36,29 @@ const Blogone = () => {
                     <h3 className={`${styles.secColor} fw-bold fs-1`}> Blog One</h3>
                 </div>
                 <div className=" mt-5 mb-5">
-                    <Image
-                        className={`img-fluid mx-auto d-block w-100 ${musingstyles.img}`}
-                        src={musingimg}
-                        width="1169"
-                        alt="musingimage"
-                                
-                    />
+                    {/*desktop view*/}
+                    <div className="d-none d-md-block d-sm-none">
+                        <Image
+                            className={`img-fluid mx-auto d-block w-100`}
+                            src={musingimg}
+                            width="1169"
+                            height={597}
+                            alt="musingimage"
+                        />
+                    </div>
+                 {/*mobile view*/}
+                    <div className="d-md-none d-sm-block">
+                        <Image
+                            className={`img-fluid mx-auto d-block w-100 ${musingstyles.img}`}
+                            src={musingimg}
+                            width="1169"
+                            height={597}
+                            alt="musingimage"
+                                    
+                        />
+                    </div>
                 </div>
+                  {/* mobile view ends */}
                 <div>
                     <div className="mt-2 fs-3">
                         <p className="text-center mx-auto w-75">
@@ -60,14 +75,29 @@ const Blogone = () => {
                         lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor.
                     </p>
                 </div>
-                <div className="mt-5 mb-5">    
-                    <Image
-                        className={`img-fluid rounded mx-auto d-block w-75 ${musingstyles.img}`}
-                        src={musing2}
-                        width="901"
-                        alt=""
-                    />
+                {/* destop view */}
+                <div className="mt-5 mb-5">
+                  <div className="d-none d-md-block d-sm-none">
+                        <Image
+                            className={`img-fluid rounded mx-auto d-block`}
+                            src={musing2}
+                            width="901"
+                            alt=""
+                        />
+                    </div>
                 </div>
+                {/*mobile view*/}
+                <div className="mt-5 mb-5">
+                    <div className="d-md-none d-sm-block">
+                        <Image
+                            className={`img-fluid rounded mx-auto d-block ${musingstyles.img}`}
+                            src={musing2}
+                            width="901"
+                            alt=""
+                         />
+                  </div>
+                </div>
+                {/*mobile view ends*/}
                 <div>
                     <p className="text-start">
                         Lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor.

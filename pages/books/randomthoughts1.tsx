@@ -16,11 +16,11 @@ export default function RandomThoughtsV1Page() {
          <RandomThoughtsV1NavTitle/>
       </div>
       <div>
-        <Hero />
+        <Hero/>
       </div>
 
       <div>
-        <OrderBookSection />
+        <OrderBookSection/>
       </div>
 
       <div>
@@ -28,11 +28,11 @@ export default function RandomThoughtsV1Page() {
       </div>
 
       <div>
-        <FeedbackForm />
+        <FeedbackForm/>
       </div>
 
       <div className="">
-        <ScrollUpIcon />
+        <ScrollUpIcon/>
       </div>
     </div>
   );

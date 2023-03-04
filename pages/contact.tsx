@@ -124,14 +124,14 @@ const ContactPageLayout = () => {
 		<>
 			{/* desktop */}
 			<div className="container mt-5 pt-3 d-none d-sm-none d-md-block">
-				<div className="row d-flex justify-content-center align-items-center">
-					<div className="col-md-4">
+				<div className="row d-flex  ms-auto justify-content-center align-items-center">
+					<div className="col-md-5  ">
 						<GetInTouch/>
 					</div>
 
-					<div className="col-md-8">
+					<div className="col-md-7">
 						<div className="container">
-							<div className="row d-flex g-5 justify-content-end align-items-end">
+							<div className="me-auto">
 							   <div className="w-50">
 								<ContactForm/>
 								</div>
@@ -145,10 +145,10 @@ const ContactPageLayout = () => {
 			<div className="container d-md-none d-sm-block mt-5 pt-3">
 				<div className="justify-content-center align-items-center">
 					<div className="">
-						<GetInTouch />
+						<GetInTouch/>
 					</div>
 					<div className=" ">
-						<ContactForm />
+						<ContactForm/>
 					</div>
 				</div>
 			</div>

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import Card from "../pages/api/musingcard.json";
 import styles from "../styles/generalstyles/colors.module.scss";
   
@@ -24,7 +25,11 @@ export const MusingCard = (props:Product) => {
           <div className="card-body text-wrap">
             <h5 className="card-title mt-4">{MusingTitle}</h5>
             <p className="card-text mt-3">{Bodytext}</p>
-          <a href=" " className={`mt-3 text-decoration-none ${styles.secColor}`}>{MusingLink}</a>
+          <Link
+              href="/musing/musingreadmore"
+              className={`mt-3 text-decoration-none ${styles.secColor}`}>
+              {MusingLink}
+          </Link>
           </div>
       </div> 
     </>
