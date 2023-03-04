@@ -79,6 +79,7 @@ export const SocialMediaIcons = () => {
 		</div>
 	);
 };
+
 export const ThreeSocialMediaIcons = () => {
 	return (
 		<div className="mt-2">

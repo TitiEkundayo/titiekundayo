@@ -22,9 +22,9 @@ export const MusingCard = (props:Product) => {
            width={307.8} height="329" alt="..."
          />
           <div className="card-body text-wrap">
-            <h5 className="card-title">{MusingTitle}</h5>
-            <p className="card-text">{Bodytext}</p>
-          <a href="#" className={`${styles.secColor}`}>{MusingLink}</a>
+            <h5 className="card-title mt-4">{MusingTitle}</h5>
+            <p className="card-text mt-3">{Bodytext}</p>
+          <a href=" " className={`mt-3 text-decoration-none ${styles.secColor}`}>{MusingLink}</a>
           </div>
       </div> 
     </>

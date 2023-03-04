@@ -70,7 +70,7 @@ const GetInTouch = () => {
 				<EmailIcon/> titiekundayo@gmail.com
 			 </div> 
 
-			<div>
+			<div className="mt-3">
 				<ThreeSocialMediaIcons/>
 			</div>
 		</div>
@@ -125,13 +125,17 @@ const ContactPageLayout = () => {
 			{/* desktop */}
 			<div className="container mt-5 pt-3 d-none d-sm-none d-md-block">
 				<div className="row d-flex justify-content-center align-items-center">
-					<div className="col-md-5">
-						<GetInTouch />
+					<div className="col-md-4">
+						<GetInTouch/>
 					</div>
 
-					<div className="col-md-7 ">
-						<div className="w-50">
-							<ContactForm />
+					<div className="col-md-8">
+						<div className="container">
+							<div className="row d-flex g-5 justify-content-end align-items-end">
+							   <div className="w-50">
+								<ContactForm/>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
