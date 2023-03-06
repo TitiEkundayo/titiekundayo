@@ -14,9 +14,8 @@ export default function ThirdBookPage() {
   return (
     <div>
       <div>
-        <ThirdBookNavTitle />
+        <ThirdBookNavTitle/>
       </div>
-
       <div>
         <Hero />
       </div>

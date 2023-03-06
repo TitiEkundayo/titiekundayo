@@ -3,8 +3,8 @@ import Image from "next/image";
 import styles from "../../styles/componentstyles/books.module.scss";
 import Book1 from "../../public/images/BooksImgs/Book1.png";
 import Ini from "../../public/images/BooksImgs/ini.png";
-import { FeedbackForm } from "@/components/FeedbackForm";
 import { AbegWhoSendMeNavTitle } from "@/components/Navbar";
+import { FeedbackForm } from "@/components/FeedbackForm";
 import { ScrollUpIcon } from "@/components/icons.js/ScrollUpIcon";
 import { YouTubeIcon } from "@/components/icons.js/YoutubeIcon";
 import { OrderBookIcons } from "@/components/icons.js/OrderBookIcons";
@@ -14,27 +14,26 @@ export default function AbegWhoSendPage() {
   return (
     <div>
       <div>
-        <AbegWhoSendMeNavTitle />
+        <AbegWhoSendMeNavTitle/>
+      </div>
+      <div>
+        <Hero/>
       </div>
 
       <div>
-        <Hero />
+        <OrderBookSection/>
       </div>
 
       <div>
-        <OrderBookSection />
+        <Testimonials/>
       </div>
 
       <div>
-        <Testimonials />
-      </div>
-
-      <div>
-        <FeedbackFormSection />
+        <FeedbackFormSection/>
       </div>
 
       <div className="">
-        <ScrollUpIcon />
+        <ScrollUpIcon/>
       </div>
     </div>
   );
@@ -49,7 +48,7 @@ export const Hero = () => {
         <div className="d-flex align-items-center">
           <div className="col">
             <div className="col-lg-12 col-md-12 col-sm-12">
-              <YouTubeIcon />
+              <YouTubeIcon/>
             </div>
           </div>
         </div>
@@ -75,7 +74,7 @@ export const OrderBookSection = () => {
           <p className={`text-center d-block ${styles.ordertext}`}>
             Order your book today
           </p>
-          <OrderBookIcons />
+          <OrderBookIcons/>
         </div>
 
         <div className="container mt-3 text-sm-start text-md-start text-lg-start">
@@ -155,7 +154,7 @@ export const Testimonials = () => {
                   </div>
                 </div>
               </div>
-              <PaginationIcons />
+              <PaginationIcons/>
             </div>
           </div>
         </div>
@@ -183,5 +182,6 @@ export const FeedbackFormSection = () => {
     </>
   );
 };
+
 
 

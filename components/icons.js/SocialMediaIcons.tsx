@@ -70,12 +70,24 @@ export const InstagramIcon = () => {
 };
 
 export const SocialMediaIcons = () => {
-  return (
-    <div className="d-flex justify-content-center align-items-center mt-2">
-      <EmailIcon />
-      <LinkedInIcon />
-      <FacebookIcon />
-      <InstagramIcon />
-    </div>
-  );
+	return (
+		<div className="mt-2">
+			<EmailIcon />
+			<LinkedInIcon />
+			<FacebookIcon />
+			<InstagramIcon />
+		</div>
+	);
 };
+
+export const ThreeSocialMediaIcons = () => {
+	return (
+		<div className="mt-2">
+			<LinkedInIcon />
+			<FacebookIcon />
+			<InstagramIcon />
+		</div>
+	);
+};
+
+

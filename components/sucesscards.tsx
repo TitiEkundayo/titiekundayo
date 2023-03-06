@@ -1,11 +1,12 @@
 // import styles from "../styles/globals.css";
+import Image from "next/image";
 import CardDetails from "../pages/api/sucesscards.json";
 import sucessCardsStyles from "../styles/componentstyles/sucesscards.module.scss";
 
 interface sucessCards {
-  images: any;
-  title: string;
-  text: string;
+  SucessImages: any;
+  SucessTitle: string;
+  SucessText: string;
   id: number;
 }
 
@@ -31,19 +32,19 @@ export const sucessCards = () => {
 };
 
 export const SingleSucessCards = (props: sucessCards) => {
-  const { images, title, text } = props;
+  const { SucessImages, SucessTitle, SucessText } = props;
   return (
     <>
       <div className="row rows-cols-1 row-cols-sm-1 row-cols-md-3 rows-cols-lg-3 g-3">
         <div className="col">
           <div className="card h-100 text-center">
-            <img src={images} className="card-img-rounded-circle" alt="..." />
+            <Image src={SucessImages} className="card-img-rounded-circle" alt="..." />
             <div className="card-body">
-              <p className="card-text">{text}</p>
+              <p className="card-text">{SucessText}</p>
               <h3 className={`card-title ${sucessCardsStyles.underlineColor}`}>
-                {title}
+                {SucessTitle}
               </h3>
-              <p className="card-text">{text}</p>
+              <p className="card-text">{SucessText}</p>
             </div>
           </div>
         </div>

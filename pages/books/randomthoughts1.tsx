@@ -16,7 +16,6 @@ export default function RandomThoughtsV1Page() {
       <div>
         <RandomThoughtsV1NavTitle />
       </div>
-
       <div>
         <Hero />
       </div>
@@ -163,6 +162,7 @@ export const Testimonials = () => {
     </>
   );
 };
+
 
 export const FeedbackFormSection = () => {
   return (

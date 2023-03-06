@@ -1,0 +1,147 @@
+.pryColor {
+  background-color: #000;
+}
+
+.secColor {
+  color: #00ffcd;
+}
+
+.secBgColor {
+  background-color: #00ffcd !important;
+}
+
+.BgColor {
+  background: #000 !important;
+}
+
+.ConsultingPageHeroBgg::before {
+  content: "";
+  position: absolute;
+  background-color: #2e3133;
+  height: 72vh;
+  width: 100%;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0;
+}
+
+.ConsultingPageHeroBg {
+  background: url(/images/ConsultingImgs/consultinghero.png);
+  background-size: cover;
+  position: relative;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  height: 72vh;
+  width: 100%;
+}
+
+.ConsultingPageHeroBg h2 {
+  position: relative;
+  line-height: 45px;
+}
+
+.ConsultingPageHeroBg h3 {
+  position: relative;
+  line-height: 35px;
+}
+
+@media only screen and (max-width: 990px) {
+  .ConsultingPageHeroBgg::before {
+    height: 33.5rem;
+  }
+  .ConsultingPageHeroBg::before {
+    height: 33.5rem;
+  }
+}
+@media only screen and (max-width: 765px) {
+  .ConsultingPageHeroBg {
+    height: 80vh;
+  }
+}
+.ConsultingHeaderText {
+  color: #00ffcd;
+  font-weight: 700;
+}
+
+.SubHeaderText {
+  color: #00ffcd;
+}
+
+.WhatOurClientsAskFor,
+.WhoWeHaveSolvedItFor {
+  background: #000000;
+  opacity: 0.95;
+}
+
+.ConsultingHero {
+  background-image: url(.././../public/images/ConsultingImgs/background.png);
+}
+.ConsultingHero h1 {
+  font-size: 3rem;
+}
+
+.desktopImage {
+  width: 40% !important;
+}
+
+.ConsultingHome {
+  background-size: cover;
+  height: 50vh;
+  margin-top: 230px;
+  margin-bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+.LineColor {
+  color: #00ffcd;
+  margin-left: 120px;
+}
+
+.LineColor3 {
+  color: #00ffcd;
+}
+
+.LineColor2 {
+  color: #00ffcd;
+  margin-left: 100px;
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+
+.justifyText {
+  text-align: justify;
+}
+
+.Underline {
+  width: 6rem;
+  background-color: #00ffcd;
+  height: 1px;
+  margin-left: 7.5rem;
+}
+
+.Card {
+  width: 25rem;
+  height: 30rem;
+}
+
+@media screen and (max-width: 991px) {
+  .ConsultingHeroBg h1 {
+    font-size: 2rem;
+  }
+  .Section {
+    margin-top: 0;
+  }
+  .bodyImage {
+    width: 19rem !important;
+    height: 12rem !important;
+  }
+  .Underline {
+    width: 11rem;
+  }
+}
+/*# sourceMappingURL=consulting.module.css.map */

@@ -1,10 +1,10 @@
 {
-  "sucesscards": [
-    {
-      "id": 1,
-      "images": "",
-      "title": "string",
-      "text": "string"
-    }
-  ]
+	"sucesscards": [
+		{
+			"id": 1,
+			"SucessImages": "",
+			"SucessTitle": "string",
+			"SucessText": "string"
+		}
+	]
 }

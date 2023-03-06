@@ -1,5 +1,5 @@
 import Image from "next/image";
-import okadaimg from "../../public/images/BooksImgs/Okada.png";
+import okadaimg from "../../public/images/BooksImgs/Okada.png"
 
 export const Amazon = () => {
   return (
@@ -66,7 +66,7 @@ export const Amazon = () => {
 
 export const OkadaBooks = () => {
   return (
-    <>
+    <> 
       <Image
         src={okadaimg}
         // src="../../images/BooksImgs/Okada.png"

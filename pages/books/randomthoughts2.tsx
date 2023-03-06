@@ -14,9 +14,8 @@ export default function RandomThoughtsV2Page() {
   return (
     <div>
       <div>
-        <RandomThoughtsV2NavTitle />
+        <RandomThoughtsV2NavTitle/>
       </div>
-
       <div>
         <Hero />
       </div>

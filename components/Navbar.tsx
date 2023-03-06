@@ -91,69 +91,67 @@ export const BookNavTitle = () => {
 };
 
 export const AbegWhoSendMeNavTitle = () => {
-  return (
-    <div className="container-fluid ">
-      <div className="row">
-        {title.AbegWhoSendMe.map((navbar) => {
-          return (
-            <div className="col-sm-12 col-md-12 col-lg-12 p-0 " key={navbar.id}>
-              <Navbar {...navbar}></Navbar>
-            </div>
-          );
-        })}
-      </div>
-    </div>
-  );
+	return (
+		<div className="container-fluid ">
+			<div className="row">
+				{title.AbegWhoSendMe.map((navbar) => {
+					return (
+						<div className="col-sm-12 col-md-12 col-lg-12 p-0 " key={navbar.id}>
+							<Navbar {...navbar}></Navbar>
+						</div>
+					);
+				})}
+			</div>
+		</div>
+	);
 };
 
 export const RandomThoughtsV1NavTitle = () => {
-  return (
-    <div className="container-fluid ">
-      <div className="row">
-        {title.RandomThoughtsV1.map((navbar) => {
-          return (
-            <div className="col-sm-12 col-md-12 col-lg-12 p-0 " key={navbar.id}>
-              <Navbar {...navbar}></Navbar>
-            </div>
-          );
-        })}
-      </div>
-    </div>
-  );
+	return (
+		<div className="container-fluid ">
+			<div className="row">
+				{title.RandomThoughtsV1.map((navbar) => {
+					return (
+						<div className="col-sm-12 col-md-12 col-lg-12 p-0 " key={navbar.id}>
+							<Navbar {...navbar}></Navbar>
+						</div>
+					);
+				})}
+			</div>
+		</div>
+	);
 };
 
 export const RandomThoughtsV2NavTitle = () => {
-  return (
-    <div className="container-fluid ">
-      <div className="row">
-        {title.RandomThoughtsV2.map((navbar) => {
-          return (
-            <div className="col-sm-12 col-md-12 col-lg-12 p-0 " key={navbar.id}>
-              <Navbar {...navbar}></Navbar>
-            </div>
-          );
-        })}
-      </div>
-    </div>
-  );
+	return (
+		<div className="container-fluid ">
+			<div className="row">
+				{title.RandomThoughtsV2.map((navbar) => {
+					return (
+						<div className="col-sm-12 col-md-12 col-lg-12 p-0 " key={navbar.id}>
+							<Navbar {...navbar}></Navbar>
+						</div>
+					);
+				})}
+			</div>
+		</div>
+	);
 };
-
 export const ThirdBookNavTitle = () => {
-  return (
-    <div className="container-fluid ">
-      <div className="row">
-        {title.ThirdBook.map((navbar) => {
-          return (
-            <div className="col-sm-12 col-md-12 col-lg-12 p-0 " key={navbar.id}>
-              <Navbar {...navbar}></Navbar>
-            </div>
-          );
-        })}
-      </div>
-    </div>
-  );
+	return (
+		<div className="container-fluid ">
+			<div className="row">
+				{title.ThirdBook.map((navbar) => {
+					return (
+						<div className="col-sm-12 col-md-12 col-lg-12 p-0 " key={navbar.id}>
+							<Navbar {...navbar}></Navbar>
+						</div>
+					);
+				})}
+			</div>
+		</div>
+	);
 };
-
 
 export const PodcastNavTitle = () => {
 	return (
