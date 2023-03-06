@@ -3,6 +3,7 @@ import Image from "next/image";
 import styles from "../../styles/componentstyles/books.module.scss";
 import Book4 from "../../public/images/BooksImgs/Book4.png";
 import Ini from "../../public/images/BooksImgs/ini.png";
+import { FeedbackForm } from "@/components/FeedbackForm";
 import { ThirdBookNavTitle } from "@/components/Navbar";
 import { ScrollUpIcon } from "@/components/icons.js/ScrollUpIcon";
 import { YouTubeIcon } from "@/components/icons.js/YoutubeIcon";
@@ -28,7 +29,7 @@ export default function ThirdBookPage() {
       </div>
 
       <div>
-        <FeedbackForm />
+        <FeedbackFormSection />
       </div>
 
       <div className="">
@@ -59,7 +60,7 @@ export const Hero = () => {
 export const OrderBookSection = () => {
   return (
     <>
-      <div className="container-fluid mt-3">
+      <div className="container-fluid mt-5 pt-3">
         <div className="d-flex align-items-center justify-content-center">
           <div className="col-sm-12 col-md-12 col-lg-12 mb-3 align-items-center justify-content-center">
             <Image
@@ -76,7 +77,7 @@ export const OrderBookSection = () => {
           <OrderBookIcons />
         </div>
 
-        <div className="container mt-3 text-center text-md-start text-lg-start ">
+        <div className="container mt-3 text-sm-start text-md-start text-lg-start">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Est maxime
             rerum consequuntur necessitatibus nostrum molestiae, non culpa nulla
@@ -110,7 +111,7 @@ export const OrderBookSection = () => {
 export const Testimonials = () => {
   return (
     <>
-      <div className="container-fluid mt-5">
+      <div className={`container-fluid mt-5 pb-4 pt-4 ${styles.lightBg}`}>
         <div className="container d-flex align-items-center justify-content-center">
           <div className="row align-items-center justify-content-center gx-md-5">
             <div className="col-sm-12 col-md-5 col-lg-5">
@@ -146,7 +147,6 @@ export const Testimonials = () => {
                   </div>
                 </div>
               </div>
-
               <PaginationIcons />
             </div>
           </div>
@@ -156,7 +156,7 @@ export const Testimonials = () => {
   );
 };
 
-export const FeedbackForm = () => {
+export const FeedbackFormSection = () => {
   return (
     <>
       <div className="mt-5">
@@ -166,41 +166,8 @@ export const FeedbackForm = () => {
               Feedback Form
             </h3>
             {/* Form */}
-            <form className="bg-white p-4 w-100">
-              <div className="form-floating mb-3">
-                <input
-                  type="name"
-                  className="form-control"
-                  id="floatingInputName"
-                  placeholder="Titi Ekundayo"
-                />
-                <label htmlFor="floatingName">Name</label>
-              </div>
-
-              <div className="form-floating mb-3">
-                <input
-                  type="email"
-                  className="form-control"
-                  id="floatingInput"
-                  placeholder="name@example.com"
-                />
-                <label htmlFor="floatingInput">Email address</label>
-              </div>
-
-              <div className="form-floating">
-                <textarea
-                  className={`form-control`}
-                  placeholder="Leave a message here"
-                  id="floatingTextarea"
-                  style={{ height: 200 }}
-                ></textarea>
-                <label htmlFor="floatingTextarea">Message</label>
-              </div>
-            </form>
-            <div className="text-center mt-3">
-              <button type="submit" className={`btn ${styles.btnbgcolor}`}>
-                Submit
-              </button>
+            <div className={`mx-auto ${styles.form}`}>
+              <FeedbackForm />
             </div>
           </div>
         </div>

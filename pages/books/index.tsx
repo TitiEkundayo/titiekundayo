@@ -74,7 +74,7 @@ export const Hero = () => {
               <Link
                 className={`nav-link active ${styles.herolink}`}
                 aria-current="page"
-                href=""
+                href="/books/abegwhosendpage"
               >
                 ABEGWHOSEND ME
               </Link>
@@ -82,7 +82,7 @@ export const Hero = () => {
               <Link
                 className={`nav-link active ${styles.herolink}`}
                 aria-current="page"
-                href=""
+                href="/books/randomthoughts1"
               >
                 RANDOM THOUGHTS VOL.1
               </Link>
@@ -90,7 +90,7 @@ export const Hero = () => {
               <Link
                 className={`nav-link active ${styles.herolink}`}
                 aria-current="page"
-                href=""
+                href="/books/randomthoughts2"
               >
                 RANDOM THOUGHTS VOL.2
               </Link>
@@ -119,7 +119,7 @@ export const Hero = () => {
 export const Books1 = () => {
   return (
     <>
-      <div className={`container-fluid mt-3`}>
+      <div className={`container-fluid mt-3 pt-3`}>
         <div className={`container d-flex align-items-center`}>
           {/* Book 1 Section */}
           <div className={`container`}>
@@ -134,7 +134,7 @@ export const Books1 = () => {
               <div className="col-lg-8 col-md-8 col-sm-12 d-flex mt-3">
                 <div className="col w-100">
                   <p
-                    className={`d-block text-center text-md-start text-lg-start ${styles.p}`}
+                    className={`d-block text-sm-start text-md-start text-lg-start ${styles.p}`}
                   >
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Ratione accusantium beatae libero nihil aut accusamus
@@ -173,7 +173,7 @@ export const Books1 = () => {
 export const Books2 = () => {
   return (
     <>
-      <div className={`container-fluid mt-3`}>
+      <div className={`container-fluid mt-3 pb-5 pt-3 ${styles.lightBg}`}>
         <div className={`container d-flex align-items-center`}>
           {/* Book 2 Section */}
           <div className={`container`}>
@@ -185,10 +185,10 @@ export const Books2 = () => {
                   alt=""
                 />
               </div>
-              <div className="col-lg-8 col-md-8 col-sm-12 d-flex mt-3 order-lg-first order-md-first order-xl-last">
-                <div className="col w-100">
+              <div className="col-lg-8 col-md-8 col-sm-12 d-flex mt-3 order-lg-first order-md-first order-xl-first">
+                <div className="col w-100 ms-xl-3">
                   <p
-                    className={`d-block text-center text-md-start text-lg-start ${styles.p}`}
+                    className={`d-block text-sm-start text-md-start text-lg-start ${styles.p}`}
                   >
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Ratione accusantium beatae libero nihil aut accusamus
@@ -241,7 +241,7 @@ export const Books3 = () => {
               <div className="col-lg-8 col-md-8 col-sm-12 d-flex mt-3">
                 <div className="col w-100">
                   <p
-                    className={`d-block text-center text-md-start text-lg-start ${styles.p}`}
+                    className={`d-block text-sm-start text-md-start text-lg-start ${styles.p}`}
                   >
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Ratione accusantium beatae libero nihil aut accusamus
@@ -291,10 +291,10 @@ export const Books4 = () => {
                   alt=""
                 />
               </div>
-              <div className="col-xl-8 col-lg-8 col-md-8 col-sm-12 d-flex mt-3 order-lg-first order-md-first order-xl-last">
-                <div className="col w-100">
+              <div className="col-xl-8 col-lg-8 col-md-8 col-sm-12 d-flex mt-3 order-lg-first order-md-first order-xl-first">
+                <div className="col w-100 ms-xl-3">
                   <p
-                    className={`d-block text-center text-md-start text-lg-start ${styles.p}`}
+                    className={`d-block text-sm-start text-md-start text-lg-start ${styles.p}`}
                   >
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Ratione accusantium beatae libero nihil aut accusamus

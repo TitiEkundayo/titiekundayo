@@ -9,7 +9,6 @@
 
 .HomePageHeroBg {
     background-color: #AAADB2;
-    
     background-size: cover;
     position: relative;
     height: auto;
@@ -20,8 +19,7 @@
     left: 0px;
 }
 
-.BookHeroBg {
-    
+.BookHeroBg { 
     background: url("/images/BooksImgs/otherbookheroimgdesktop.png");
     background-size: cover;
     position: relative;
@@ -105,4 +103,15 @@
     margin: auto;
     // fill: #ffffff;
 
+}
+
+.form{
+//    align-self: center;
+   max-width: 350px;
+   min-width: 200px;
+   height: auto;
+}
+
+.lightBg{
+    background: rgba(255, 255, 255, 0.05) !important;
 }

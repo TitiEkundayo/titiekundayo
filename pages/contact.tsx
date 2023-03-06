@@ -124,7 +124,7 @@ const ContactPageLayout = () => {
 		<>
 			{/* desktop */}
 			<div className="container mt-5 pt-3 d-none d-sm-none d-md-block">
-				<div className="row d-flex  ms-auto justify-content-center align-items-center">
+				<div className="row g-5 d-flex  ms-auto justify-content-center align-items-center">
 					<div className="col-md-5  ">
 						<GetInTouch/>
 					</div>

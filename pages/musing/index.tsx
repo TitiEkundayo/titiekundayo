@@ -47,7 +47,7 @@ const Blog = () => {
 		      </div>
 			
 				<div className="container mt-3">
-					<div className="row justify-content-center align-items-center">
+					<div className="row gx-md-5 justify-content-center align-items-center">
 						<div className="col-md-7 mt-2">
 							<main className="d-none d-md-block d-sm-none">
 								<Image
