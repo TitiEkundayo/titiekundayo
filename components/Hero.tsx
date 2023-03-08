@@ -15,7 +15,7 @@ export const ConsultingPageHero = () => {
         className={`container-fluid d-flex align-items-center ${consultingstyles.ConsultingPageHeroBg}`}
       >
         <div
-          className={`px-5 container-fluid d-flex ${consultingstyles.ConsultingPageHeroBgg}`}
+          className={`px-4 container-fluid d-flex ${consultingstyles.ConsultingPageHeroBgg}`}
         >
           <div className={`row align-items-center py-3`}>
             <div className={`col-lg-5 col-md-7 col-sm-12 pt-3`}>
@@ -78,68 +78,6 @@ export const LandingPageHero = () => {
         </div>
       </div>
     </>
-  );
-};
-
-export const LetterFromTiti = () => {
-  return (
-    <div
-      className={`container-fluid py-5 px-5 text-white ${styles.LandingPageBg}`}
-    >
-      <div className="row mx-5">
-        {" "}
-        <h4>Letter from Titi</h4>
-        <p>
-          <b>Dear All,</b>
-        </p>
-        <p>
-          Lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum
-          dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem
-          ipsum dolor lorem ipsum dolor lorem ipsum dolor Lorem ipsum dolor
-          lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum
-          dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem
-          ipsum dolor lorem ipsum dolor Lorem ipsum dolor lorem ipsum dolor
-          lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum
-          dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem
-          ipsum dolor Lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor
-          lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum
-          dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor Lorem
-          ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor
-          <p className={`my-3`}>
-            Lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum
-            dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem
-            ipsum dolor lorem ipsum dolor lorem ipsum dolor Lorem ipsum dolor
-            lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum
-            dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem
-            ipsum dolor lorem ipsum dolor Lorem ipsum dolor lorem ipsum dolor
-            lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum
-            dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem
-            ipsum dolor Lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor
-            lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum
-            dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor Lorem
-            ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor
-          </p>
-          <p className={`my-3`}>
-            Lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum
-            dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem
-            ipsum dolor lorem ipsum dolor lorem ipsum dolor Lorem ipsum dolor
-            lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum
-            dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem
-            ipsum dolor lorem ipsum dolor Lorem ipsum dolor lorem ipsum dolor
-            lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum
-            dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem
-            ipsum dolor Lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor
-            lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum
-            dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor Lorem
-            ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor
-          </p>
-        </p>
-        <p className={`my-3`}>
-          Thank you. <br />
-          Best Regards, <br /> Titilayo Ekundayo.
-        </p>
-      </div>{" "}
-    </div>
   );
 };
 
