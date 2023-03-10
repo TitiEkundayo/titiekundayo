@@ -4,7 +4,8 @@ import UnderConstruction1 from "./underconstruction1";
 import { TitiNavTitle } from "@/components/Navbar";
 import { MeettitipageHero } from "@/components/Hero";
 import meettiti1 from "../public/images/HomeImgs/meettiti1.png";
-import { BsFillCircleFill } from "react-icons/bs";
+import styles from "../styles/componentstyles/meetTitipage.module.scss";
+// import { BsFillCircleFill } from "react-icons/bs";
 
 const Meettiti = () => {
   return (
@@ -69,36 +70,25 @@ export const MeettitiBody = () => {
                     My Interest
                   </h5>
                 </div>
-                <div className="d-flex">
-                  <BsFillCircleFill
-                    className="mt-1"
-                    style={{ color: "#D9D9D9" }}
-                  />
+
+                {/* <div className="d-flex">
+                  <div>
+                    
+                  </div>
+                  z
+
                   <p className="mx-2 mb-5 pb-5" style={{ color: "white" }}>
                     Writing
                   </p>
-                  <BsFillCircleFill
-                    className="mt-1 ms-2"
-                    style={{ color: "#D9D9D9" }}
-                  />
+
                   <p className="mx-2 mb-5 pb-5" style={{ color: "white" }}>
                     Writing
                   </p>
-                  <BsFillCircleFill
-                    className="mt-1 ms-2"
-                    style={{ color: "#D9D9D9" }}
-                  />
+
                   <p className="mx-2 mb-5 pb-5" style={{ color: "white" }}>
                     Writing
                   </p>
-                  <BsFillCircleFill
-                    className="mt-1 ms-2"
-                    style={{ color: "#D9D9D9" }}
-                  />
-                  <p className="mx-2 mb-5 pb-5" style={{ color: "white" }}>
-                    Writing
-                  </p>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -135,7 +125,7 @@ export const MeettitiBody = () => {
                   </p>
                 </div>
                 <div className="col-sm-12 mb-5 mt-4 mx-5">
-                  <Image src={meettiti1.src} alt="/" />
+                  <Image src={meettiti1} alt="/" />
                 </div>
                 <div className="">
                   <h5
@@ -147,31 +137,31 @@ export const MeettitiBody = () => {
                 </div>
                 <div></div>
                 <div className="d-flex justify-content-center col-sm-12">
-                  <BsFillCircleFill
+                  {/* <BsFillCircleFill
                     className="mt-1"
                     style={{ color: "#D9D9D9" }}
-                  />
+                  /> */}
                   <p className="mx-2 mb-5 pb-5" style={{ color: "white" }}>
                     Writing
                   </p>
-                  <BsFillCircleFill
+                  {/* <BsFillCircleFill
                     className="mt-1 ms-2"
                     style={{ color: "#D9D9D9" }}
-                  />
+                  /> */}
                   <p className="mx-2 mb-5 pb-5" style={{ color: "white" }}>
                     Writing
                   </p>
-                  <BsFillCircleFill
+                  {/* <BsFillCircleFill
                     className="mt-1 ms-2"
                     style={{ color: "#D9D9D9" }}
-                  />
+                  /> */}
                   <p className="mx-2 mb-5 pb-5" style={{ color: "white" }}>
                     Writing
                   </p>
-                  <BsFillCircleFill
+                  {/* <BsFillCircleFill
                     className="mt-1 ms-2"
                     style={{ color: "#D9D9D9" }}
-                  />
+                  /> */}
                   <p className="mx-2 mb-5 pb-5" style={{ color: "white" }}>
                     Writing
                   </p>

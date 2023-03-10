@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useEffect } from "react";
-import { BsArrowUpCircleFill } from "react-icons/bs";
+// import { BsArrowUpCircleFill } from "react-icons/bs";
 
 export default function ScrollToTop() {
   const [isVisible, setIsVisible] = useState(false);
@@ -36,7 +36,7 @@ export default function ScrollToTop() {
         <div onClick={scrollToTop}>
           <div style={{ color: "#00FFCD", fontSize: "30px" }}>
             <div className="text-end mx-5 ">
-              <BsArrowUpCircleFill />
+              {/* <BsArrowUpCircleFill /> */}
             </div>
           </div>
         </div>
