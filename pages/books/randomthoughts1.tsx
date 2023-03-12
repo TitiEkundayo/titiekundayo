@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image"
+import Image from "next/image";
 import styles from "../../styles/componentstyles/books.module.scss";
 import Book2 from "../../public/images/BooksImgs/Book2.png";
 import Ini from "../../public/images/BooksImgs/ini.png";
@@ -14,14 +14,14 @@ export default function RandomThoughtsV1Page() {
   return (
     <div>
       <div>
-         <RandomThoughtsV1NavTitle/>
+        <RandomThoughtsV1NavTitle />
       </div>
       <div>
-        <Hero/>
+        <Hero />
       </div>
 
       <div>
-        <OrderBookSection/>
+        <OrderBookSection />
       </div>
 
       <div>
@@ -29,11 +29,11 @@ export default function RandomThoughtsV1Page() {
       </div>
 
       <div>
-        <FeedbackFormSection/>
+        <FeedbackFormSection />
       </div>
 
       <div className="">
-        <ScrollUpIcon/>
+        <ScrollUpIcon />
       </div>
     </div>
   );
@@ -74,7 +74,7 @@ export const OrderBookSection = () => {
           <p className={`text-center d-block ${styles.ordertext}`}>
             Order your book today
           </p>
-          <OrderBookIcons/>
+          <OrderBookIcons />
         </div>
 
         <div className="container mt-3 text-sm-start text-md-start text-lg-start">
@@ -118,17 +118,23 @@ export const Testimonials = () => {
               <div className="d-flex flex-column align-items-start mb-3">
                 <h3 className={`mb-0 ${styles.testimonials}`}>Testimonials</h3>
               </div>
-              <p>
+              <p className="d-block d-sm-block d-md-block d-lg-none">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+                eius pariatur tenetur dolor perferendis eveniet?
+              </p>
+              <p className="d-none d-sm-none d-md-none d-lg-block w-80 pe-3">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
                 eius pariatur tenetur dolor perferendis eveniet?
               </p>
             </div>
-            <div className="col-sm-12 col-md-7 col-lg-7 mt-3">
-            <div className={`${styles.secColor}`}>
+
+            <div className="col-sm-12 col-md-7 col-lg-5 mt-3">
               <div className="col">
-                <div className="card h-100 w-auto text-center">
-                  <div className="card-body">
-                    <p className="card-text text-dark text-start">
+                <div
+                  className={`card h-100 text-center ${styles.testimonialsCard}`}
+                >
+                  <div className={`card-body`}>
+                    <p className="card-text text-white text-start">
                       Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                       A ipsam autem possimus illo tenetur asperiores, eius nihil
                       eum quis numquam nisi, neque veniam ea ut!
@@ -140,11 +146,10 @@ export const Testimonials = () => {
                         className="rounded-circle me-3"
                         alt="..."
                       />
-                      <div className="text-start">
+                      <div className="text-start text-white">
                         <h5>NAME</h5>
-                        <p className="card-text text-dark">Lorem ipsum dolor</p>
+                        <p className="card-text">Lorem ipsum dolor</p>
                       </div>
-                    </div>
                     </div>
                   </div>
                 </div>
@@ -157,6 +162,7 @@ export const Testimonials = () => {
     </>
   );
 };
+
 
 export const FeedbackFormSection = () => {
   return (
