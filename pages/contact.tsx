@@ -73,6 +73,7 @@ const GetInTouch = () => {
 			<div className="mt-3">
 				<ThreeSocialMediaIcons/>
 			</div>
+			
 		</div>
 	);
 };

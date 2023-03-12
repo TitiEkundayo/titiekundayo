@@ -12,7 +12,7 @@ const Musing = () => {
 	return ( 
 		<div>
 			<div>
-				<MusingNavTitle />
+				<MusingNavTitle/>
 			</div>
 
 			{/*<div>

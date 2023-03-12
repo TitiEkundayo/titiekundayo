@@ -4,7 +4,7 @@ import SectionImgTwo from ".././../public/images/ConsultingImgs/consultingImage2
 import { CardMappingTwo } from "../../components/consultingComponents/cardTwo";
 import { ConsultNavTitle } from "@/components/Navbar";
 import MobileHeroImg from ".././../public/images/ConsultingImgs/MobileHeroImg.png";
-import DesktopHeroImg from ".././../public/images/HomeImgs/titi.png";
+//import DesktopHeroImg from ".././../public/images/HomeImgs/titi.png";
 //import { ScrollUpIcon } from "@/components/icons.js/ScrollUpIcon";
 const ConsultingReadMoreTwo = () => {
   return (
@@ -60,13 +60,13 @@ const ConsultingHero = () => {
               width={277}
               height={377}
             />
-            <Image
+            {/* <Image
               className="desktopImage d-none d-lg-block"
               src={DesktopHeroImg}
               alt=""
              width={1512}
              height={668}
-            />
+            /> */}
           </div>
         </div>
     </div>

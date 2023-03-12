@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "../styles/componentstyles/landingpage.module.scss";
 import consultingstyles from "../styles/componentstyles/consulting.module.scss";
-import titi from "../public/images/HomeImgs/titi.png";
+//import titi from "../public/images/HomeImgs/titi.png";
 // import styles from "../styles/generalstyles/colors.module.scss";
  
 const Hero = () => {
@@ -68,11 +68,11 @@ export const LandingPageHero = () => {
               <div className={`text-start mb-4`}></div>
             </div>
             <div className={`col-lg-5 col-md-5 col-sm-12`}>
-              <Image
+              {/* <Image
                 src={titi}
                 className="d-block mx-lg-auto img-fluid"
                 alt=""
-              />
+              /> */}
             </div>
           </div>
         </div>

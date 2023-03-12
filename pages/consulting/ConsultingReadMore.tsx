@@ -1,10 +1,10 @@
 import styles from ".././../styles/componentstyles/consulting.module.scss";
 import Image from "next/image";
-import SectionImg from ".././../public/images/ConsultingImgs/Image1.png";
+import SectionImg from "../../public/images/ConsultingImgs/Image1.png";
 import { CardMapping } from "../../components/consultingComponents/card";
 import { ConsultNavTitle } from "@/components/Navbar";
-import MobileHeroImg from ".././../public/images/ConsultingImgs/MobileHeroImg.png";
-import DesktopHeroImg from ".././../public/images/HomeImgs/titi.png";
+import MobileHeroImg from "../../public/images/ConsultingImgs/MobileHeroImg.png";
+//import DesktopHeroImg from "../../public/images/HomeImgs/titi.png";
 
 const ConsultingReadMore = () => {
   return (
@@ -35,13 +35,13 @@ const ConsultingReadMore = () => {
               width={277}
               height={377}
             />
-            <Image
+            {/* <Image
               className="desktopImage d-none d-lg-block"
               src={DesktopHeroImg}
               alt=""
               width={1512}
               height={668}
-            />
+            /> */}
           </div>
         </div>
       </div>

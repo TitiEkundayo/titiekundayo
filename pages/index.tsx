@@ -9,6 +9,7 @@ import { ArticleCard } from "@/components/ArticleCard";
 import styles from "../styles/pagesstyle/contactform.module.scss"
 // import Hero from "../components/Hero";
 
+
 export default function Home() {
   return (
     <>
