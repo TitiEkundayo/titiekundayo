@@ -45,7 +45,7 @@ const WhatOurClientsAskFor = () => {
     <div
       className={`container-fluid py-5 px-2 text-white bg-black ${consultingstyles.WhatOurClientsAskFor}`}
     >
-      <div className={`row mx-5 d-flex align-items-center`}>
+      <div className={`row mx-3 d-flex align-items-center`}>
         <div className={`col-lg-6 col-md-6 col-sm-12`}>
           <h3 className={`${consultingstyles.ConsultingHeaderText}`}>
             What most of our clients ask for
@@ -94,15 +94,15 @@ const WhatOurClientsAskFor = () => {
 };
 const HowDoWeSolveIt = () => {
   return (
-    <div className={`container-fluid py-5 px-2 bg-black`}>
+    <div className={`container-fluid py-5 px-lg-2  bg-black`}>
       <h3 className={`mb-5 ps-5 ${consultingstyles.ConsultingHeaderText}`}>
         How do we solve it
       </h3>
       <div
-        className={`row mx-5 d-flex align-items-center justify-content-center`}
+        className={`row mx-lg-5  d-flex align-items-center justify-content-center`}
       >
         <div
-          className={`col-lg-4 col-md-6 col-sm-10 px-4 d-flex justify-content-center align-items-stretch`}
+          className={`col-lg-4 col-md-6 col-sm-10 px-lg-4 d-flex justify-content-center align-items-stretch`}
         >
           {" "}
           <div className={`card mb-5 text-center`}>
@@ -168,7 +168,7 @@ const WhoWeHaveSolvedItFor = () => {
     <div
       className={`container-fluid py-5 px-2 text-white bg-black ${consultingstyles.WhoWeHaveSolvedItFor}`}
     >
-      <div className={`row mx-5 d-flex align-items-center`}>
+      <div className={`row mx-3 d-flex align-items-center`}>
         <div className={`col-lg-6 col-md-6 col-sm-12`}>
           <h3 className={`${consultingstyles.ConsultingHeaderText}`}>
             Who we have solved it for
@@ -237,7 +237,7 @@ const OurApproach = () => {
     <div className={`container-fluid py-5 px-2 bg-black text-white`}>
       {" "}
       <div
-        className={`row mx-5 d-flex align-items-center justify-content-center`}
+        className={`row mx-4 d-flex align-items-center justify-content-center`}
       >
         <div
           className={`col-lg-3 col-md-6 col-sm-10 px-4 d-flex justify-content-center align-items-stretch`}

@@ -1,3 +1,5 @@
+@use "../generalstyles/colors.module.scss" as *;
+
 .LandingPageHeroBgg::before {
   content: "";
   position: absolute;
@@ -48,4 +50,9 @@
 
 .LandingPageBg {
   background-color: #000;
+}
+.lineColor {
+  border-left: 2px solid #fff;
+  height: 80px;
+  // padding-bottom: 3px;
 }
