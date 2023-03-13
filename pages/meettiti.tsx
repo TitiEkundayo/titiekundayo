@@ -4,7 +4,6 @@ import UnderConstruction1 from "./underconstruction1";
 import { TitiNavTitle } from "@/components/Navbar";
 import { MeettitipageHero } from "@/components/Hero";
 import meettiti1 from "../public/images/HomeImgs/meettiti1.png";
-import styles from "../styles/componentstyles/meetTitipage.module.scss";
 // import { BsFillCircleFill } from "react-icons/bs";
 
 const Meettiti = () => {
@@ -70,25 +69,75 @@ export const MeettitiBody = () => {
                     My Interest
                   </h5>
                 </div>
+                <div className="d-flex">
+                  {/* <BsFillCircleFill
+                    className="mt-1"
+                    style={{ color: "#D9D9D9" }}
+                  /> */}
 
-                {/* <div className="d-flex">
-                  <div>
-                    
-                  </div>
-                  z
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="grey"
+                    className="bi bi-circle-fill mt-1 ms-2"
+                    viewBox="0 0 16 16">
+                    <circle cx="8" cy="8" r="8" />
+                  </svg>
 
                   <p className="mx-2 mb-5 pb-5" style={{ color: "white" }}>
                     Writing
                   </p>
-
+                  {/* <BsFillCircleFill
+                    className="mt-1 ms-2"
+                    style={{ color: "#D9D9D9" }}
+                  /> */}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="grey"
+                    className="bi bi-circle-fill mt-1 ms-2"
+                    viewBox="0 0 16 16">
+                    <circle cx="8" cy="8" r="8" />
+                  </svg>
                   <p className="mx-2 mb-5 pb-5" style={{ color: "white" }}>
                     Writing
                   </p>
-
+                  {/* <BsFillCircleFill
+                    className="mt-1 ms-2"
+                    style={{ color: "#D9D9D9" }}
+                  /> */}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="grey"
+                    className="bi bi-circle-fill mt-1 ms-2"
+                    viewBox="0 0 16 16">
+                    <circle cx="8" cy="8" r="8" />
+                  </svg>
                   <p className="mx-2 mb-5 pb-5" style={{ color: "white" }}>
                     Writing
                   </p>
-                </div> */}
+                  {/* <BsFillCircleFill
+                    className="mt-1 ms-2"
+                    style={{ col
+                      or: "#D9D9D9" }}
+                  /> */}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="grey"
+                    className="bi bi-circle-fill mt-1 ms-2"
+                    viewBox="0 0 16 16">
+                    <circle cx="8" cy="8" r="8" />
+                  </svg>
+                  <p className="mx-2 mb-5 pb-5" style={{ color: "white" }}>
+                    Writing
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -137,31 +186,51 @@ export const MeettitiBody = () => {
                 </div>
                 <div></div>
                 <div className="d-flex justify-content-center col-sm-12">
-                  {/* <BsFillCircleFill
-                    className="mt-1"
-                    style={{ color: "#D9D9D9" }}
-                  /> */}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="grey"
+                    className="bi bi-circle-fill mt-1 ms-2"
+                    viewBox="0 0 16 16">
+                    <circle cx="8" cy="8" r="8" />
+                  </svg>
                   <p className="mx-2 mb-5 pb-5" style={{ color: "white" }}>
                     Writing
                   </p>
-                  {/* <BsFillCircleFill
-                    className="mt-1 ms-2"
-                    style={{ color: "#D9D9D9" }}
-                  /> */}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="grey"
+                    className="bi bi-circle-fill mt-1 ms-2"
+                    viewBox="0 0 16 16">
+                    <circle cx="8" cy="8" r="8" />
+                  </svg>
                   <p className="mx-2 mb-5 pb-5" style={{ color: "white" }}>
                     Writing
                   </p>
-                  {/* <BsFillCircleFill
-                    className="mt-1 ms-2"
-                    style={{ color: "#D9D9D9" }}
-                  /> */}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="grey"
+                    className="bi bi-circle-fill mt-1 ms-2"
+                    viewBox="0 0 16 16">
+                    <circle cx="8" cy="8" r="8" />
+                  </svg>
                   <p className="mx-2 mb-5 pb-5" style={{ color: "white" }}>
                     Writing
                   </p>
-                  {/* <BsFillCircleFill
-                    className="mt-1 ms-2"
-                    style={{ color: "#D9D9D9" }}
-                  /> */}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="grey"
+                    className="bi bi-circle-fill mt-1 ms-2"
+                    viewBox="0 0 16 16">
+                    <circle cx="8" cy="8" r="8" />
+                  </svg>
                   <p className="mx-2 mb-5 pb-5" style={{ color: "white" }}>
                     Writing
                   </p>
