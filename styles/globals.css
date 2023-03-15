@@ -41,9 +41,10 @@ html:focus-within {
 
 /* Set core body defaults */
 body {
-  min-height: 100vh;
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
+	min-height: 100vh;
+	text-rendering: optimizeSpeed;
+	line-height: 1.5;
+	background-color: black !important;
 }
 
 /* A elements that don't have a class get default styles */
@@ -79,12 +80,28 @@ picture {
 /* color-scheme: light dark; */
 /* } */
 
+/* body{
+	background-color: black;
+} */
+
 h1,
 h2,
-h3 {
-  font-family: "Montserrat";
+h3,
+h5 {
+	font-family: "Montserrat" !important;
+	font-weight: bold !important;
+	letter-spacing: 2px;
 }
 
 p {
-  font-family: "Open Sans", sans-serif;
+	font-family: "Open Sans", sans-serif !important;
+	color: #ffffff !important;
+	/* font-weight: smaller !important; */
 }
+
+
+
+body{
+	background-color: black !important;
+}
+

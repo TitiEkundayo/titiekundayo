@@ -1,17 +1,13 @@
 .EnterpreneurHero {
-  width: auto;
-  height: auto;
-  background-image: url(../../public/images/HomeImgs/heroRectangle.png);
-  background-repeat: no-repeat;
-  background-position: center;
+  background-color: #aaadb2;
   background-size: cover;
   position: relative;
+  height: auto;
+  width: auto;
   top: 0px;
   right: 0px;
   bottom: 0px;
   left: 0px;
-  background-attachment: fixed;
-  // background-attachment: fixed;
 }
 
 @media only screen and (min-device-width: 427px) and (max-device-width: 763px) {
