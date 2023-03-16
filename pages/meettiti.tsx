@@ -2,7 +2,7 @@ import Image from "next/image";
 import Footer from "@/components/Footer";
 import UnderConstruction1 from "./underconstruction1";
 import { TitiNavTitle } from "@/components/Navbar";
-import { MeettitipageHero } from "@/components/Hero";
+//import { MeettitipageHero } from "@/components/Hero";
 import meettiti1 from "../public/images/HomeImgs/meettiti1.png";
 import styles from "../styles/generalstyles/colors.module.scss";
 
@@ -11,7 +11,7 @@ const Meettiti = () => {
     <div>
       <div>
         <TitiNavTitle />
-        <MeettitipageHero />
+        {/* <MeettitipageHero /> */}
       </div>
 
       {/* <div>
