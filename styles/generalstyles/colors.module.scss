@@ -3,17 +3,20 @@ $secColor: #00ffcd;
 $textColor: #fff;
 
 .pryColor {
-	background-color: $pryColor;
+  background-color: $pryColor;
 }
 
 .secColor {
-	color: $secColor;
+  color: $secColor;
+}
+.textColor {
+  color: $textColor;
 }
 
 .secBgColor {
-	background-color: $secColor !important;
+  background-color: $secColor !important;
 }
 
 .BgColor {
-	background: $pryColor !important;
+  background: $pryColor !important;
 }

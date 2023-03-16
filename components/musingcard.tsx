@@ -24,7 +24,7 @@ export const MusingCard = (props:Product) => {
          <Image src={MusingImage} className="card-img-top"
            width={307.8} height="329" alt="..."
          />
-          <div className="card-body text-wrap">
+          <div className="card-body text-wrap text-start">
             <h5 className="card-title mt-4">{MusingTitle}</h5>
             <p className="card-text mt-3">{Bodytext}</p>
             <Link

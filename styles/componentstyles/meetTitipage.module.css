@@ -3,20 +3,17 @@
     width: 25rem;
   }
 }
-
 @media only screen and (min-device-width: 223px) and (max-device-width: 420px) {
   .MeetTitiHero {
     width: 19rem;
   }
 }
-
 @media only screen and (min-device-width: 1008px) and (max-device-width: 1876px) {
   .MeetTitiHerotext {
     padding-top: 45px;
     margin-top: 45px;
   }
 }
-
 .circle {
   display: flex;
   width: 10px;
@@ -24,3 +21,4 @@
   background-color: grey;
   border-radius: 50%;
 }
+/*# sourceMappingURL=meetTitipage.module.css.map */
