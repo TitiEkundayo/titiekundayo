@@ -210,28 +210,28 @@ export const EnterpreneurpageHero = () => {
     </div>
   );
 };
-// export const MeettitipageHero = () => {
-//   return (
-//     <main>
-//       <div className="container">
-//         <div className="row">
-//             <div className={`col-lg-6 col-md-6 col-sm-12 mt-5 pt-5`}>
-//               <p className={`${MeetTiti.MeetTitiHerotext}`}>Hello,</p>
-//               <h1 className={`${color.textColor}`}>I'm Titilayo</h1>
-//               <p>
-//                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
-//                 Repellendus animi, ratione quam et atque soluta explicabo facere
-//                 aperiam.
-//               </p>
-//            </div>
-//           <div
-//             className={`col-lg-6 col-md-6 col-sm-12 mt-5 mb-5 ${MeetTiti.MeetTitiHero}`}>
-//             <Image src={meettitiheropics} alt={""} />
-//           </div>
-//         </div>
-//       </div>
-//     </main>
-//   );
-// };
+export const MeettitipageHero = () => {
+  return (
+    <main>
+      <div className="container">
+        <div className="row">
+            <div className={`col-lg-6 col-md-6 col-sm-12 mt-5 pt-5`}>
+              <p className={`${MeetTiti.MeetTitiHerotext}`}>Hello,</p>
+              <h1 className={`${color.textColor}`}> I m Titilayo</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repellendus animi, ratione quam et atque soluta explicabo facere
+                aperiam.
+              </p>
+           </div>
+          <div
+            className={`col-lg-6 col-md-6 col-sm-12 mt-5 mb-5 ${MeetTiti.MeetTitiHero}`}>
+            <Image src={meettitiheropics} alt={""} />
+          </div>
+        </div>
+      </div>
+    </main>
+  );
+};
 
 export default Hero;
