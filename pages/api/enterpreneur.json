@@ -1,0 +1,28 @@
+{
+  "enterpreneurshipjson": [
+    {
+      "id": 1,
+      "images": "/images/HomeImgs/Enterpreneuepic.png",
+      "heading": "RGETYUEDS",
+      "body": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et numquam minima amet delectus velit optio adipisci labore quam consectetur. Assumenda praesentium aspernatur voluptatum, debitis eos pariatur. Beatae mollitia autem exercitationem?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et numquam minima amet delectus velit optio adipisci labore quam consectetur. Assumenda praesentium aspernatur voluptatum, debitis eos pariatur. Beatae mollitia autem exercitationem?"
+    },
+    {
+      "id": 2,
+      "images": "/images/HomeImgs/Enterpreneuepic.png",
+      "heading": "RGETYUEDS",
+      "body": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et numquam minima amet delectus velit optio adipisci labore quam consectetur. Assumenda praesentium aspernatur voluptatum, debitis eos pariatur. Beatae mollitia autem exercitationem?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et numquam minima amet delectus velit optio adipisci labore quam consectetur. Assumenda praesentium aspernatur voluptatum, debitis eos pariatur. Beatae mollitia autem exercitationem?"
+    },
+    {
+      "id": 3,
+      "images": "/images/HomeImgs/Enterpreneuepic.png",
+      "heading": "ABCCOW",
+      "body": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et numquam minima amet delectus velit optio adipisci labore quam consectetur. Assumenda praesentium aspernatur voluptatum, debitis eos pariatur. Beatae mollitia autem exercitationem?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et numquam minima amet delectus velit optio adipisci labore quam consectetur. Assumenda praesentium aspernatur voluptatum, debitis eos pariatur. Beatae mollitia autem exercitationem?"
+    },
+    {
+      "id": 4,
+      "images": "/images/HomeImgs/Enterpreneuepic.png",
+      "heading": "FRESHCOW",
+      "body": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et numquam minima amet delectus velit optio adipisci labore quam consectetur. Assumenda praesentium aspernatur voluptatum, debitis eos pariatur. Beatae mollitia autem exercitationem?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et numquam minima amet delectus velit optio adipisci labore quam consectetur. Assumenda praesentium aspernatur voluptatum, debitis eos pariatur. Beatae mollitia autem exercitationem?"
+    }
+  ]
+}

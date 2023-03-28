@@ -1,0 +1,8 @@
+@use "../generalstyles/colors.module.scss" as *;
+
+.underlineColor {
+	border-top: 2px solid $secColor;
+	// padding-bottom: 3px;
+}
+
+$card-height: 100%
