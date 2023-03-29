@@ -37,7 +37,7 @@ const Blog = () => {
 	return (
 		<div className={"container mt-5 p-3"}>
 			  {/* Destop view */}
-			  <div className="d-none d-md-block d-sm-none">
+			  <div className="d-none d-md-block d-sm-none text-start">
 					<p className="fs-7 fw-lighter">
 						16 October, 2022
 					</p>
@@ -46,7 +46,7 @@ const Blog = () => {
 					</h2>
 		      </div>
 			
-				<div className="container mt-3">
+				<div className="mt-3">
 					<div className="row gx-md-5 justify-content-center align-items-center">
 						<div className="col-md-7 mt-2">
 							<main className="d-none d-md-block d-sm-none">
@@ -56,7 +56,7 @@ const Blog = () => {
 									alt=""
 								/>
 							</main>
-						  {/*mobile*/}
+						  {/*mobile view starts here*/}
 						 <div className="d-md-none d-sm-block">
 								<div className="">
 									<p className="fs-7 fw-lighter">
@@ -80,12 +80,13 @@ const Blog = () => {
 										alt=""
 									/>
 								</main>
-					      </div>
+						</div>
                      </div>
+					 {/* mobile view ends here */}
 			
-						<div className="col-md-5 col-sm-12 mt-3">
+						<div className="col-md-5 col-sm-12 flex-start">
 							<div className="d-none d-md-block d-sm-none">
-								<h3 className="fw-bolder"> Blog One</h3>
+								<h3 className="fw-bolder"> Blog One </h3>
 								<p className="text-start"> Lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor
 									lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor
 									lorem ipsum dolor lorem ipsum dolor

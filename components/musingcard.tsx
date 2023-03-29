@@ -1,3 +1,4 @@
+import { link } from "fs";
 import Image from "next/image";
 import Link from "next/link";
 import Card from "../pages/api/musingcard.json";
@@ -11,10 +12,11 @@ interface Product {
   Bodytext: string;
   MusingLink: string;
   id: number;
+  Links: string;
 }
 
 export const MusingCard = (props:Product) => {
-  const { MusingImage, MusingTitle, Bodytext, MusingLink, id } = props;
+  const { MusingImage, MusingTitle, Bodytext, MusingLink, Links, id } = props;
   return (
     <>
       
@@ -22,14 +24,14 @@ export const MusingCard = (props:Product) => {
          <Image src={MusingImage} className="card-img-top"
            width={307.8} height="329" alt="..."
          />
-          <div className="card-body text-wrap">
+          <div className="card-body text-wrap text-start">
             <h5 className="card-title mt-4">{MusingTitle}</h5>
             <p className="card-text mt-3">{Bodytext}</p>
-          <Link
-              href="/musing/musingreadmore"
+            <Link
+              href={Links}
               className={`mt-3 text-decoration-none ${styles.secColor}`}>
               {MusingLink}
-          </Link>
+            </Link>
           </div>
       </div> 
     </>

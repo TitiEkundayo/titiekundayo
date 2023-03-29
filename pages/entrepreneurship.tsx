@@ -18,7 +18,7 @@ const Entrepreneurship = () => {
           </div> */}
 
         <div>
-          <EnterpreneurpageHero />
+          <EnterpreneurpageHero  />
         </div>
 
         <div>

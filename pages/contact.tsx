@@ -57,7 +57,7 @@ const Contact = () => {
 
 const GetInTouch = () => {
 	return (
-		<div className="text-white text-center text-md-start p-3">
+		<div className="text-white text-center w-100">
 			<div className=" ">
 				<h3>Get In Touch</h3>
 				<p>
@@ -124,35 +124,34 @@ const ContactPageLayout = () => {
 	return (
 		<>
 			{/* desktop */}
-			<div className="container mt-5 pt-3 d-none d-sm-none d-md-block">
-				<div className="row g-5 d-flex  ms-auto justify-content-center align-items-center">
-					<div className="col-md-5  ">
+			<div className="container mt-5 pt-3 mb-5">
+				<div className="row d-flex justify-content-center align-items-center">
+					<div className="col-md-5">
 						<GetInTouch/>
 					</div>
 
 					<div className="col-md-7">
-						<div className="container">
-							<div className="me-auto">
-							   <div className="w-50">
+						<div className={`px-md-5 ms-lg-5 d-flex justify-content-center align-items-center`}>
+							
 								<ContactForm/>
-								</div>
-							</div>
+							
+							
 						</div>
 					</div>
 				</div>
 			</div>
 
-			{/* mobile */}
+			{/* mobile
 			<div className="container d-md-none d-sm-block mt-5 pt-3">
 				<div className="justify-content-center align-items-center">
 					<div className="">
 						<GetInTouch/>
 					</div>
-					<div className=" ">
+					<div className="px-5">
 						<ContactForm/>
 					</div>
 				</div>
-			</div>
+			</div> */}
 		</>
 	);
 };
