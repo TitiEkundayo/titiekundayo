@@ -45,7 +45,7 @@ const Enterpreneuerbody = (props: ITestimonial) => {
   const { images, heading, body } = props;
   return (
     <>
-      <main className="d-flex d-none d-sm-none d-md-block">
+      <main className="d-flex d-none d-sm-none d-md-none d-lg-block">
         <div className="container mt-5 pt-5">
           <div className="row">
             <div className="col-lg-3 col-md-4 col-sm-12 col-xs-12 mb-5">
@@ -76,7 +76,7 @@ const Enterpreneuerbody = (props: ITestimonial) => {
         </div>
       </main>
       {/* mobile section */}
-      <div className="container d-md-none d-lg-none d-sm-block mt-5 justify-content-evenly">
+      <div className="container d-md-block d-lg-none d-sm-block mt-5 justify-content-evenly">
         <div className="row">
           <div className="col-sm-12">
             <h5 className="text-white">{heading}</h5>
@@ -89,11 +89,11 @@ const Enterpreneuerbody = (props: ITestimonial) => {
             </p>
 
             <Image
-              className="col-sm-12"
+              className="col-sm-12 block mx-auto"
               src={images}
               alt="/"
-              width={170}
-              height={170}
+              width={300}
+              height={310}
             />
           </div>
         </div>
