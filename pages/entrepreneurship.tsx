@@ -33,7 +33,6 @@ export default Entrepreneurship;
 
 import styles from "../styles/componentstyles/enterpreneurpage.module.scss";
 import enterpreneur from "../pages/api/enterpreneur.json";
-// import  Type  from "typescript"
 
 interface ITestimonial {
   images: string;
@@ -75,6 +74,7 @@ const Enterpreneuerbody = (props: ITestimonial) => {
           </div>
         </div>
       </main>
+
       {/* mobile section */}
       <div className="container d-md-block d-lg-none d-sm-block mt-5 justify-content-evenly">
         <div className="row">
