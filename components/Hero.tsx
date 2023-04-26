@@ -216,8 +216,9 @@ export const MeettitipageHero = () => {
       <div className="container">
         <div className="row">
             <div className={`col-lg-6 col-md-6 col-sm-12 mt-5 pt-5`}>
-              <p className={`${MeetTiti.MeetTitiHerotext}`}>Hello,</p>
-              <h1 className={`${color.textColor}`}> I m Titilayo</h1>
+              <p className={`${MeetTiti.MeetTitiHerotext} mt-1 fw-bold fs-4`}>Hello,</p>
+              {/* <h1 className={`${color.textColor}`}> I am Titilayo</h1> */}
+               <p className=" mt-1 fw-bold fs-1 "> I am Titilayo</p>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Repellendus animi, ratione quam et atque soluta explicabo facere
@@ -225,9 +226,22 @@ export const MeettitipageHero = () => {
               </p>
            </div>
           <div
-            className={`col-lg-6 col-md-6 col-sm-12 mt-5 mb-5 ${MeetTiti.MeetTitiHero}`}>
-            <Image src={meettitiheropics} alt={""} />
+            className={`col-lg-6 col-md-6 col-sm-12 col-sm-12 img-fluid mt-5 mb-5 mx-auto ${MeetTiti.MeetTitiHero}`}>
+            {/* className= "col-lg-6 col-md-6 col-sm-12 d-none d-md-block d-sm-none img-fluid mt-5 mb-5 mx-auto" > */}
+            <Image src={meettitiheropics}
+              width={516} 
+              height={517}
+              alt={""}
+            />
           </div>
+          {/* <div   
+            //mobial view
+            className= "col-sm-12 mt-5 mb-5 mx-auto img-fluid" >
+            <Image src={meettitiheropics}
+              width={235} 
+              height={311}
+              alt={""} />
+          </div> */}
         </div>
       </div>
     </main>

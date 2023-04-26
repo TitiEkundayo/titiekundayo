@@ -36,8 +36,11 @@ export const MeettitiBody = () => {
       <main className="d-none d-lg-block d-md-block">
         <div className="container">
           <div className="row">
-            <div className={`col-lg-6 col-md-6 mb-5 mt-5`}>
-              <Image src={meettiti1} alt="/" />
+            <div className={"col-lg-6 col-md-6 img-fluid mb-5 mt-5"}>
+              <Image src={meettiti1}
+                width={ 419}
+                height={529}
+                alt="/" />
             </div>
             <div className="col-lg-6 col-md-6 mt-5 pt-2">
               <div className="mt-5 pt-3">
@@ -123,7 +126,7 @@ export const MeettitiBody = () => {
                 <h5 className={`${styles.secColor}`}>My Intro</h5>
                 <div>
                   <h1 className={`mt-4 ${styles.textColor}`}>About Me</h1>
-                  <p className={`${styles.secColor}`}>
+                  <p className={`${styles.secColor} mt-4`}>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
                     eligendi, possimus sit eos nam deserunt beatae atque illo
                     voluptatum, voluptatibus nihil. Molestias assumenda cum
@@ -134,8 +137,12 @@ export const MeettitiBody = () => {
                     sint cum vero totam laudantium. Id.
                   </p>
                 </div>
-                <div className="col-sm-12 mb-5 mt-4 mx-5">
-                  <Image src={meettiti1} alt="/" />
+                <div className="col-sm-12 mb-5 mt-5">
+                  <Image src={meettiti1}
+                    className=" mx-auto d-block img-fluid"
+                    width={225}
+                    height={310}
+                    alt="/" />
                 </div>
                 <div className="">
                   <h5 className={`${styles.secColor}`}>My Interest</h5>
