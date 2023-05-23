@@ -11,7 +11,7 @@ export default function UnderConstruction1() {
 	const [seconds, setSeconds] = useState(0);
 
 	useEffect(() => {
-		const target = new Date("05/10/2023 23:59:59");
+		const target = new Date("07/10/2023 23:59:59");
 		const interval = setInterval(() => {
 			const now = new Date();
 			const timeDifference = target.getTime() - now.getTime();
