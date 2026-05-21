@@ -76,7 +76,7 @@ const Footer = () => {
 						Subscribe to Newsletter
 					</p>
 				</div>
-				<div className="mb-5">
+				<div className=" d-flex flex-column align-items-center mb-5">
 					<SocialMediaIcons />
 				</div>
 				<div className="mt-4 text-center">

@@ -1,0 +1,124 @@
+@use "../generalstyles/colors.module.scss" as *;
+
+.underlineColor {
+	border-bottom: 2px solid $secColor;
+	// padding-bottom: 3px;
+}
+
+
+
+.HomePageHeroBg {
+    background-color: #AAADB2;
+    background-size: cover;
+    position: relative;
+    height: auto;
+    width: auto;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+
+.BookHeroBg { 
+    background: url("/images/BooksImgs/otherbookheroimgdesktop.png");
+    background-size: cover;
+    position: relative;
+    height: 50vh;
+    width: auto;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+
+
+
+.p {
+    // position: relative;
+    // line-height: 10px;
+    color: #ffffff;
+    // color: #000000;
+    font-weight: normal;
+}
+
+.img {
+    width: auto;
+    height: auto;
+}
+
+.booklink{
+    display: flex;
+    position: relative;
+    color: #00ffcd;
+    font-size: small;
+    font-weight: 500;
+    // text-decoration: underline;
+}
+
+.ordertext{
+    color: #00ffcd !important;
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+.testimonials{
+    color: #00ffcd;
+    border-bottom: 2px solid #00ffcd;
+
+}
+
+.feedbackform{
+    color: #00ffcd;
+
+}
+
+// .cardbgcolor{
+//    background-color: #00FFCD;
+// }
+
+// .cardunderlinecolor{
+//   border-bottom: 2px solid #ffffff;
+// }
+
+.btnbgcolor{
+    color: #000000;
+    background-color: #00ffcd;
+    font-weight: 700;
+
+}
+
+.herolink{
+    display: flex;
+    position: relative;
+    color: #000000;
+    font-size: small;
+    text-decoration: underline;
+	font-weight: normal;
+
+}
+
+.youtubeicon {
+    color: red;
+    display: block;
+    margin: auto;
+    // fill: #ffffff;
+
+}
+
+.form{
+//    align-self: center;
+   max-width: 350px;
+   min-width: 200px;
+   height: auto;
+}
+
+.lightBg{
+    background: rgba(255, 255, 255, 0.05) !important;
+}
+
+
+.testimonialsCard{
+    background: rgba(0, 255, 205, 0.1);
+    max-width: 400px;
+    min-width: 200px;
+}
