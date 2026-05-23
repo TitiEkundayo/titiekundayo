@@ -1,332 +1,407 @@
 import Link from "next/link";
 import Image from "next/image";
+import { useState } from "react";
 import styles from "../../styles/componentstyles/books.module.scss";
-import HomePageHeroImgMobile from "../../public/images/BooksImgs/homepageheroimgmobile.png";
-import HomePageHeroImgDesktop from "../../public/images/BooksImgs/homepageheroimgdesktop.png";
 import { BookNavTitle } from "@/components/Navbar";
-import Book1 from "../../public/images/BooksImgs/Book1.png";
-import Book2 from "../../public/images/BooksImgs/Book2.png";
-import Book3 from "../../public/images/BooksImgs/Book3.png";
-import Book4 from "../../public/images/BooksImgs/Book4.png";
+import Book1 from "../../public/images/BooksImgs/WMEDSFL Mockup.png";
+import Book2 from "../../public/images/BooksImgs/TOAM Mockup.png";
+import titi from "../../public/images/BooksImgs/author-titi_2.jpeg";
+import HomePageHeroImgDesktop from "../../public/images/BooksImgs/homepageheroimgdesktop.png";
+import HomePageHeroImgMobile from "../../public/images/BooksImgs/homepageheroimgmobile.png";
 import { ScrollUpIcon } from "@/components/icons.js/ScrollUpIcon";
-import UnderConstruction1 from "../underconstruction1";
-// import Footer from "@/components/Footer";
 
+/* ─── Data ──────────────────────────────────────────────────── */
+const booksData = [
+  {
+    key: "b1",
+    src: Book1,
+    title: "Wetin My Eyes Don See For Lagos",
+    year: "2026",
+    description:
+      "An extraordinary anthology that captures the essence, energy, and soul of Lagos through the eyes of 22 talented writers.",
+  },
+  {
+    key: "b2",
+    src: Book2,
+    title: "Threads of a Mind",
+    year: "2026",
+    description:
+      "A captivating exploration of consciousness, identity, and the intricate connections that weave through our thoughts and experiences. This debut work established Titi as one of Nigeria's most compelling new voices.",
+  },
+];
+
+const GET_BOOK_URL =
+  "https://docs.google.com/forms/d/e/1FAIpQLSddijfqcoguOfqv5-QiE-jH4-g3LUnRrAA_qkp6Lo5NhK17iQ/viewform?usp=sharing&ouid=112731816547039664331";
+
+const reviews = [
+  {
+    id: 1,
+    name: "Samuel Afolayan",
+    // book: "Wetin My Eyes Don See For Lagos",
+    rating: 5,
+    review:
+      "An absolute must-read. Titi has a rare gift for making the complex feel intimate and the personal feel universal.",
+  },
+  {
+    id: 2,
+    name: "Daniel Chukwuji",
+    // book: "Threads of a Mind",
+    rating: 5,
+    review:
+      "Reading this book felt like sitting down for a long lunch with an old friend. Well grounded, with so many actionable thoughts wrapped in relatable stories.",
+  },
+  {
+    id: 3,
+    name: "Peter Yohanna Gwafan",
+    // book: "Threads of a Mind",
+    rating: 4,
+    review:
+      "Every page carries a meaningful lesson, and what makes them stand out is how practical they are and how easily they apply to our daily lives.",
+  },
+  {
+    id: 4,
+    name: "Pelumi Okunronmu",
+    // book: "Threads of a Mind",
+    rating: 4,
+    review:
+      "Threads of a Mind was a delight to read. Relatable stories carrying valuable lessons. A great book to lose yourself in when you need to take a break.",
+  },
+  {
+    id: 5,
+    name: "Engr. Odiase",
+    // book: "Threads of a Mind",
+    rating: 5,
+    review:
+      "It is a beautiful thing and a rare privilege to have someone close write a book. Threads of a mind is an exceptionally articulated collection, full of wise nuggets that anyone can relate to.",
+  },
+  {
+    id: 6,
+    name: "Bwejuah Jojo Bibinu",
+    // book: "Threads of a Mind",
+    rating: 5,
+    review:
+      '"THREADS OF A MIND" By Titi Ekundayo is a motivational masterpiece that is all about pushing you to chase your dreams and believe that you can make it.',
+  },
+  {
+    id: 7,
+    name: "Joseph Osifeso",
+    // book: "Threads of a Mind",
+    rating: 4,
+    review:
+      'Reading "Threads of a Mind" was like journeying with Titi in her adventures. She perfectly exemplified the impact and importance of having goals and with her writing and the creation of this book, she showed the impact of being consistent.',
+  },
+];
+
+/* ─── Helpers ───────────────────────────────────────────────── */
+// const Stars = ({ count }) => (
+//   <span className={styles.stars}>
+//     {Array.from({ length: 5 }).map((_, i) => (
+//       <span key={i} className={i < count ? styles.starFilled : styles.starEmpty}>
+//         ★
+//       </span>
+//     ))}
+//   </span>
+// );
+
+// const getInitials = (name) =>
+//   name
+//     .split(" ")
+//     .slice(0, 2)
+//     .map((w) => w[0])
+//     .join("")
+//     .toUpperCase();
+
+/* ─── Page root ─────────────────────────────────────────────── */
 export const Books = () => {
   return (
-    <div className={``}>
-      <div>
-        <BookNavTitle />
-      </div>
-
-      <div>
-        <Hero />
-      </div>
-
-      <div>
-        <Books1 />
-      </div>
-
-      <div>
-        <Books2 />
-      </div>
-
-      <div>
-        <Books3 />
-      </div>
-
-      <div>
-        <Books4 />
-      </div>
-
-      <div className="">
-        <ScrollUpIcon />
-      </div>
-
-
-      {/* <div className="bg-dark mt-5 pt-5">
-        <Footer />
-      </div> */}
+    <div className={styles.pageRoot}>
+      <BookNavTitle />
+      <HeroSection />
+      <BooksSection />
+      <ReviewsSection />
+      <ContactSection />
+      <ScrollUpIcon />
     </div>
   );
 };
 
-export const Hero = () => {
+/* ─── 1. HERO ────────────────────────────────────────────────── */
+export const HeroSection = () => {
   return (
-    <>
-      <div
-        className={`container-fluid d-flex align-items-center ${styles.HomePageHeroBg}`}
-      >
-        <div className={`container-fluid d-flex`}>
-          <div className="row align-items-center justify-content-center d-flex">
-            <div className="col-lg-6 col-md-6 col-sm-6">
-              <br />
-              <h2
-                className={`d-none d-lg-block d-md-block d-sm-none d-xs-none ${styles.HeroHeading}`}
-              >
-                Books
-              </h2>
+    <section className={styles.heroBand}>
+      <div className={styles.heroInner}>
+        {/* Left */}
+        <div className={styles.heroLeft}>
+          <p className={styles.eyebrow}>Author &amp; Storyteller</p>
+          <h1 className={styles.heroName}>
+            Titilayo
+            <br />
+            Ekundayo
+          </h1>
 
-              <h3 className="d-xs-block d-sm-block d-md-none d-lg-none">
-                Books
-              </h3>
+          <div className={styles.heroStats}>
+            <span>{booksData.length} Books</span>
+            <span className={styles.statDivider}>·</span>
+            <span>{reviews.length} Reviews</span>
+            <span className={styles.statDivider}>·</span>
+            <span>3 Photos</span>
+          </div>
 
-              <Link
-                className={`nav-link active ${styles.herolink}`}
-                aria-current="page"
-                href="/books/abegwhosendpage"
-              >
-                ABEGWHOSEND ME
-              </Link>
+          <p className={styles.heroBio}>
+            Titilayo Ekundayo operates at the confluence of strategy, business
+            development, and long term value creation. For over a decade, she
+            has built, led, and supported organizations within Africa's startup
+            and innovation ecosystem, navigating growth, uncertainty, and
+            transformation with discipline and intent. Her work spans
+            entrepreneurship, operations, and organizational development,
+            shaped by a deep respect for process and the big picture.
+          </p>
+          <p className={styles.heroBio}>
+            She believes deeply in the creative and transformative power of
+            words and in the idea that every voice, no matter how small, can
+            add light to the vast body of human knowledge. And so she writes,
+            hoping to leave the world a little fuller, a little wiser, and a
+            little more alive.
+          </p>
 
-              <Link
-                className={`nav-link active ${styles.herolink}`}
-                aria-current="page"
-                href="/books/randomthoughts1"
-              >
-                RANDOM THOUGHTS VOL.1
-              </Link>
+          <a
+            href={GET_BOOK_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.heroCta}
+          >
+            Get My Book
+          </a>
+        </div>
 
-              <Link
-                className={`nav-link active ${styles.herolink}`}
-                aria-current="page"
-                href="/books/randomthoughts2"
-              >
-                RANDOM THOUGHTS VOL.2
-              </Link>
-            </div>
-            <div className="col-lg-6 col-md-6 col-sm-6">
-              <Image
-                className={`img-fluid
-                 mx-lg-auto d-xs-block d-sm-block d-md-none d-lg-none ms-5`}
-                src={HomePageHeroImgMobile}
-                alt=""
-              />
-              <Image
-                className={`img-fluid d-none
-                 mx-lg-auto d-lg-block d-md-block d-sm-none d-xs-none`}
-                src={HomePageHeroImgDesktop}
-                alt=""
-              />
-            </div>
+        {/* Right — photo */}
+        <div className={styles.heroRight}>
+          <div className={styles.heroPhotoWrap}>
+            <Image
+              src={titi}
+              alt="Titilayo Ekundayo"
+              fill
+              style={{ objectFit: "cover" }}
+              priority
+            />
           </div>
         </div>
       </div>
-    </>
+    </section>
   );
 };
 
-export const Books1 = () => {
+/* ─── 2. BOOKS ───────────────────────────────────────────────── */
+export const BooksSection = () => {
+  const [active, setActive] = useState(0);
+  const book = booksData[active];
+
   return (
-    <>
-      <div className={`container-fluid mt-3 pt-3`}>
-        <div className={`container d-flex align-items-center`}>
-          {/* Book 1 Section */}
-          <div className={`container`}>
-            <div className="row align-items-center justify-content-center gx-md-5">
-              <div className="col-lg-4 col-md-4 col-sm-12 mt-4">
+    <section className={styles.booksBand}>
+      <div className={styles.booksInner}>
+        <div className={styles.bandHeader}>
+          <h2 className={styles.bandTitle}>Books</h2>
+          <p className={styles.bandSub}>{booksData.length} titles</p>
+        </div>
+
+        <div className={styles.booksLayout}>
+          {/* Sidebar */}
+          <aside className={styles.booksSidebar}>
+            {booksData.map((b, i) => (
+              <button
+                key={b.key}
+                className={`${styles.sidebarItem} ${
+                  i === active ? styles.sidebarItemActive : ""
+                }`}
+                onClick={() => setActive(i)}
+              >
                 <Image
-                  className={`img-fluid d-block mx-auto ${styles.img}`}
-                  src={Book1}
-                  alt=""
+                  src={b.src}
+                  alt={b.title}
+                  width={40}
+                  height={54}
+                  className={styles.sidebarThumb}
+                />
+                <div className={styles.sidebarText}>
+                  <p className={styles.sidebarTitle}>{b.title}</p>
+                  <p className={styles.sidebarYear}>{b.year}</p>
+                </div>
+                <span className={styles.sidebarChevron}>›</span>
+              </button>
+            ))}
+          </aside>
+
+          {/* Featured card */}
+          <div className={styles.featuredCard}>
+            <div className={styles.featuredInner}>
+              <div className={styles.featuredImgCol}>
+                <Image
+                  src={book.src}
+                  alt={book.title}
+                  width={200}
+                  height={270}
+                  className={styles.featuredImg}
                 />
               </div>
-              <div className="col-lg-8 col-md-8 col-sm-12 d-flex mt-3">
-                <div className="col w-100">
-                  <p
-                    className={`d-block text-sm-start text-md-start text-lg-start ${styles.p}`}
-                  >
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Ratione accusantium beatae libero nihil aut accusamus
-                    impedit autem quasi. In placeat totam neque tenetur, itaque
-                    dicta dolores cupiditate quia mollitia illo!
-                  </p>
-
-                  <div
-                    className={`col justify-content-center justify-content-md-start justify-content-lg-start ${styles.booklink}`}
-                  >
-                    <Link
-                      className={`nav-link active me-2 ${styles.underlineColor}`}
-                      aria-current="page"
-                      href="/books/abegwhosendpage"
-                    >
-                      Read More
-                    </Link>
-                    <Link
-                      className={`nav-link active ${styles.underlineColor} `}
-                      aria-current="page"
-                      href=""
-                    >
-                      Visit Website
-                    </Link>
-                  </div>
-                </div>
+              <div className={styles.featuredBody}>
+                <p className={styles.featuredYear}>📅 {book.year}</p>
+                <h3 className={styles.featuredTitle}>{book.title}</h3>
+                <p className={styles.featuredDesc}>{book.description}</p>
+                <a
+                  href={GET_BOOK_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.featuredCta}
+                >
+                  Get This Book
+                </a>
               </div>
+            </div>
+
+            {/* Pagination */}
+            <div className={styles.featuredPagination}>
+              <button
+                className={styles.pageBtn}
+                onClick={() => setActive((p) => Math.max(0, p - 1))}
+                disabled={active === 0}
+              >
+                ← Previous
+              </button>
+              <span className={styles.pageCount}>
+                {active + 1} / {booksData.length}
+              </span>
+              <button
+                className={styles.pageBtn}
+                onClick={() =>
+                  setActive((p) => Math.min(booksData.length - 1, p + 1))
+                }
+                disabled={active === booksData.length - 1}
+              >
+                Next →
+              </button>
             </div>
           </div>
         </div>
       </div>
-    </>
+    </section>
   );
 };
 
-export const Books2 = () => {
+/* ─── 3. REVIEWS — carousel matching Jolevi style ────────────── */
+export const ReviewsSection = () => {
+  const VISIBLE = 3;
+  const [start, setStart] = useState(0);
+
+  const canPrev = start > 0;
+  const canNext = start + VISIBLE < reviews.length;
+
+  const visible = reviews.slice(start, start + VISIBLE);
+
   return (
-    <>
-      <div className={`container-fluid mt-3 pb-5 pt-3 ${styles.lightBg}`}>
-        <div className={`container d-flex align-items-center`}>
-          {/* Book 2 Section */}
-          <div className={`container`}>
-            <div className="row align-items-center justify-content-center gx-md-5">
-              <div className="col-lg-4 col-md-4 col-sm-12 mt-4">
-                <Image
-                  className={`img-fluid d-block mx-auto ${styles.img}`}
-                  src={Book2}
-                  alt=""
-                />
-              </div>
-              <div className="col-lg-8 col-md-8 col-sm-12 d-flex mt-3 order-lg-first order-md-first order-xl-first">
-                <div className="col w-100 ms-xl-3">
-                  <p
-                    className={`d-block text-sm-start text-md-start text-lg-start ${styles.p}`}
-                  >
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Ratione accusantium beatae libero nihil aut accusamus
-                    impedit autem quasi. In placeat totam neque tenetur, itaque
-                    dicta dolores cupiditate quia mollitia illo!
-                  </p>
-                  <div
-                    className={`col justify-content-center justify-content-md-start justify-content-lg-start ${styles.booklink}`}
-                  >
-                    <Link
-                      className={`nav-link active me-2 ${styles.underlineColor}`}
-                      aria-current="page"
-                      href="/books/randomthoughts1"
-                    >
-                      Read More
-                    </Link>
-                    <Link
-                      className={`nav-link active ${styles.underlineColor}`}
-                      aria-current="page"
-                      href=""
-                    >
-                      Visit Website
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
+    <section className={styles.reviewsBand}>
+      <div className={styles.reviewsInner}>
+        <div className={styles.reviewsTopRow}>
+          <div className={styles.bandHeader}>
+            <h2 className={styles.bandTitle}>Reviews</h2>
+            <p className={styles.bandSub}>
+              {reviews.length} reviews from real readers
+            </p>
+          </div>
+          {/* Arrow controls — top-right like Jolevi */}
+          <div className={styles.reviewsArrows}>
+            <button
+              className={styles.arrowBtn}
+              onClick={() => setStart((s) => Math.max(0, s - 1))}
+              disabled={!canPrev}
+              aria-label="Previous reviews"
+            >
+              ‹
+            </button>
+            <button
+              className={styles.arrowBtn}
+              onClick={() => setStart((s) => s + 1)}
+              disabled={!canNext}
+              aria-label="Next reviews"
+            >
+              ›
+            </button>
           </div>
         </div>
+
+        {/* Cards */}
+        <div className={styles.reviewsGrid}>
+          {visible.map((r) => (
+            <div key={r.id} className={styles.reviewCard}>
+              <span className={styles.quoteIcon}>"</span>
+              <p className={styles.reviewText}>{r.review}</p>
+              <div className={styles.reviewMeta}>
+                {/* <Stars count={r.rating} /> */}
+                {/* <p className={styles.reviewBook}>{r.book}</p> */}
+              </div>
+              <div className={styles.reviewAuthor}>
+                {/* <div className={styles.reviewAvatar}>
+                  {getInitials(r.name)}
+                </div> */}
+                <span className={styles.reviewName}>{r.name}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Dot indicators */}
+        <div className={styles.reviewsDots}>
+          {Array.from({
+            length: reviews.length - VISIBLE + 1,
+          }).map((_, i) => (
+            <button
+              key={i}
+              className={`${styles.dot} ${i === start ? styles.dotActive : ""}`}
+              onClick={() => setStart(i)}
+              aria-label={`Go to review ${i + 1}`}
+            />
+          ))}
+        </div>
       </div>
-    </>
+    </section>
   );
 };
 
-export const Books3 = () => {
+/* ─── 4. CONTACT ─────────────────────────────────────────────── */
+export const ContactSection = () => {
   return (
-    <>
-      <div className={`container-fluid mt-3`}>
-        <div className={`container d-flex align-items-center`}>
-          {/* Book 3 Section */}
-          <div className={`container`}>
-            <div className="row align-items-center justify-content-center gx-md-5">
-              <div className="col-lg-4 col-md-4 col-sm-12 mt-4">
-                <Image
-                  className={`img-fluid d-block mx-auto ${styles.img}`}
-                  src={Book3}
-                  alt=""
-                />
-              </div>
-              <div className="col-lg-8 col-md-8 col-sm-12 d-flex mt-3">
-                <div className="col w-100">
-                  <p
-                    className={`d-block text-sm-start text-md-start text-lg-start ${styles.p}`}
-                  >
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Ratione accusantium beatae libero nihil aut accusamus
-                    impedit autem quasi. In placeat totam neque tenetur, itaque
-                    dicta dolores cupiditate quia mollitia illo!
-                  </p>
-                  <div
-                    className={`col justify-content-center justify-content-md-start justify-content-lg-start ${styles.booklink}`}
-                  >
-                    <Link
-                      className={`nav-link active me-2 ${styles.underlineColor}`}
-                      aria-current="page"
-                      href="/books/randomthoughts2"
-                    >
-                      Read More
-                    </Link>
-                    <Link
-                      className={`nav-link active ${styles.underlineColor} `}
-                      aria-current="page"
-                      href=""
-                    >
-                      Visit Website
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+    <section className={styles.contactBand}>
+      <div className={styles.contactInner}>
+        <div className={styles.contactLeft}>
+          <p className={styles.eyebrow}>Get in Touch</p>
+          <h2 className={styles.contactTitle}>Contact Titi</h2>
+          <p className={styles.contactDesc}>
+            Interested in a collaboration, speaking engagement, or just want to
+            share your thoughts on a book? Reach out directly.
+          </p>
         </div>
-      </div>
-    </>
-  );
-};
 
-export const Books4 = () => {
-  return (
-    <>
-      <div className={`container-fluid mt-3`}>
-        <div className={`container d-flex align-items-center`}>
-          {/* Book 4 Section */}
-          <div className={`container`}>
-            <div className="row align-items-center justify-content-center gx-md-5">
-              <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12 mt-4">
-                <Image
-                  className={`img-fluid d-block mx-auto ${styles.img}`}
-                  src={Book4}
-                  alt=""
-                />
-              </div>
-              <div className="col-xl-8 col-lg-8 col-md-8 col-sm-12 d-flex mt-3 order-lg-first order-md-first order-xl-first">
-                <div className="col w-100 ms-xl-3">
-                  <p
-                    className={`d-block text-sm-start text-md-start text-lg-start ${styles.p}`}
-                  >
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Ratione accusantium beatae libero nihil aut accusamus
-                    impedit autem quasi. In placeat totam neque tenetur, itaque
-                    dicta dolores cupiditate quia mollitia illo!
-                  </p>
-                  <div
-                    className={`col justify-content-center justify-content-md-start justify-content-lg-start ${styles.booklink}`}
-                  >
-                    <Link
-                      className={`nav-link active me-2 ${styles.underlineColor}`}
-                      aria-current="page"
-                      href="/books/thirdbook"
-                    >
-                      Read More
-                    </Link>
-                    <Link
-                      className={`nav-link active ${styles.underlineColor} `}
-                      aria-current="page"
-                      href=""
-                    >
-                      Visit Website
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div className={styles.contactLinks}>
+          <a
+            href="mailto:hi@titiekundayo.com"
+            className={styles.contactRow}
+          >
+            <span className={styles.contactRowIcon}>✉</span>
+            <span className={styles.contactRowLabel}>Email</span>
+          </a>
+          <a
+            href="https://www.instagram.com/titiekundayo/"
+            target="_blank"
+            rel="noreferrer"
+            className={styles.contactRow}
+          >
+            <span className={styles.contactRowIcon}>📸</span>
+            <span className={styles.contactRowLabel}>Instagram</span>
+          </a>
         </div>
       </div>
-    </>
+    </section>
   );
 };
 
 export default Books;
+ 

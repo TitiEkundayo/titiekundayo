@@ -271,7 +271,7 @@ const Navbar = (props: topic) => {
                     Titi
                   </Link>
                 </li>
-                <li className="nav-item">
+                {/* <li className="nav-item">
                   <Link className="nav-link active" href="/consulting">
                     Consulting
                   </Link>
@@ -280,27 +280,27 @@ const Navbar = (props: topic) => {
                   <Link className="nav-link active" href="/entrepreneurship">
                     Entrepreneur
                   </Link>
-                </li>
+                </li> */}
                 <li className="nav-item">
                   <Link className="nav-link active" href="/books">
                     Books
                   </Link>
                 </li>
-                <li className="nav-item">
+                {/* <li className="nav-item">
                   <Link className="nav-link active" href="/podcast">
                     Podcast
                   </Link>
-                </li>
+                </li> */}
                 <li className="nav-item">
                   <Link className="nav-link active" href="/musing">
                     Musing
                   </Link>
                 </li>
-                <li className="nav-item">
+                {/* <li className="nav-item">
                   <Link className="nav-link active" href="/contact">
                     Contact
                   </Link>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>

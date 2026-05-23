@@ -14,12 +14,12 @@ const Footer = () => {
 				<div className="d-flex justify-content-around mb-5">
 					{/* first column */}
 					<div>
-						<Link
+						{/* <Link
 							className="nav-link active"
 							aria-current="page"
 							href="/meettiti">
 							Titi
-						</Link>
+						</Link> */}
 
 						<Link
 							className="nav-link active mt-3"
@@ -27,23 +27,23 @@ const Footer = () => {
 							href="/books">
 							Books
 						</Link>
-
+{/* 
 						<Link
 							className="nav-link active mt-3"
 							aria-current="page"
 							href="/contact">
 							Contact
-						</Link>
+						</Link> */}
 					</div>
 
 					{/* second column */}
 					<div>
-						<Link
+						{/* <Link
 							className="nav-link active"
 							aria-current="page"
 							href="/podcast">
 							Podcast
-						</Link>
+						</Link> */}
 
 						<Link
 							className="nav-link active mt-3"
@@ -55,7 +55,7 @@ const Footer = () => {
 
 					{/* third column */}
 					<div>
-						<Link
+						{/* <Link
 							className="nav-link active"
 							aria-current="page"
 							href="/entrepreneurship">
@@ -67,7 +67,7 @@ const Footer = () => {
 							aria-current="page"
 							href="/consulting">
 							Consulting
-						</Link>
+						</Link> */}
 					</div>
 				</div>
 
@@ -84,7 +84,7 @@ const Footer = () => {
 						All Rights Reserved <span className={`${styles.secColor}`}>|</span>{" "}
 						Privacy Policy
 					</p>
-					<p>&copy; 2022 Titi Ekundayo.</p>
+					<p>&copy; 2026 Titi Ekundayo.</p>
 				</div>
 			</footer>
 
@@ -98,12 +98,12 @@ const Footer = () => {
 					<div className={`vr`}></div>
 
 					<div className="text-start">
-						<Link
+						{/* <Link
 							className="nav-link active mb-3"
 							aria-current="page"
 							href="/meettiti">
 							Titi
-						</Link>
+						</Link> */}
 
 						<Link
 							className="nav-link active mb-3"
@@ -112,12 +112,12 @@ const Footer = () => {
 							Books
 						</Link>
 
-						<Link
+						{/* <Link
 							className="nav-link active mb-3"
 							aria-current="page"
 							href="/podcast">
 							Podcast
-						</Link>
+						</Link> */}
 
 						<Link
 							className="nav-link active"
@@ -130,14 +130,14 @@ const Footer = () => {
 					<div className={`vr`}></div>
 
 					<div className="text-start">
-						<Link
+						{/* <Link
 							className="nav-link active mb-3"
 							aria-current="page"
 							href="/musing">
 							Entrepreneur
-						</Link>
+						</Link> */}
 
-						<Link
+						{/* <Link
 							className="nav-link active mb-3"
 							aria-current="page"
 							href="/consulting">
@@ -149,7 +149,7 @@ const Footer = () => {
 							aria-current="page"
 							href="/contact">
 							Contact
-						</Link>
+						</Link> */}
 					</div>
 				</div>
 
@@ -165,7 +165,7 @@ const Footer = () => {
 
 				<div className="mt-4 text-center">
 					<p className="mb-0">
-						&copy; 2022 Titi Ekundayo. All Rights Reserved{" "}
+						&copy; 2026 Titi Ekundayo. All Rights Reserved{" "}
 						<span className={`${styles.secColor}`}> | </span> Privacy Policy
 					</p>
 				</div>
