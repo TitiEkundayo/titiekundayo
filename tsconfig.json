@@ -42,8 +42,7 @@
 		"incremental": true,
 		"paths": {
 			"@/*": ["./*"]
-		},
-		"types": ["node", "next", "next/image-types/global"]
+		}
 	},
 	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/Navbar.tsx"],
 	"exclude": ["node_modules"]
