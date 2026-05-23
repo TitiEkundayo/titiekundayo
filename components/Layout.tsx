@@ -14,16 +14,16 @@ import Footer from "./Footer";
 // };
 
 interface pages {
-	children: any;
+  children: any;
 }
 const Layout = (props: pages) => {
-	const { children } = props;
-	return (
-		<div>
-			{children}
-			<Footer />
-		</div>
-	);
+  const { children } = props;
+  return (
+    <div>
+      {children}
+      <Footer />
+    </div>
+  );
 };
 
 export default Layout;

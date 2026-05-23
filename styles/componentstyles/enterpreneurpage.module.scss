@@ -1,0 +1,40 @@
+.EnterpreneurHero {
+  background-color: #aaadb2;
+  background-size: cover;
+  position: relative;
+  height: auto;
+  width: auto;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+@media only screen and (min-device-width: 427px) and (max-device-width: 763px) {
+  .EnterpreneurHeroimage {
+    justify-content: center;
+    text-align: left;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 991px) {
+  .enterpreneurLineimg {
+    display: none;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .EnterpreneuerbodySpacing {
+    margin-top: 25px;
+  }
+}
+
+.homeHeroText {
+  font-size: 4rem;
+  font-weight: 300;
+}
+
+.Enterpreneuepic {
+  height: 50vh;
+}
+// }
