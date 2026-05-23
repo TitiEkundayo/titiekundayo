@@ -279,7 +279,7 @@ const LetterFromTiti = () => {
             </p>
 
             <p className={styles.letterText}>
-              Whether it's through entrepreneurship, consulting, or creative projects, 
+              Whether it&apos;s through entrepreneurship, consulting, or creative projects, 
               my goal is always the same: to build things that make a real impact.
             </p>
           </div>

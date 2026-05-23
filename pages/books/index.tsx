@@ -150,7 +150,7 @@ export const HeroSection = () => {
           <p className={styles.heroBio}>
             Titilayo Ekundayo operates at the confluence of strategy, business
             development, and long term value creation. For over a decade, she
-            has built, led, and supported organizations within Africa's startup
+            has built, led, and supported organizations within Africa&apos;s startup
             and innovation ecosystem, navigating growth, uncertainty, and
             transformation with discipline and intent. Her work spans
             entrepreneurship, operations, and organizational development,
@@ -332,7 +332,7 @@ export const ReviewsSection = () => {
         <div className={styles.reviewsGrid}>
           {visible.map((r) => (
             <div key={r.id} className={styles.reviewCard}>
-              <span className={styles.quoteIcon}>"</span>
+              <span className={styles.quoteIcon}>&quot;</span>
               <p className={styles.reviewText}>{r.review}</p>
               <div className={styles.reviewMeta}>
                 {/* <Stars count={r.rating} /> */}
