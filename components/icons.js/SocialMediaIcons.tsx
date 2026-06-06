@@ -20,7 +20,7 @@ export const EmailIcon = () => {
 
 export const LinkedInIcon = () => {
   return (
-    <Link href="https://www.linkedin.com/in/titilayo-ekundayo/">
+    <Link href="https://www.linkedin.com/in/titilayo-ekundayo/" target="_blank" rel="noreferrer noopener">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="16"
@@ -37,7 +37,7 @@ export const LinkedInIcon = () => {
 
 export const FacebookIcon = () => {
   return (
-    <Link href="https://www.facebook.com/teas4me4life">
+    <Link href="https://www.facebook.com/teas4me4life" target="_blank" rel="noreferrer noopener">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="16"
@@ -54,7 +54,7 @@ export const FacebookIcon = () => {
 
 export const InstagramIcon = () => {
   return (
-    <Link href="https://www.instagram.com/titiekundayo/">
+    <Link href="https://www.instagram.com/titiekundayo/" target="_blank" rel="noreferrer noopener">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="16"

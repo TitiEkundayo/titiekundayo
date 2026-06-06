@@ -286,21 +286,21 @@ const Navbar = (props: topic) => {
                     Books
                   </Link>
                 </li>
-                {/* <li className="nav-item">
+                <li className="nav-item">
                   <Link className="nav-link active" href="/podcast">
                     Podcast
                   </Link>
-                </li> */}
+                </li>
                 <li className="nav-item">
                   <Link className="nav-link active" href="/musing">
                     Musing
                   </Link>
                 </li>
-                {/* <li className="nav-item">
+                <li className="nav-item">
                   <Link className="nav-link active" href="/contact">
                     Contact
                   </Link>
-                </li> */}
+                </li>
               </ul>
             </div>
           </div>

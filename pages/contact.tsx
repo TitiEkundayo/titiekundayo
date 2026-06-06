@@ -60,10 +60,7 @@ const GetInTouch = () => {
 		<div className="text-white text-center w-100">
 			<div className=" ">
 				<h3>Get In Touch</h3>
-				<p>
-			        Lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor 
-					lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor 
-				</p>
+				
 			</div>
 
 			  <div className=" ">

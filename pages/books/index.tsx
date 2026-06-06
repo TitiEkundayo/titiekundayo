@@ -3,9 +3,9 @@ import Image from "next/image";
 import { useState } from "react";
 import styles from "../../styles/componentstyles/books.module.scss";
 import { BookNavTitle } from "@/components/Navbar";
-import Book1 from "../../public/images/BooksImgs/WMEDSFL Mockup.png";
-import Book2 from "../../public/images/BooksImgs/TOAM Mockup.png";
-import titi from "../../public/images/BooksImgs/author-titi_2.jpeg";
+import Book1 from "../../public/images/BooksImgs/TOAM Mockup.png";
+import Book2 from "../../public/images/BooksImgs/WMEDSFL Mockup.png";
+import titi from "../../public/images/BooksImgs/books-hero.jpeg";
 import HomePageHeroImgDesktop from "../../public/images/BooksImgs/homepageheroimgdesktop.png";
 import HomePageHeroImgMobile from "../../public/images/BooksImgs/homepageheroimgmobile.png";
 import { ScrollUpIcon } from "@/components/icons.js/ScrollUpIcon";
@@ -15,18 +15,18 @@ const booksData = [
   {
     key: "b1",
     src: Book1,
-    title: "Wetin My Eyes Don See For Lagos",
+     title: "Threads of a Mind",
     year: "2026",
     description:
-      "An extraordinary anthology that captures the essence, energy, and soul of Lagos through the eyes of 22 talented writers.",
+      "A captivating exploration of consciousness, identity, and the intricate connections that weave through our thoughts and experiences. This debut work established Titi as one of Nigeria's most compelling new voices.",
   },
   {
     key: "b2",
     src: Book2,
-    title: "Threads of a Mind",
+    title: "Wetin My Eyes Don See For Lagos",
     year: "2026",
     description:
-      "A captivating exploration of consciousness, identity, and the intricate connections that weave through our thoughts and experiences. This debut work established Titi as one of Nigeria's most compelling new voices.",
+      "An extraordinary anthology that captures the essence, energy, and soul of Lagos through the eyes of 22 talented writers.",
   },
 ];
 
@@ -92,25 +92,6 @@ const reviews = [
   },
 ];
 
-/* ─── Helpers ───────────────────────────────────────────────── */
-// const Stars = ({ count }) => (
-//   <span className={styles.stars}>
-//     {Array.from({ length: 5 }).map((_, i) => (
-//       <span key={i} className={i < count ? styles.starFilled : styles.starEmpty}>
-//         ★
-//       </span>
-//     ))}
-//   </span>
-// );
-
-// const getInitials = (name) =>
-//   name
-//     .split(" ")
-//     .slice(0, 2)
-//     .map((w) => w[0])
-//     .join("")
-//     .toUpperCase();
-
 /* ─── Page root ─────────────────────────────────────────────── */
 export const Books = () => {
   return (
@@ -119,7 +100,6 @@ export const Books = () => {
       <HeroSection />
       <BooksSection />
       <ReviewsSection />
-      <ContactSection />
       <ScrollUpIcon />
     </div>
   );
@@ -147,7 +127,7 @@ export const HeroSection = () => {
             <span>3 Photos</span>
           </div>
 
-          <p className={styles.heroBio}>
+          {/* <p className={styles.heroBio}>
             Titilayo Ekundayo operates at the confluence of strategy, business
             development, and long term value creation. For over a decade, she
             has built, led, and supported organizations within Africa&apos;s startup
@@ -162,7 +142,7 @@ export const HeroSection = () => {
             add light to the vast body of human knowledge. And so she writes,
             hoping to leave the world a little fuller, a little wiser, and a
             little more alive.
-          </p>
+          </p> */}
 
           <a
             href={GET_BOOK_URL}
@@ -360,43 +340,6 @@ export const ReviewsSection = () => {
               aria-label={`Go to review ${i + 1}`}
             />
           ))}
-        </div>
-      </div>
-    </section>
-  );
-};
-
-/* ─── 4. CONTACT ─────────────────────────────────────────────── */
-export const ContactSection = () => {
-  return (
-    <section className={styles.contactBand}>
-      <div className={styles.contactInner}>
-        <div className={styles.contactLeft}>
-          <p className={styles.eyebrow}>Get in Touch</p>
-          <h2 className={styles.contactTitle}>Contact Titi</h2>
-          <p className={styles.contactDesc}>
-            Interested in a collaboration, speaking engagement, or just want to
-            share your thoughts on a book? Reach out directly.
-          </p>
-        </div>
-
-        <div className={styles.contactLinks}>
-          <a
-            href="mailto:hi@titiekundayo.com"
-            className={styles.contactRow}
-          >
-            <span className={styles.contactRowIcon}>✉</span>
-            <span className={styles.contactRowLabel}>Email</span>
-          </a>
-          <a
-            href="https://www.instagram.com/titiekundayo/"
-            target="_blank"
-            rel="noreferrer"
-            className={styles.contactRow}
-          >
-            <span className={styles.contactRowIcon}>📸</span>
-            <span className={styles.contactRowLabel}>Instagram</span>
-          </a>
         </div>
       </div>
     </section>

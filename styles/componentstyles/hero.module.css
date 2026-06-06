@@ -1,0 +1,29 @@
+.ConsultingHero::before {
+  content: "";
+  margin-top: 55px;
+  background-image: url(.././../public/images/HomeImgs/consultingHeroimg.png);
+  background-size: fill;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  height: 80vh;
+  max-width: 1500px;
+  min-width: 441px;
+  z-index: -1;
+}
+
+.ConsultingHeroBg h1 {
+  position: relative;
+  font-size: 3rem;
+  font-weight: 1000;
+  margin-top: 150px;
+}
+
+.ConsultingHeroBg h2 {
+  position: relative;
+  font-size: 1rem;
+  font-weight: 150;
+  margin-left: 53px;
+}/*# sourceMappingURL=hero.module.css.map */

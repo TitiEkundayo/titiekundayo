@@ -6,6 +6,10 @@
   color: #00ffcd;
 }
 
+.textColor {
+  color: #fff;
+}
+
 .secBgColor {
   background-color: #00ffcd !important;
 }
@@ -59,7 +63,7 @@
 }
 @media only screen and (max-width: 765px) {
   .ConsultingPageHeroBg {
-    height: 80vh;
+    height: 50vh;
   }
 }
 .ConsultingHeaderText {
@@ -143,5 +147,4 @@
   .Underline {
     width: 11rem;
   }
-}
-/*# sourceMappingURL=consulting.module.css.map */
+}/*# sourceMappingURL=consulting.module.css.map */

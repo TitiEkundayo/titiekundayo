@@ -1,67 +1,672 @@
+
 // @use "../generalstyles/colors.module.scss" as *;
 
-// .LandingPageHeroBgg::before {
-//   content: "";
+// // ==========================================
+// // MODERN LANDING PAGE HERO STYLES
+// // CSS MODULES COMPATIBLE (No :root selector)
+// // ==========================================
+
+// // ==========================================
+// // HERO CONTAINER
+// // ==========================================
+// .heroContainer {
+//   position: relative;
+//   min-height: 100vh;
+//   width: 100%;
+//   background: $pryColor;
+//   overflow: hidden;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   padding: 2.5rem;
+
+//   // Animated gradient overlay
+//   &::before {
+//     content: "";
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//     background: radial-gradient(
+//       ellipse at 20% 50%,
+//       rgba(0, 255, 205, 0.08) 0%,
+//       transparent 50%
+//     ),
+//     radial-gradient(
+//       ellipse at 80% 80%,
+//       rgba(0, 255, 205, 0.05) 0%,
+//       transparent 50%
+//     );
+//     pointer-events: none;
+//     animation: gradientShift 15s ease-in-out infinite;
+//   }
+// }
+
+// .gradientOverlay {
 //   position: absolute;
-//   background-color: #2e3133;
-//   height: 72vh;
+//   inset: 0;
+//   background: radial-gradient(circle at 30% 50%, rgba(0, 255, 205, 0.05), transparent 60%);
+//   pointer-events: none;
+//   animation: pulseOverlay 8s ease-in-out infinite;
+// }
+
+// // ==========================================
+// // HERO CONTENT GRID
+// // ==========================================
+// .heroContent {
+//   position: relative;
+//   z-index: 2;
+//   display: grid;
+//   grid-template-columns: 1fr 1fr;
+//   gap: 6rem;
+//   align-items: center;
+//   max-width: 1400px;
 //   width: 100%;
+//   margin: 0 auto;
+// }
+
+// // ==========================================
+// // TEXT SECTION
+// // ==========================================
+// .textSection {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   animation: slideInLeft 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+// }
+
+// .textWrapper {
+//   display: flex;
+//   flex-direction: column;
+//   gap: 2.5rem;
+// }
+
+// // Subtitle
+// .subtitle {
+//   display: none;
+// }
+
+// .subtitleDot {
+//   display: inline-block;
+//   width: 8px;
+//   height: 8px;
+//   background: $secColor;
+//   border-radius: 50%;
+//   animation: fadeInDown 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.1s both;
+// }
+
+// .subtitleAccent {
+//   font-size: 0.95rem;
+//   letter-spacing: 2px;
+//   text-transform: uppercase;
+//   color: $secColor;
+//   font-weight: 600;
+//   animation: fadeInDown 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.1s both;
+// }
+
+// // Main headline
+// .mainHeadline {
+//   font-size: clamp(2rem, 8vw, 3.5rem);
+//   font-weight: 800;
+//   line-height: 1.15;
+//   color: $textColor;
+//   letter-spacing: -1px;
+//   margin: 0;
+//   animation: fadeInUp 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s both;
+// }
+
+// .highlight {
+//   color: $secColor;
+//   display: inline;
+//   animation: gradientFlow 4s ease-in-out infinite;
+// }
+
+// // Description
+// .description {
+//   font-size: clamp(1rem, 2.5vw, 1.1rem);
+//   line-height: 1.8;
+//   color: #b0b0b0;
+//   max-width: 520px;
+//   margin: 0;
+//   animation: fadeInUp 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.3s both;
+// }
+
+// // ==========================================
+// // BUTTONS
+// // ==========================================
+// .buttonGroup {
+//   display: flex;
+//   gap: 1rem;
+//   flex-wrap: wrap;
+//   margin-top: 1rem;
+//   animation: fadeInUp 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.4s both;
+// }
+
+// .btn {
+//   padding: 0.6rem 1.2rem;
+//   border-radius: 8px;
+//   border: none;
+//   font-size: 0.9rem;
+//   font-weight: 600;
+//   letter-spacing: 0.5px;
+//   cursor: pointer;
+//   transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+//   text-transform: uppercase;
+//   white-space: nowrap;
+//   position: relative;
+//   overflow: hidden;
+
+//   &::before {
+//     content: "";
+//     position: absolute;
+//     inset: 0;
+//     background: rgba(255, 255, 255, 0.1);
+//     transform: translateX(-100%);
+//     transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+//   }
+
+//   &:hover::before {
+//     transform: translateX(0);
+//   }
+// }
+
+// .btnPrimary {
+//   background: $secColor;
+//   color: $pryColor;
+
+//   &:hover {
+//     transform: translateY(-2px);
+//     box-shadow: 0 20px 40px rgba(0, 255, 205, 0.3);
+//   }
+
+//   &:active {
+//     transform: translateY(0);
+//   }
+// }
+
+// .btnSecondary {
+//   background: transparent;
+//   color: $secColor;
+//   border: 2px solid $secColor;
+
+//   &:hover {
+//     background: rgba(0, 255, 205, 0.1);
+//     transform: translateY(-2px);
+//     box-shadow: 0 20px 40px rgba(0, 255, 205, 0.15);
+//   }
+
+//   &:active {
+//     transform: translateY(0);
+//   }
+// }
+
+// // ==========================================
+// // IMAGE SECTION
+// // ==========================================
+// .imageSection {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   animation: slideInRight 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.1s both;
+// }
+
+// .imageWrapper {
+//   position: relative;
+//   width: 100%;
+//   max-width: 500px;
+//   aspect-ratio: 3 / 4;
+// }
+
+// .heroImage {
+//   width: 100%;
+//   height: 100%;
+//   object-fit: cover;
+//   border-radius: 12px;
+//   transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+//   filter: brightness(0.95) contrast(1.05);
+
+//   &:hover {
+//     transform: scale(1.02);
+//     filter: brightness(1) contrast(1.08);
+//   }
+// }
+
+// .imageBorder {
+//   position: absolute;
+//   inset: -3px;
+//   border-radius: 12px;
+//   background: $secColor;
+//   z-index: -1;
+//   opacity: 0.5;
+//   animation: borderGlow 3s ease-in-out infinite;
+// }
+
+// // ==========================================
+// // SCROLL INDICATOR
+// // ==========================================
+// .scrollIndicator {
+//   display: none;
+// }
+
+// // ==========================================
+// // ANIMATIONS
+// // ==========================================
+// @keyframes slideInLeft {
+//   from {
+//     opacity: 0;
+//     transform: translateX(-50px);
+//   }
+//   to {
+//     opacity: 1;
+//     transform: translateX(0);
+//   }
+// }
+
+// @keyframes slideInRight {
+//   from {
+//     opacity: 0;
+//     transform: translateX(50px);
+//   }
+//   to {
+//     opacity: 1;
+//     transform: translateX(0);
+//   }
+// }
+
+// @keyframes fadeInUp {
+//   from {
+//     opacity: 0;
+//     transform: translateY(30px);
+//   }
+//   to {
+//     opacity: 1;
+//     transform: translateY(0);
+//   }
+// }
+
+// @keyframes fadeInDown {
+//   from {
+//     opacity: 0;
+//     transform: translateY(-20px);
+//   }
+//   to {
+//     opacity: 1;
+//     transform: translateY(0);
+//   }
+// }
+
+// @keyframes gradientFlow {
+//   0%, 100% {
+//     filter: brightness(1);
+//   }
+//   50% {
+//     filter: brightness(1.15);
+//   }
+// }
+
+// @keyframes gradientShift {
+//   0%, 100% {
+//     transform: translate(0, 0);
+//   }
+//   50% {
+//     transform: translate(20px, -20px);
+//   }
+// }
+
+// @keyframes pulseOverlay {
+//   0%, 100% {
+//     opacity: 0.5;
+//   }
+//   50% {
+//     opacity: 0.8;
+//   }
+// }
+
+// @keyframes borderGlow {
+//   0%, 100% {
+//     opacity: 0.5;
+//     box-shadow: 0 0 20px rgba(0, 255, 205, 0.3);
+//   }
+//   50% {
+//     opacity: 0.7;
+//     box-shadow: 0 0 40px rgba(0, 255, 205, 0.5);
+//   }
+// }
+
+// @keyframes bounce {
+//   0%, 100% {
+//     transform: translateY(0);
+//   }
+//   50% {
+//     transform: translateY(8px);
+//   }
+// }
+
+// @keyframes expandLine {
+//   from {
+//     height: 0;
+//     opacity: 0;
+//   }
+//   to {
+//     height: 80px;
+//     opacity: 1;
+//   }
+// }
+
+// // ==========================================
+// // RESPONSIVE DESIGN
+// // ==========================================
+
+// // Tablet (< 1024px)
+// @media (max-width: 1024px) {
+//   .heroContainer {
+//     padding: 1.5rem;
+//   }
+
+//   .heroContent {
+//     gap: 4rem;
+//     grid-template-columns: 1fr;
+//   }
+
+//   .imageWrapper {
+//     max-width: 400px;
+//   }
+// }
+
+// // Mobile (< 768px)
+// @media (max-width: 768px) {
+//   .heroContainer {
+//     padding: 1.5rem;
+//     min-height: auto;
+//   }
+
+//   .heroContent {
+//     grid-template-columns: 1fr;
+//     gap: 3rem;
+//   }
+
+//   .textSection {
+//     order: 2;
+//   }
+
+//   .imageSection {
+//     order: 1;
+//   }
+
+//   .mainHeadline {
+//     font-size: 2rem;
+//     line-height: 1.2;
+//   }
+
+//   .description {
+//     font-size: 1rem;
+//     max-width: 100%;
+//   }
+
+//   .buttonGroup {
+//     flex-direction: column;
+//     width: 100%;
+//   }
+
+//   .btn {
+//     width: 100%;
+//     padding: 0.6rem 1rem;
+//   }
+
+//   .imageWrapper {
+//     max-width: 100%;
+//   }
+
+//   .scrollIndicator {
+//     display: none;
+//   }
+// }
+
+// // Small mobile (< 480px)
+// @media (max-width: 480px) {
+//   .mainHeadline {
+//     font-size: 1.5rem;
+//     line-height: 1.25;
+//   }
+
+//   .description {
+//     font-size: 0.95rem;
+//     line-height: 1.6;
+//   }
+
+//   .subtitleAccent {
+//     font-size: 0.85rem;
+//   }
+
+//   .btn {
+//     font-size: 0.85rem;
+//     padding: 0.5rem 0.9rem;
+//   }
+// }
+
+// // ==========================================
+// // LETTER FROM TITI SECTION
+// // ==========================================
+
+// .letterSection {
+//   background: $pryColor;
+//   padding: 6rem 2.5rem;
+//   position: relative;
+//   overflow: hidden;
+
+//   // Background glow
+//   &::before {
+//     content: "";
+//     position: absolute;
+//     top: 50%;
+//     left: -10%;
+//     width: 500px;
+//     height: 500px;
+//     background: radial-gradient(circle, rgba(0, 255, 205, 0.05) 0%, transparent 70%);
+//     border-radius: 50%;
+//     transform: translateY(-50%);
+//     pointer-events: none;
+//   }
+
+//   &::after {
+//     content: "";
+//     position: absolute;
+//     bottom: -200px;
+//     right: -200px;
+//     width: 400px;
+//     height: 400px;
+//     background: radial-gradient(
+//       circle,
+//       rgba(0, 255, 205, 0.03) 0%,
+//       transparent 70%
+//     );
+//     border-radius: 50%;
+//     pointer-events: none;
+//   }
+// }
+
+// .letterContainer {
+//   max-width: 1200px;
+//   margin: 0 auto;
+//   position: relative;
+//   z-index: 2;
+//   display: grid;
+//   grid-template-columns: auto 1fr;
+//   gap: 4rem;
+//   align-items: flex-start;
+// }
+
+// .accentLine {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   gap: 1.5rem;
+
+//   &::before {
+//     content: "";
+//     width: 3px;
+//     height: 80px;
+//     background: $secColor;
+//     border-radius: 2px;
+//     animation: expandLine 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+//   }
+
+//   &::after {
+//     content: "";
+//     width: 8px;
+//     height: 8px;
+//     background: $secColor;
+//     border-radius: 50%;
+//   }
+// }
+
+// .letterContent {
+//   animation: fadeInUp 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s both;
+// }
+
+// .sectionHeader {
+//   margin-bottom: 2.5rem;
+// }
+
+// .sectionTitle {
+//   font-size: clamp(2rem, 4vw, 2.8rem);
+//   font-weight: 700;
+//   line-height: 1.2;
+//   color: $textColor;
+//   margin: 0;
+//   letter-spacing: -0.5px;
+// }
+
+// .titleAccent {
+//   color: $secColor;
+// }
+
+// .letterBody {
+//   display: flex;
+//   flex-direction: column;
+//   gap: 1.5rem;
+//   max-width: 800px;
+// }
+
+// .letterGreeting {
+//   font-size: 1.1rem;
+//   color: $textColor;
+//   margin: 0;
+//   font-weight: 600;
+
+//   strong {
+//     color: $secColor;
+//   }
+// }
+
+// .letterText {
+//   font-size: clamp(1rem, 1.5vw, 1.1rem);
+//   line-height: 1.8;
+//   color: #b0b0b0;
+//   margin: 0;
+//   transition: color 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+//   &:first-of-type {
+//     font-size: 1.05rem;
+//     font-weight: 500;
+//     color: $textColor;
+//   }
+
+//   &:hover {
+//     color: $textColor;
+//   }
+// }
+
+// // ==========================================
+// // RESPONSIVE LETTER SECTION
+// // ==========================================
+
+// @media (max-width: 1024px) {
+//   .letterContainer {
+//     gap: 2rem;
+//   }
+
+//   .letterContent {
+//     padding: 0 2rem;
+//   }
+// }
+
+// @media (max-width: 768px) {
+//   .letterSection {
+//     padding: 4rem 1.5rem;
+//   }
+
+//   .letterContainer {
+//     grid-template-columns: 1fr;
+//     gap: 2rem;
+//   }
+
+//   .accentLine {
+//     display: none;
+//   }
+
+//   .sectionTitle {
+//     font-size: 1.8rem;
+//   }
+
+//   .letterText {
+//     font-size: 1rem;
+//     line-height: 1.7;
+//   }
+
+//   .letterGreeting {
+//     font-size: 1rem;
+//   }
+// }
+
+// @media (max-width: 480px) {
+//   .letterSection {
+//     padding: 4rem 1rem;
+//   }
+
+//   .sectionTitle {
+//     font-size: 1.5rem;
+//   }
+
+//   .letterText {
+//     font-size: 0.95rem;
+//     line-height: 1.6;
+//   }
+// }
+
+// // Keep existing consulting hero styles if needed
+// .ConsultingHero::before {
+//   content: "";
+//   margin-top: 55px;
+//   // background-image: url(.././../public/images/HomeImgs/consultingHeroimg.png);
+//   background-size: fill;
+//   position: absolute;
 //   top: 0px;
 //   right: 0px;
 //   bottom: 0px;
 //   left: 0px;
-//   opacity: 0;
+//   height: 80vh;
+//   max-width: 1500px;
+//   min-width: 441px;
+//   z-index: -1;
 // }
 
-// .LandingPageHeroBg {
-//   background: url(/images/HomeImgs/landingpageherobg.png);
-//   background-size: cover;
+// .ConsultingHeroBg h1 {
 //   position: relative;
-//   top: 0px;
-//   right: 0px;
-//   bottom: 0px;
-//   left: 0px;
-//   height: 72vh;
-//   width: 100%;
+//   font-size: 3rem;
+//   font-weight: 1000;
+//   margin-top: 150px;
 // }
 
-// .LandingPageHeroBg h2 {
+// .ConsultingHeroBg h2 {
 //   position: relative;
-//   line-height: 45px;
-// }
-// .LandingPageHeroBg h3 {
-//   position: relative;
-//   line-height: 35px;
+//   font-size: 1rem;
+//   font-weight: 150;
+//   margin-left: 53px;
 // }
 
-// @media only screen and (max-width: 990px) {
-//   .LandingPageHeroBgg::before {
-//     height: 22.5rem;
-//   }
-//   .LandingPageHeroBg::before {
-//     height: 22.5rem;
-//   }
-// }
-// @media only screen and (max-width: 765px) {
-//   .LandingPageHeroBg {
-//     height: 120vh;
-//   }
-// }
-
-// .LandingPageBg {
-//   background-color: #000;
-// }
-// .lineColor {
-//   border-left: 2px solid #fff;
-//   height: 80px;
-//   // padding-bottom: 3px;
-// }
 @use "../generalstyles/colors.module.scss" as *;
-
-// ==========================================
-// MODERN LANDING PAGE HERO STYLES
-// CSS MODULES COMPATIBLE (No :root selector)
-// ==========================================
 
 // ==========================================
 // HERO CONTAINER
@@ -73,11 +678,8 @@
   background: $pryColor;
   overflow: hidden;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2.5rem;
+  align-items: stretch;
 
-  // Animated gradient overlay
   &::before {
     content: "";
     position: absolute;
@@ -86,16 +688,12 @@
     right: 0;
     bottom: 0;
     background: radial-gradient(
-      ellipse at 20% 50%,
-      rgba(0, 255, 205, 0.08) 0%,
-      transparent 50%
-    ),
-    radial-gradient(
-      ellipse at 80% 80%,
-      rgba(0, 255, 205, 0.05) 0%,
-      transparent 50%
+      ellipse at 70% 50%,
+      rgba(0, 255, 205, 0.06) 0%,
+      transparent 55%
     );
     pointer-events: none;
+    z-index: 1;
     animation: gradientShift 15s ease-in-out infinite;
   }
 }
@@ -103,8 +701,9 @@
 .gradientOverlay {
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at 30% 50%, rgba(0, 255, 205, 0.05), transparent 60%);
+  background: radial-gradient(circle at 70% 50%, rgba(0, 255, 205, 0.04), transparent 60%);
   pointer-events: none;
+  z-index: 1;
   animation: pulseOverlay 8s ease-in-out infinite;
 }
 
@@ -115,215 +714,163 @@
   position: relative;
   z-index: 2;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 6rem;
-  align-items: center;
-  max-width: 1400px;
+  grid-template-columns: 42% 1fr;
   width: 100%;
-  margin: 0 auto;
+  min-height: 100vh;
+  align-items: stretch;
 }
 
 // ==========================================
-// TEXT SECTION
-// ==========================================
-.textSection {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  animation: slideInLeft 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
-}
-
-.textWrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 2.5rem;
-}
-
-// Subtitle
-.subtitle {
-  display: none;
-}
-
-.subtitleDot {
-  display: inline-block;
-  width: 8px;
-  height: 8px;
-  background: $secColor;
-  border-radius: 50%;
-  animation: fadeInDown 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.1s both;
-}
-
-.subtitleAccent {
-  font-size: 0.95rem;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: $secColor;
-  font-weight: 600;
-  animation: fadeInDown 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.1s both;
-}
-
-// Main headline
-.mainHeadline {
-  font-size: clamp(2rem, 8vw, 3.5rem);
-  font-weight: 800;
-  line-height: 1.15;
-  color: $textColor;
-  letter-spacing: -1px;
-  margin: 0;
-  animation: fadeInUp 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s both;
-}
-
-.highlight {
-  color: $secColor;
-  display: inline;
-  animation: gradientFlow 4s ease-in-out infinite;
-}
-
-// Description
-.description {
-  font-size: clamp(1rem, 2.5vw, 1.1rem);
-  line-height: 1.8;
-  color: #b0b0b0;
-  max-width: 520px;
-  margin: 0;
-  animation: fadeInUp 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.3s both;
-}
-
-// ==========================================
-// BUTTONS
-// ==========================================
-.buttonGroup {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-  margin-top: 1rem;
-  animation: fadeInUp 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.4s both;
-}
-
-.btn {
-  padding: 0.6rem 1.2rem;
-  border-radius: 8px;
-  border: none;
-  font-size: 0.9rem;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  cursor: pointer;
-  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  text-transform: uppercase;
-  white-space: nowrap;
-  position: relative;
-  overflow: hidden;
-
-  &::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(255, 255, 255, 0.1);
-    transform: translateX(-100%);
-    transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  }
-
-  &:hover::before {
-    transform: translateX(0);
-  }
-}
-
-.btnPrimary {
-  background: $secColor;
-  color: $pryColor;
-
-  &:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 20px 40px rgba(0, 255, 205, 0.3);
-  }
-
-  &:active {
-    transform: translateY(0);
-  }
-}
-
-.btnSecondary {
-  background: transparent;
-  color: $secColor;
-  border: 2px solid $secColor;
-
-  &:hover {
-    background: rgba(0, 255, 205, 0.1);
-    transform: translateY(-2px);
-    box-shadow: 0 20px 40px rgba(0, 255, 205, 0.15);
-  }
-
-  &:active {
-    transform: translateY(0);
-  }
-}
-
-// ==========================================
-// IMAGE SECTION
+// IMAGE SECTION (LEFT - full bleed)
 // ==========================================
 .imageSection {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  animation: slideInRight 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.1s both;
+  position: relative;
+  overflow: hidden;
+  animation: fadeIn 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
 }
 
 .imageWrapper {
   position: relative;
   width: 100%;
-  max-width: 500px;
-  aspect-ratio: 3 / 4;
+  height: 100%;
+  min-height: 100vh;
 }
 
 .heroImage {
-  width: 100%;
-  height: 100%;
   object-fit: cover;
-  border-radius: 12px;
-  transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  filter: brightness(0.95) contrast(1.05);
+  object-position: center top;
+  filter: brightness(0.92) contrast(1.05);
+  transition: filter 0.6s ease;
 
   &:hover {
-    transform: scale(1.02);
     filter: brightness(1) contrast(1.08);
   }
 }
 
+// Teal left-edge accent line
 .imageBorder {
   position: absolute;
-  inset: -3px;
-  border-radius: 12px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
   background: $secColor;
-  z-index: -1;
-  opacity: 0.5;
+  z-index: 2;
+  opacity: 0.6;
   animation: borderGlow 3s ease-in-out infinite;
 }
 
+// Gradient fade from image into dark bg on the right edge
+.imageOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    transparent 65%,
+    $pryColor 100%
+  );
+  z-index: 1;
+  pointer-events: none;
+}
+
 // ==========================================
-// SCROLL INDICATOR
+// TEXT SECTION (RIGHT)
 // ==========================================
-.scrollIndicator {
-  display: none;
+.textSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5rem 4rem 5rem 3rem;
+  animation: slideInRight 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.15s both;
+}
+
+.textWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 520px;
+}
+
+// ==========================================
+// EYEBROW
+// ==========================================
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  animation: fadeInDown 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.3s both;
+}
+
+.eyebrowDot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: $secColor;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.eyebrowText {
+  font-size: 0.8rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: $secColor;
+  font-weight: 600;
+}
+
+// ==========================================
+// HEADLINE
+// ==========================================
+.mainHeadline {
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+  font-weight: 700;
+  line-height: 1.2;
+  color: $textColor;
+  letter-spacing: -0.5px;
+  margin: 0;
+  animation: fadeInUp 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.35s both;
+}
+
+.highlight {
+  color: $secColor;
+  display: inline;
+}
+
+// ==========================================
+// ACCENT RULE
+// ==========================================
+.accentRule {
+  width: 48px;
+  height: 3px;
+  background: $secColor;
+  border-radius: 2px;
+  opacity: 0.6;
+  animation: fadeInUp 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.45s both;
+}
+
+// ==========================================
+// DESCRIPTION
+// ==========================================
+.description {
+  font-size: clamp(0.95rem, 1.5vw, 1.05rem);
+  line-height: 1.8;
+  color: #888;
+  margin: 0;
+  animation: fadeInUp 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s both;
 }
 
 // ==========================================
 // ANIMATIONS
 // ==========================================
-@keyframes slideInLeft {
-  from {
-    opacity: 0;
-    transform: translateX(-50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
 
 @keyframes slideInRight {
   from {
     opacity: 0;
-    transform: translateX(50px);
+    transform: translateX(40px);
   }
   to {
     opacity: 1;
@@ -334,7 +881,7 @@
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(24px);
   }
   to {
     opacity: 1;
@@ -345,7 +892,7 @@
 @keyframes fadeInDown {
   from {
     opacity: 0;
-    transform: translateY(-20px);
+    transform: translateY(-16px);
   }
   to {
     opacity: 1;
@@ -353,157 +900,104 @@
   }
 }
 
-@keyframes gradientFlow {
-  0%, 100% {
-    filter: brightness(1);
-  }
-  50% {
-    filter: brightness(1.15);
-  }
-}
-
 @keyframes gradientShift {
-  0%, 100% {
-    transform: translate(0, 0);
-  }
-  50% {
-    transform: translate(20px, -20px);
-  }
+  0%, 100% { transform: translate(0, 0); }
+  50%       { transform: translate(20px, -20px); }
 }
 
 @keyframes pulseOverlay {
-  0%, 100% {
-    opacity: 0.5;
-  }
-  50% {
-    opacity: 0.8;
-  }
+  0%, 100% { opacity: 0.5; }
+  50%       { opacity: 0.9; }
 }
 
 @keyframes borderGlow {
   0%, 100% {
     opacity: 0.5;
-    box-shadow: 0 0 20px rgba(0, 255, 205, 0.3);
+    box-shadow: 0 0 12px rgba(0, 255, 205, 0.3);
   }
   50% {
-    opacity: 0.7;
-    box-shadow: 0 0 40px rgba(0, 255, 205, 0.5);
-  }
-}
-
-@keyframes bounce {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(8px);
-  }
-}
-
-@keyframes expandLine {
-  from {
-    height: 0;
-    opacity: 0;
-  }
-  to {
-    height: 80px;
-    opacity: 1;
+    opacity: 0.8;
+    box-shadow: 0 0 28px rgba(0, 255, 205, 0.5);
   }
 }
 
 // ==========================================
-// RESPONSIVE DESIGN
+// RESPONSIVE
 // ==========================================
 
 // Tablet (< 1024px)
 @media (max-width: 1024px) {
-  .heroContainer {
-    padding: 1.5rem;
-  }
-
   .heroContent {
-    gap: 4rem;
-    grid-template-columns: 1fr;
+    grid-template-columns: 45% 1fr;
   }
 
-  .imageWrapper {
-    max-width: 400px;
+  .textSection {
+    padding: 4rem 2.5rem 4rem 2rem;
   }
 }
 
 // Mobile (< 768px)
 @media (max-width: 768px) {
   .heroContainer {
-    padding: 1.5rem;
     min-height: auto;
   }
 
   .heroContent {
     grid-template-columns: 1fr;
-    gap: 3rem;
-  }
-
-  .textSection {
-    order: 2;
+    min-height: auto;
   }
 
   .imageSection {
-    order: 1;
+    min-height: 60vw;
+    max-height: 380px;
+  }
+
+  .imageWrapper {
+    min-height: 60vw;
+    max-height: 380px;
+  }
+
+  .imageOverlay {
+    background: linear-gradient(
+      to bottom,
+      transparent 65%,
+      $pryColor 100%
+    );
+  }
+
+  .textSection {
+    padding: 2.5rem 1.5rem 3.5rem;
+  }
+
+  .textWrapper {
+    max-width: 100%;
+    gap: 1.5rem;
   }
 
   .mainHeadline {
     font-size: 2rem;
-    line-height: 1.2;
-  }
-
-  .description {
-    font-size: 1rem;
-    max-width: 100%;
-  }
-
-  .buttonGroup {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .btn {
-    width: 100%;
-    padding: 0.6rem 1rem;
-  }
-
-  .imageWrapper {
-    max-width: 100%;
-  }
-
-  .scrollIndicator {
-    display: none;
   }
 }
 
 // Small mobile (< 480px)
 @media (max-width: 480px) {
   .mainHeadline {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     line-height: 1.25;
   }
 
   .description {
-    font-size: 0.95rem;
-    line-height: 1.6;
+    font-size: 0.9rem;
+    line-height: 1.7;
   }
 
-  .subtitleAccent {
-    font-size: 0.85rem;
-  }
-
-  .btn {
-    font-size: 0.85rem;
-    padding: 0.5rem 0.9rem;
+  .textSection {
+    padding: 2rem 1.25rem 3rem;
   }
 }
 
 // ==========================================
-// LETTER FROM TITI SECTION
+// LETTER FROM TITI SECTION (unchanged)
 // ==========================================
 
 .letterSection {
@@ -512,7 +1006,6 @@
   position: relative;
   overflow: hidden;
 
-  // Background glow
   &::before {
     content: "";
     position: absolute;
@@ -533,11 +1026,7 @@
     right: -200px;
     width: 400px;
     height: 400px;
-    background: radial-gradient(
-      circle,
-      rgba(0, 255, 205, 0.03) 0%,
-      transparent 70%
-    );
+    background: radial-gradient(circle, rgba(0, 255, 205, 0.03) 0%, transparent 70%);
     border-radius: 50%;
     pointer-events: none;
   }
@@ -635,10 +1124,6 @@
   }
 }
 
-// ==========================================
-// RESPONSIVE LETTER SECTION
-// ==========================================
-
 @media (max-width: 1024px) {
   .letterContainer {
     gap: 2rem;
@@ -692,11 +1177,23 @@
   }
 }
 
-// Keep existing consulting hero styles if needed
+@keyframes expandLine {
+  from {
+    height: 0;
+    opacity: 0;
+  }
+  to {
+    height: 80px;
+    opacity: 1;
+  }
+}
+
+// ==========================================
+// CONSULTING HERO (unchanged)
+// ==========================================
 .ConsultingHero::before {
   content: "";
   margin-top: 55px;
-  // background-image: url(.././../public/images/HomeImgs/consultingHeroimg.png);
   background-size: fill;
   position: absolute;
   top: 0px;

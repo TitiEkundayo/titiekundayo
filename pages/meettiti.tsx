@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import UnderConstruction1 from "./underconstruction1";
 import { TitiNavTitle } from "@/components/Navbar";
 import { MeettitipageHero } from "@/components/Hero";
-import meettiti1 from "../public/images/HomeImgs/meettiti1.png";
+import meettiti1 from "../public/images/MeetTitiImgs/meettiti.jpg";
 import styles from "../styles/generalstyles/colors.module.scss";
 
 const Meettiti = () => {
@@ -21,9 +21,9 @@ const Meettiti = () => {
       <div>
         <MeettitiBody />
       </div>
-      <div>
+      {/* <div>
         <MeettitiBody1 />
-      </div>
+      </div> */}
     </div>
   );
 };
@@ -48,69 +48,17 @@ export const MeettitiBody = () => {
                 <div>
                   <h1 className={`mt-3 ${styles.textColor}`}>About Me</h1>
                   <p className={`${styles.textColor}`}>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
-                    eligendi, possimus sit eos nam deserunt beatae atque illo
-                    voluptatum, voluptatibus nihil. Molestias assumenda cum
-                    harum repudiandae facere error odit soluta. Lorem ipsum
-                    dolor sit amet consectetur adipisicing elit. Eligendi.
+                   Titilayo Ekundayo operates at the confluence of strategy, business development, and long term value creation. For over a decade, she has built, led, and supported organizations within Africa's startup and innovation ecosystem, navigating growth, uncertainty, and transformation with discipline and intent. Her work spans entrepreneurship, operations, and organizational development, shaped by a deep respect for process and the big picture.
+
+She believes deeply in the creative and transformative power of words and in the idea that every voice, no matter how small, can add light to the vast body of human knowledge. And so she writes, hoping to leave the world a little fuller, a little wiser, and a little more alive.
+
                   </p>
                 </div>
                 <div>
                   <h5 className={`${styles.secColor}`}>My Interest</h5>
                 </div>
-                <div className="d-flex">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="grey"
-                    className="bi bi-circle-fill mt-1 ms-2"
-                    viewBox="0 0 16 16">
-                    <circle cx="8" cy="8" r="8" />
-                  </svg>
-
-                  <p className={`mx-2 mb-5 pb-5 ${styles.textColor}`}>
-                    Writing
-                  </p>
-
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="grey"
-                    className="bi bi-circle-fill mt-1 ms-2"
-                    viewBox="0 0 16 16">
-                    <circle cx="8" cy="8" r="8" />
-                  </svg>
-                  <p className={`mx-2 mb-5 pb-5 ${styles.textColor}`}>
-                    Writing
-                  </p>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="grey"
-                    className="bi bi-circle-fill mt-1 ms-2"
-                    viewBox="0 0 16 16">
-                    <circle cx="8" cy="8" r="8" />
-                  </svg>
-                  <p className={`mx-2 mb-5 pb-5 ${styles.textColor}`}>
-                    Writing
-                  </p>
-
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="grey"
-                    className="bi bi-circle-fill mt-1 ms-2"
-                    viewBox="0 0 16 16">
-                    <circle cx="8" cy="8" r="8" />
-                  </svg>
-                  <p className={`mx-2 mb-5 pb-5 ${styles.textColor}`}>
-                    Writing
-                  </p>
-                </div>
+                <p>Reading and Reflective writing | Public speaking and facilitation | Martial Art </p>
+               
               </div>
             </div>
           </div>
@@ -207,21 +155,21 @@ export const MeettitiBody = () => {
   );
 };
 
-export const MeettitiBody1 = () => {
-  return (
-    <>
-      <main>
-        <h1
-          className={`text-center mb-5 pt-5 py-5 d-none d-lg-block d-md-block d-sm-none d-xs-none ${styles.textColor}`}
-          style={{ fontSize: "100px" }}>
-          Infograph
-        </h1>
-        <h1
-          className={`text-center d-sm-block d-xs-block d-lg-none d-md-none ${styles.textColor}`}
-          style={{ fontWeight: "bolder" }}>
-          Infograph
-        </h1>
-      </main>
-    </>
-  );
-};
+// export const MeettitiBody1 = () => {
+//   return (
+//     <>
+//       <main>
+//         <h1
+//           className={`text-center mb-5 pt-5 py-5 d-none d-lg-block d-md-block d-sm-none d-xs-none ${styles.textColor}`}
+//           style={{ fontSize: "100px" }}>
+//           Infograph
+//         </h1>
+//         <h1
+//           className={`text-center d-sm-block d-xs-block d-lg-none d-md-none ${styles.textColor}`}
+//           style={{ fontWeight: "bolder" }}>
+//           Infograph
+//         </h1>
+//       </main>
+//     </>
+//   );
+// };

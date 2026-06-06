@@ -1,0 +1,23 @@
+.pryColor {
+  background-color: #000;
+}
+
+.secColor {
+  color: #00ffcd;
+}
+
+.textColor {
+  color: #fff;
+}
+
+.secBgColor {
+  background-color: #00ffcd !important;
+}
+
+.BgColor {
+  background: #000 !important;
+}
+
+.underlineColor {
+  border-bottom: 2px solid #00ffcd;
+}/*# sourceMappingURL=footer.module.css.map */

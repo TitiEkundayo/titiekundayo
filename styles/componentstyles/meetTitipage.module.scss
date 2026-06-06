@@ -1,20 +1,329 @@
-@media only screen and (min-device-width: 423px) and (max-device-width: 671px) {
-  .MeetTitiHero {
-    width: 25rem;
+// @media only screen and (min-device-width: 423px) and (max-device-width: 671px) {
+//   .MeetTitiHero {
+//     width: 25rem;
+//   }
+// }
+
+// @media only screen and (min-device-width: 223px) and (max-device-width: 420px) {
+//   .MeetTitiHero {
+//     width: 19rem;
+//   }
+// }
+
+// @media only screen and (min-device-width: 1008px) and (max-device-width: 1876px) {
+//   .MeetTitiHerotext {
+//     padding-top: 45px;
+//     margin-top: 45px;
+//   }
+// }
+
+// .circle {
+//   display: flex;
+//   width: 10px;
+//   height: 10px;
+//   background-color: grey;
+//   border-radius: 50%;
+// }
+
+
+@use "../generalstyles/colors.module.scss" as *;
+
+// ==========================================
+// MEET TITI HERO SECTION - MODERN DESIGN
+// ==========================================
+
+.heroContainer {
+  position: relative;
+  width: 100%;
+  background: $pryColor;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2.5rem;
+  min-height: 90vh;
+
+  // Modern gradient background with brand colors
+  &::before {
+    content: "";
+    position: absolute;
+    top: -200px;
+    left: -200px;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(
+      circle,
+      rgba(0, 255, 205, 0.15) 0%,
+      transparent 70%
+    );
+    border-radius: 50%;
+    pointer-events: none;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -100px;
+    right: -100px;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(
+      circle,
+      rgba(0, 255, 205, 0.08) 0%,
+      transparent 70%
+    );
+    border-radius: 50%;
+    pointer-events: none;
   }
 }
 
-@media only screen and (min-device-width: 223px) and (max-device-width: 420px) {
-  .MeetTitiHero {
-    width: 19rem;
+// ==========================================
+// HERO CONTENT GRID
+// ==========================================
+.heroContent {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 1rem;
+  align-items: center;
+  max-width: 1500px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+// ==========================================
+// TEXT SECTION
+// ==========================================
+.textSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.textWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  position: relative;
+}
+
+// Accent element above text
+.textWrapper::before {
+  content: "";
+  position: absolute;
+  top: -60px;
+  left: 0;
+  width: 80px;
+  height: 5px;
+  background: linear-gradient(90deg, $secColor, transparent);
+  border-radius: 3px;
+}
+
+.mainHeadline {
+  font-size: clamp(2.4rem, 5vw, 3.8rem);
+  font-weight: 900;
+  line-height: 1.15;
+  color: $textColor;
+  letter-spacing: -2px;
+  margin: 0;
+  word-spacing: 0.1em;
+  position: relative;
+  z-index: 1;
+}
+
+.highlight {
+  color: $secColor;
+  display: inline;
+  font-weight: 900;
+  letter-spacing: -1px;
+  position: relative;
+  
+  // Underline effect
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: $secColor;
+    opacity: 0.4;
+    border-radius: 2px;
   }
 }
 
-@media only screen and (min-device-width: 1008px) and (max-device-width: 1876px) {
-  .MeetTitiHerotext {
-    padding-top: 45px;
-    margin-top: 45px;
+// ==========================================
+// IMAGE SECTION
+// ==========================================
+.imageSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 100%;
+}
+
+// Decorative shape behind image
+.imageSection::before {
+  content: "";
+  position: absolute;
+  top: -40px;
+  right: -60px;
+  width: 480px;
+  height: 480px;
+  background: linear-gradient(135deg, rgba(0, 255, 205, 0.1) 0%, transparent 100%);
+  border-radius: 20px;
+  transform: rotate(15deg);
+  z-index: 0;
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  max-width: 450px;
+  aspect-ratio: 9 / 12;
+  overflow: hidden;
+  border-radius: 24px;
+  z-index: 1;
+  box-shadow: 0 20px 60px rgba(0, 255, 205, 0.15);
+}
+
+.imageBorder {
+  display: none;
+}
+
+// Modern frame effect
+.imageWrapper::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 2px solid rgba(0, 255, 205, 0.2);
+  border-radius: 24px;
+  pointer-events: none;
+}
+
+// ==========================================
+// RESPONSIVE DESIGN
+// ==========================================
+
+// Tablet (< 1024px)
+@media (max-width: 1024px) {
+  .heroContainer {
+    padding: 3rem 2rem;
+    min-height: 85vh;
   }
+
+  .heroContent {
+    gap: 2rem;
+    grid-template-columns: 1fr;
+  }
+
+  .imageWrapper {
+    max-width: 450px;
+  }
+
+  .imageSection::before {
+    width: 400px;
+    height: 400px;
+    top: -20px;
+    right: -40px;
+  }
+
+  .mainHeadline {
+    font-size: 2.8rem;
+  }
+}
+
+// Mobile (< 768px)
+@media (max-width: 768px) {
+  .heroContainer {
+    padding: 2.5rem 1.5rem;
+    min-height: auto;
+
+    &::before {
+      width: 400px;
+      height: 400px;
+      top: -150px;
+      left: -150px;
+    }
+
+    &::after {
+      width: 300px;
+      height: 300px;
+      bottom: -200px;
+      right: -150px;
+    }
+  }
+
+  .heroContent {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .imageSection {
+    order: 2;
+  }
+
+  .textSection {
+    order: 1;
+  }
+
+  .textWrapper::before {
+    top: -40px;
+    width: 60px;
+  }
+
+  .mainHeadline {
+    font-size: 2rem;
+    line-height: 1.2;
+    letter-spacing: -1px;
+  }
+
+  .imageWrapper {
+    max-width: 100%;
+  }
+
+  .imageSection::before {
+    display: none;
+  }
+}
+
+// Small mobile (< 480px)
+@media (max-width: 480px) {
+  .heroContainer {
+    padding: 2rem 1rem;
+  }
+
+  .mainHeadline {
+    font-size: 1.6rem;
+    line-height: 1.15;
+    letter-spacing: -0.5px;
+  }
+
+  .textWrapper::before {
+    width: 50px;
+    height: 4px;
+  }
+
+  .highlight::after {
+    bottom: -6px;
+    height: 2px;
+  }
+}
+
+// Keep existing styles if you have them
+.MeetTitiHero {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 516 / 517;
+  overflow: hidden;
+}
+
+.MeetTitiHerotext {
+  font-size: 1.1rem;
+  color: $textColor;
 }
 
 .circle {
