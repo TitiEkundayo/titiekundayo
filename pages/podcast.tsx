@@ -51,7 +51,7 @@ const PodcastHero = () => {
               className={styles.logo}
             />
           </div>
-          <p className={styles.podcastSubtitle}>The Entrepreneur's Podcast</p>
+          <p className={styles.podcastSubtitle}>The Entrepreneur&apos;s sPodcast</p>
         </div>
         <div className={styles.accentElements}>
           <div className={styles.accentLine}></div>

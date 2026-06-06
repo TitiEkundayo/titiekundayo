@@ -48,7 +48,7 @@ export const MeettitiBody = () => {
                 <div>
                   <h1 className={`mt-3 ${styles.textColor}`}>About Me</h1>
                   <p className={`${styles.textColor}`}>
-                   Titilayo Ekundayo operates at the confluence of strategy, business development, and long term value creation. For over a decade, she has built, led, and supported organizations within Africa's startup and innovation ecosystem, navigating growth, uncertainty, and transformation with discipline and intent. Her work spans entrepreneurship, operations, and organizational development, shaped by a deep respect for process and the big picture.
+                   Titilayo Ekundayo operates at the confluence of strategy, business development, and long term value creation. For over a decade, she has built, led, and supported organizations within Africa&apos;s startup and innovation ecosystem, navigating growth, uncertainty, and transformation with discipline and intent. Her work spans entrepreneurship, operations, and organizational development, shaped by a deep respect for process and the big picture.
 
 She believes deeply in the creative and transformative power of words and in the idea that every voice, no matter how small, can add light to the vast body of human knowledge. And so she writes, hoping to leave the world a little fuller, a little wiser, and a little more alive.
 
