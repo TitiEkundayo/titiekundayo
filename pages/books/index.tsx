@@ -4,7 +4,7 @@ import styles from "../../styles/componentstyles/books.module.scss";
 import { BookNavTitle } from "@/components/Navbar";
 import Book1 from "../../public/images/BooksImgs/TOAM Mockup.png";
 import Book2 from "../../public/images/BooksImgs/WMEDSFL Mockup.png";
-import titi from "../../public/images/BooksImgs/books-hero.jpeg";
+import titi from "../../public/images/BooksImgs/bookshero.jpeg";
 import { ScrollUpIcon } from "@/components/icons.js/ScrollUpIcon";
 
 /* ─── Data ──────────────────────────────────────────────────── */
