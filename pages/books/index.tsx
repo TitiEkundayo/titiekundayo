@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 import styles from "../../styles/componentstyles/books.module.scss";
@@ -6,8 +5,6 @@ import { BookNavTitle } from "@/components/Navbar";
 import Book1 from "../../public/images/BooksImgs/TOAM Mockup.png";
 import Book2 from "../../public/images/BooksImgs/WMEDSFL Mockup.png";
 import titi from "../../public/images/BooksImgs/books-hero.jpeg";
-import HomePageHeroImgDesktop from "../../public/images/BooksImgs/homepageheroimgdesktop.png";
-import HomePageHeroImgMobile from "../../public/images/BooksImgs/homepageheroimgmobile.png";
 import { ScrollUpIcon } from "@/components/icons.js/ScrollUpIcon";
 
 /* ─── Data ──────────────────────────────────────────────────── */

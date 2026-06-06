@@ -1,6 +1,4 @@
-import Image from "next/image";
-import Footer from "@/components/Footer";
-import UnderConstruction1 from "./underconstruction1";
+import Image from "next/image";;
 import { TitiNavTitle } from "@/components/Navbar";
 import { MeettitipageHero } from "@/components/Hero";
 import meettiti1 from "../public/images/MeetTitiImgs/meettiti.jpg";

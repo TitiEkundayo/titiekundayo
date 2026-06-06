@@ -1,25 +1,4 @@
-// import { PodcastNavTitle } from "@/components/Navbar";
-// import UnderConstruction1 from "./underconstruction1";
-// import Footer from "@/components/Footer";
-
-// const Podcast = () => {
-//   return (
-//     <div>
-//       <div>
-//         <PodcastNavTitle />
-//       </div>
-
-//       <div>
-//         <UnderConstruction1 />
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Podcast;
-
 import { PodcastNavTitle } from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import Image from "next/image";
 import styles from "../styles/pagesstyle/podcast.module.scss";
 import awsmLogo from "../public/images/PodcastImgs/AWSM-Logo.png";
