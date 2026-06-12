@@ -42,12 +42,11 @@ export const MeettitiBody = () => {
             </div>
             <div className="col-lg-6 col-md-6 mt-5 pt-2">
               <div className="mt-5 pt-3">
-                <h5 className={`${styles.secColor}`}>My Intro</h5>
+                
                 <div>
                   <h1 className={`mt-3 ${styles.textColor}`}>About Me</h1>
                   <p className={`${styles.textColor}`}>
-                   Titilayo Ekundayo operates at the confluence of strategy, business development, and long term value creation. For over a decade, she has built, led, and supported organizations within Africa&apos;s startup and innovation ecosystem, navigating growth, uncertainty, and transformation with discipline and intent. Her work spans entrepreneurship, operations, and organizational development, shaped by a deep respect for process and the big picture.
-
+                   Titilayo Ekundayo operates at the confluence of strategy, business development, and long term value creation. For over a decade, she has built, led, and supported organizations within Africa&apos;s startup and innovation ecosystem, navigating growth, uncertainty, and transformation with discipline and intent. Her work spans entrepreneurship, operations, and organizational development, shaped by a deep respect for process and the big picture. <br/><br/>
 She believes deeply in the creative and transformative power of words and in the idea that every voice, no matter how small, can add light to the vast body of human knowledge. And so she writes, hoping to leave the world a little fuller, a little wiser, and a little more alive.
 
                   </p>
@@ -69,7 +68,7 @@ She believes deeply in the creative and transformative power of words and in the
           <div className="row">
             <div className="col-sm-12">
               <div className="mt-3">
-                <h5 className={`${styles.secColor}`}>My Intro</h5>
+              
                 <div>
                   <h1 className={`mt-4 ${styles.textColor}`}>About Me</h1>
                   <p className={`${styles.secColor} mt-4`}>

@@ -64,7 +64,7 @@ const GetInTouch = () => {
 			</div>
 
 			  <div className=" ">
-				<EmailIcon/> titiekundayo@gmail.com
+				<EmailIcon/> hi@titiekundayo.com
 			 </div> 
 
 			<div className="mt-3">

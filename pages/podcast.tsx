@@ -5,7 +5,7 @@ import awsmLogo from "../public/images/PodcastImgs/AWSM-Logo.png";
 
 const Podcast = () => {
   return (
-    <div>
+   <div className={styles.pageRoot}>
       <PodcastNavTitle />
       <PodcastHero />
       <PodcastDescription />
@@ -30,7 +30,7 @@ const PodcastHero = () => {
               className={styles.logo}
             />
           </div>
-          <p className={styles.podcastSubtitle}>The Entrepreneur&apos;s sPodcast</p>
+          <p className={styles.podcastSubtitle}>The Entrepreneur&apos;s Podcast</p>
         </div>
         <div className={styles.accentElements}>
           <div className={styles.accentLine}></div>

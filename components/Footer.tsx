@@ -14,12 +14,12 @@ const Footer = () => {
 				<div className="d-flex justify-content-around mb-5">
 					{/* first column */}
 					<div>
-						{/* <Link
+						<Link
 							className="nav-link active"
 							aria-current="page"
 							href="/meettiti">
 							Titi
-						</Link> */}
+						</Link>
 
 						<Link
 							className="nav-link active mt-3"
@@ -27,23 +27,23 @@ const Footer = () => {
 							href="/books">
 							Books
 						</Link>
-{/* 
+
 						<Link
 							className="nav-link active mt-3"
 							aria-current="page"
 							href="/contact">
 							Contact
-						</Link> */}
+						</Link>
 					</div>
 
 					{/* second column */}
 					<div>
-						{/* <Link
+						<Link
 							className="nav-link active"
 							aria-current="page"
 							href="/podcast">
 							Podcast
-						</Link> */}
+						</Link>
 
 						<Link
 							className="nav-link active mt-3"
@@ -98,12 +98,12 @@ const Footer = () => {
 					<div className={`vr`}></div>
 
 					<div className="text-start">
-						{/* <Link
+						<Link
 							className="nav-link active mb-3"
 							aria-current="page"
 							href="/meettiti">
 							Titi
-						</Link> */}
+						</Link>
 
 						<Link
 							className="nav-link active mb-3"
@@ -112,19 +112,19 @@ const Footer = () => {
 							Books
 						</Link>
 
-						{/* <Link
+						<Link
 							className="nav-link active mb-3"
 							aria-current="page"
 							href="/podcast">
 							Podcast
-						</Link> */}
+						</Link>
 
-						<Link
+						{/* <Link
 							className="nav-link active"
 							aria-current="page"
 							href="/musing">
 							Musing
-						</Link>
+						</Link> */}
 					</div>
 
 					<div className={`vr`}></div>
@@ -142,6 +142,12 @@ const Footer = () => {
 							aria-current="page"
 							href="/consulting">
 							Consulting
+						</Link> */}
+						<Link
+							className="nav-link active mb-3"
+							aria-current="page"
+						href="/musing">
+							Musing
 						</Link>
 
 						<Link
@@ -149,7 +155,7 @@ const Footer = () => {
 							aria-current="page"
 							href="/contact">
 							Contact
-						</Link> */}
+						</Link>
 					</div>
 				</div>
 

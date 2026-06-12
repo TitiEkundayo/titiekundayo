@@ -124,31 +124,37 @@ export const HeroSection = () => {
             <span>3 Photos</span>
           </div>
 
-          {/* <p className={styles.heroBio}>
-            Titilayo Ekundayo operates at the confluence of strategy, business
-            development, and long term value creation. For over a decade, she
-            has built, led, and supported organizations within Africa&apos;s startup
-            and innovation ecosystem, navigating growth, uncertainty, and
-            transformation with discipline and intent. Her work spans
-            entrepreneurship, operations, and organizational development,
-            shaped by a deep respect for process and the big picture.
-          </p>
-          <p className={styles.heroBio}>
-            She believes deeply in the creative and transformative power of
-            words and in the idea that every voice, no matter how small, can
-            add light to the vast body of human knowledge. And so she writes,
-            hoping to leave the world a little fuller, a little wiser, and a
-            little more alive.
-          </p> */}
-
-          <a
+          
+          {/* <a
             href={GET_BOOK_URL}
             target="_blank"
             rel="noopener noreferrer"
             className={styles.heroCta}
           >
             Get My Book
-          </a>
+          </a> */}
+
+          <div className={styles.availableAt}>
+  <p className={styles.availableLabel}>Available at</p>
+  <div className={styles.availableBtns}>
+    <a
+      href="https://docs.google.com/forms/d/e/1FAIpQLSddijfqcoguOfqv5-QiE-jH4-g3LUnRrAA_qkp6Lo5NhK17iQ/viewform?usp=sharing&ouid=112731816547039664331" 
+      target="_blank"
+      rel="noopener noreferrer"
+      className={styles.btnPrimary}
+    >
+      Jolevi →
+    </a>
+    <a
+      href="https://rhbooks.com.ng/product/threads-of-a-mind/" 
+      target="_blank"
+      rel="noopener noreferrer"
+      className={styles.btnOutline}
+    >
+      RH Books →
+    </a>
+  </div>
+</div>
         </div>
 
         {/* Right — photo */}
